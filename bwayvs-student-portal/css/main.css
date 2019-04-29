@@ -12,6 +12,7 @@ h1 {
     font-size: 3em;
     color: darkred;
     line-height: .75em;
+    text-align: left;
 }
 
 h2 {
