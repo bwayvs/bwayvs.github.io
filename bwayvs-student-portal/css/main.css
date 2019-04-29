@@ -36,7 +36,7 @@ header, footer, footer a {
 header img {
     width: 150px;
     height: auto;
-    align-self: right;
+    float: right;
 }
 
 footer {
