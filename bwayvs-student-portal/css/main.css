@@ -24,11 +24,10 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: 1rem;
-    max-width: 5tem;
+    max-width: 500px;
 }
 
 header {
-    max-width: 600px 
     text-align: left;
     background-color: lightslategray;
     color: darkred;
