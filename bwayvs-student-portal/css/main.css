@@ -41,8 +41,8 @@ footer, footer a {
 
 }
 header img {
-    width: auto;
-    height: 150px;
+    width: 150px;
+    height: auto;
     float: right;
 }
 
