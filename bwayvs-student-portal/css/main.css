@@ -27,17 +27,12 @@ header, main, footer {
     max-width: 5tem;
 }
 
-header, footer, a {
+header, main, a {
     text-align: center;
     background-color: lightslategray;
     color: darkred;
 }
-footer {
-    text-align: center;
-    background-color:lightslategray
-    color: whitesmoke;
-}
-header img {
+img {
     width: 150px;
     height: auto;
     float: right;
