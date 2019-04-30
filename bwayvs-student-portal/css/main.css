@@ -3,7 +3,7 @@
 body { 
     font-size: 16px; 
     line-height: 2em;
-    font-family: 'Courier New', Courier, Arial, Helvetica, Georgia, 'Times New Roman', Times, serif
+    font-family: 'Courier New', Courier, Arial, Helvetica, Georgia, 'Times New Roman', Times, serif;
     color: darkslategray;
     text-align: left;
 }
@@ -28,11 +28,12 @@ header, main, footer {
 }
 
 header {
-    text-align: left;
     background-color: lightslategray;
     color: darkred;
 }
-
+header img {
+    float: right;
+    }
 footer, footer a {
     text-align: center;
     background-color: lightslategray;
