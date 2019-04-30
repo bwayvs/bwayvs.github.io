@@ -28,7 +28,7 @@ header, main, footer {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     background-color: lightslategray;
     color: darkred;
 }
