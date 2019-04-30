@@ -32,7 +32,7 @@ header, main, a {
     background-color: lightslategray;
     color: darkred;
 }
-img {
+header img {
     width: 150px;
     height: auto;
     float: right;
