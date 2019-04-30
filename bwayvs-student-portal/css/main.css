@@ -28,6 +28,7 @@ header, main, footer {
 }
 
 header {
+    max-width: 600px 
     text-align: left;
     background-color: lightslategray;
     color: darkred;
