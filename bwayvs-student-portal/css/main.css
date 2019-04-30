@@ -33,10 +33,12 @@ header {
     color: darkred;
 }
 
-footer, a {
+footer, {
     text-align: center;
     background-color: lightslategray;
     color: white;
+}
+
 }
 header img {
     width: 150px;
