@@ -27,13 +27,13 @@ header, main, footer {
     max-width: 5tem;
 }
 
-header, a {
+header {
     text-align: center;
     background-color: lightslategray;
     color: darkred;
 }
 
-footer{
+footer, a {
     text-align: center;
     background-color: lightslategray;
     color: white;
