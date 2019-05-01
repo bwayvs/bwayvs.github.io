@@ -30,6 +30,7 @@ header, main, footer {
 header {
     background-color: lightslategray;
     color: darkred;
+    font-family: 'Courier New', Courier, Arial, Helvetica, Georgia, 'Times New Roman', Times, serif;
 }
 header img {
     float: right;
