@@ -30,7 +30,7 @@ header, main, footer {
 header {
     background-color: lightslategray;
     color: darkred;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 header img {
     float: right;
