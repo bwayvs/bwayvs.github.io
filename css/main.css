@@ -3,7 +3,7 @@
 body { 
     font-size: 16px; 
     line-height: 2em;
-    font-family: 'Courier New', Courier, Arial, Helvetica, Georgia, 'Times New Roman', Times, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: darkslategray;
     text-align: left;
 }
@@ -30,7 +30,7 @@ header, main, footer {
 header {
     background-color: lightslategray;
     color: darkred;
-    font-family: 'Courier New', Courier, Arial, Helvetica, Georgia, 'Times New Roman', Times, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 header img {
     float: right;
