@@ -5,7 +5,8 @@ body {
 }
 
 header {
-	margin: 10px auto;
+    margin: auto auto;
+    padding: 0;
 	background-color: rgb(58,87,80);
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
