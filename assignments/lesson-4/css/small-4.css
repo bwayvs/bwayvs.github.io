@@ -19,14 +19,21 @@ header img, .headings {
 	vertical-align: middle;
 	margin: 10px;
 }
-h2, h3
+h1
+{
+    font-family: 'Playfair Display', serif;
+    color: #fff; 
+    margin: 0;  
+}
+h2, h3, h4
 { 
     font-family: 'Playfair Display', serif;
     color: rgb(58,87,80);
 }
-h1>p 
+section p
 { 
     font-size: .75rem;
+    margin: 10px;
 }
 nav
 {
