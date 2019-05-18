@@ -1,0 +1,54 @@
+body {
+    background-color:rgb(175,202,196);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0, auto;
+}
+
+header {
+	margin: 10px auto;
+	background-color: rgb(58,87,80);
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    }
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+h1, h2, h3
+{ 
+    font: serif
+    color: rbg(58,87,80);
+}
+h1>div 
+{ 
+    font-size: .75rem;
+}
+nav
+{
+    background-color: rgb(175,202,196);
+    text-align: center;
+}
+nav ul
+{
+    list-style-type: none;
+}
+nav li a
+{
+    padding: .5rem;
+    display: block;
+    text-decoration: none;
+}
+.active 
+{
+    background-color: rgb(126, 173, 162);
+    color: #fff
+}
+.inactive
+{
+    color: rgb(58,87,80)
+}
