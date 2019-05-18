@@ -60,3 +60,13 @@ nav li a
 {
     color: rgb(58,87,80);
 }
+footer
+{
+    background-color: rgb(192,186,186);
+    color: #000;
+    margin: 10px auto;
+}
+footer p
+{
+    padding: .5rem;
+}
