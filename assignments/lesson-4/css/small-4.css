@@ -22,7 +22,7 @@ header img, .headings {
 h1, h2, h3
 { 
     font-family: 'Playfair Display', serif;
-    color: rbg(58,87,80);
+    color: rgb(58,87,80);
 }
 h1>p 
 { 
@@ -46,9 +46,9 @@ nav li a
 .active 
 {
     background-color: rgb(126, 173, 162);
-    color: #fff
+    color: #fff;
 }
 .inactive
 {
-    color: rgb(58,87,80)
+    color: rgb(58,87,80);
 }
