@@ -24,7 +24,7 @@ h1, h2, h3
     font: serif
     color: rbg(58,87,80);
 }
-h1>div 
+h1>p 
 { 
     font-size: .75rem;
 }
