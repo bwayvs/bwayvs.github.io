@@ -21,7 +21,7 @@ header img, .headings {
 }
 h1, h2, h3
 { 
-    font: serif
+    font: serif;
     color: rbg(58,87,80);
 }
 h1>p 
