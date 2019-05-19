@@ -45,13 +45,12 @@ h2
 }
 section p
 { 
-    margin: 30px;
+    margin: 30px 40px;
     text-align: justify;
 }
 nav
 {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(175,202,196);
     text-align: center;
 }
 nav li {
