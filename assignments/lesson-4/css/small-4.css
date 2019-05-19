@@ -1,23 +1,8 @@
+/*****Generic Classes*****/
+
 body {
     background-color:rgb(175,202,196);
     font-family: 'Montserrat', sans-serif;
-}
-
-header {
-    margin: auto auto;
-    padding: 0;
-	background-color: rgb(58,87,80);
-	border: 1px solid #bbb;
-	box-shadow: 0 0 30px #777;
-    text-align: center;
-    color: #fff;
-    font-size: 2em;
-    }
-
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 10px;
 }
 h1
 {
@@ -38,23 +23,31 @@ h2
     text-align: center;
     font-size: 2em;
 }
-.author
-{
+/*****Header*****/
+header {
+    margin: auto auto;
+    padding: 0;
+	background-color: rgb(58,87,80);
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    }
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
     margin: 10px;
-    font-size: .75rem;
 }
-article p
-{ 
-    margin: 30px 40px;
-    text-align: justify;
-}
+/*****Nav Menu*****/
 nav
 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 nav li {
-	display: block;
+    display: block;
 }
 ul
 {
@@ -76,14 +69,27 @@ nav li a
 {
     color: rgb(58,87,80);
 }
+/*****main content*****/
+.author
+{
+    margin: 10px;
+    font-size: .75rem;
+}
+article p
+{ 
+    margin: 30px 40px;
+    text-align: justify;
+}
 picture img
 {
     width: 100%;
 }
+/*****Aside*****/
 aside p
 {
     margin: 0;
 }
+/*****Footer*****/
 footer
 {
     background-color: rgb(192,186,186);
