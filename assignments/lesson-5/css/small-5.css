@@ -1,5 +1,7 @@
 /*****Generic Classes*****/
-
+*{
+    margin:0 auto;
+}
 body {
     background-color:rgb(175,202,196);
     font-family: 'Montserrat', sans-serif;
@@ -8,17 +10,13 @@ h1
 {
     font-family: 'Playfair Display', serif;
     color: #fff; 
-    margin: 10px 0;  
 }
 h3, h4
 { 
     font-family: 'Playfair Display', serif;
     width: 100%;
 }
-h3
-{
-     margin: 30px;
-}
+
 h2
 {
     background-color: rgb(58,87,80);
@@ -37,11 +35,11 @@ h3
 }
 /*****Header*****/
 header {
-    margin: auto auto;
+    margin: auto;
     padding: 0;
 	background-color: rgb(58,87,80);
 	border: 1px solid #bbb;
-	box-shadow: 0 0 30px rgb(49, 49, 49);
+	box-shadow: 0 0 2em rgb(49, 49, 49);
     text-align: center;
     color: #fff;
     font-size: 2em;
@@ -49,18 +47,16 @@ header {
 header p
 {
     font-size: .65em;
-    margin: 0;
 }
 
 header img, .headings {
 	display: inline-block;
 	vertical-align: middle;
-    margin: 10px;
 }
 /*****Nav Menu*****/
 nav
 {
-    margin: 15px auto;
+    margin: 1.5em auto;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -71,7 +67,7 @@ ul
 {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+
 }
 nav li a
 {
@@ -90,10 +86,8 @@ nav li a
 /*****Hero Content*****/
 .container
 {
-    margin: 30px auto;
     width: 100%;
-    display: inline-flex;
-    align-content: flex-start;
+    display: block;
 }
 .images, .summary
 {
@@ -102,63 +96,58 @@ nav li a
 
 .summary
 {
-    width: 50%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
-    margin-right: 30px;
-    
     
 }
 .images
 {
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 10px;
-    width: 40%
+    margin-top: 1em;
+    width: 100%
 }
 .weather img
 {
     display: block;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 .video{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 /*****Article content*****/
 div.author
 {
-    margin: 0 30px 10px; /*top&bottom margin isn't working. why not?*/
+    margin: 1em; /*top&bottom margin isn't working. why not?*/
     font-size: .75rem;
 }
 article p
 { 
-    margin: 30px;
     text-align: justify;
 }
 picture img
 {
-    margin: 30px;
+    margin-top: 1em;
 }
 /*****Aside*****/
 aside p
 {
-    margin: 0 30px;
+    margin-top: 1em;
 }
 .contact
 {
-    margin: 30px;
+    margin-top:1em;
 }
 /*****Footer*****/
 footer
 {
     background-color: rgb(192,186,186);
     color: #000;
-    margin: 30px auto;
+    margin-top: 1em;
 }
 footer p
 {
     padding: .5rem;
-    margin: auto 30px;
+    margin: auto 3em;
 }
