@@ -89,13 +89,13 @@ nav li a
 }
 .active 
 {
-    background-color:  #ACCBE1;
-    color: #2d3319;
+    background-color:  #F6FAFC;
+    color: #536B78;
 }
 .inactive
 {
-    background-color: #7C98B3;
-    color: #637081;
+    background-color: #536B78;
+    color: #F6FAFC;
  
 }
 /*****main content*****/
