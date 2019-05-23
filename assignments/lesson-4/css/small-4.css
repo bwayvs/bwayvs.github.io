@@ -13,8 +13,9 @@ h1
 h3, h4
 { 
     font-family: 'Playfair Display', serif;
-    color: rgb(58,87,80);
+    color:#517664;
     margin: 10px;
+    text-outline: 1px #2D3319 solid;
 }
 h2
 {

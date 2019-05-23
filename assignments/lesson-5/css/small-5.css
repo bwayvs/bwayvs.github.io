@@ -1,153 +1,186 @@
 /*****Generic Classes*****/
-*{
-    margin:0 auto;
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1;
 }
 body {
-    background-color:rgb(175,202,196);
+    background-color: #CEE5F2;
     font-family: 'Montserrat', sans-serif;
 }
 h1
 {
     font-family: 'Playfair Display', serif;
-    color: #fff; 
+    color:  #CEE5F2;
+    margin: .35em;
+    font-size: 2rem;  
 }
 h3, h4
 { 
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    color: #536B78;
+    margin: 1em;
 }
-
 h2
 {
-    background-color: rgb(58,87,80);
-    color: #fff;
+    color: #536B78;
     text-align: center;
     font-size: 2em;
-}
-h4
-{
-    font-size: 1em;
-    color: rgb(49, 49, 49);
-}
-h3
-{
-    color: rgb(58,87,80);
+    padding: 1em;
 }
 /*****Header*****/
 header {
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
-	background-color: rgb(58,87,80);
-	border: 1px solid #bbb;
-	box-shadow: 0 0 2em rgb(49, 49, 49);
+	background-color: #536B78;
+	border: 1px solid #ACCBE1;
+	box-shadow: 0 0 30px #7C98B3;
     text-align: center;
-    color: #fff;
-    font-size: 2em;
+    color: #CEE5F2;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
     }
-header p
-{
-    font-size: .65em;
-}
 
-header img, .headings {
+header img {
 	display: inline-block;
 	vertical-align: middle;
+    margin: .1em;
+    height: 4em;
+    position: relative;
+    top: -1em;
+    
+}
+.headings {
+    display: inline-block;
+   
+}
+
+.motto {
+    font-size: 1rem;
+    color: #ACCBE1;
 }
 /*****Nav Menu*****/
 nav
 {
-    margin: 1.5em auto;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-weight: bold;
+    text-outline: 1px #637081 solid;
 }
+
 nav li {
-    display: block;
+    display: block;   
+    font-size: 1.5em;
+    padding: .05em;
 }
 ul
 {
     list-style-type: none;
     padding: 0;
-
+    margin: 0;
 }
 nav li a
 {
     display: block;
     text-decoration: none;
+    padding: .5em;
 }
 .active 
 {
-    background-color: rgb(126, 173, 162);
-    color: #fff;
+    background-color:  #ACCBE1;
+    color: #2d3319;
 }
 .inactive
 {
-    color: rgb(58,87,80);
+    background-color: #7C98B3;
+    color: #637081;
+ 
 }
-/*****Hero Content*****/
-.container
-{
+/*****main content*****/
+.hero {
+    position: relative;
+    margin: 1.25em;
+}
+.heropicture {
     width: 100%;
-    display: block;
-}
-.images, .summary
-{
-    vertical-align: middle;
-}
-
-.summary
-{
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    height: 12em;
     
 }
-.images
-{
-    margin-top: 1em;
-    width: 100%
+.herolist{
+    font-size: 1em;
+    
 }
-.weather img
-{
-    display: block;
-    width: 100%;
-    margin-top: 1em;
+.summary {
+    position: absolute;
+    top: .25em;
+    left: 2.5em;
+    background-color: #ACCBE1;
+    opacity: .78;
+    padding: .25em;
+    
 }
-.video{
-    width: 100%;
-    margin-top: 1em;
-}
+.article{
 
-/*****Article content*****/
-div.author
+    background-color: #ACCBE1;
+    margin: 1.25em;
+    border: 1px #637081 solid;
+    color: #637081;
+}
+.article .articlepicture {
+    width: 100%;
+}
+.articletitle {
+    margin: 1em;
+}
+.author
 {
-    margin: 1em; /*top&bottom margin isn't working. why not?*/
+    margin: 1.5em;
     font-size: .75rem;
 }
 article p
 { 
+    margin: 2em 3em;
     text-align: justify;
 }
 picture img
 {
-    margin-top: 1em;
+    width: 100%;
 }
 /*****Aside*****/
-aside p
+.contactinfo
 {
-    margin-top: 1em;
+    margin: 0 auto;
+    padding-bottom: 12.5em;
+    padding-top: .5em;
+    position: relative;
+    background-color: #7C98B3;
+    text-align: center;
+    color: #CEE5F2;
+    font-size: .75rem;
 }
-.contact
-{
-    margin-top:1em;
+.contactheader {
+    color: #CEE5F2;
+}
+.contactpicture {
+    width: 60%;
+    position: absolute;
+    top: 10em;
+    left: 6em;
+
 }
 /*****Footer*****/
 footer
 {
-    background-color: rgb(192,186,186);
-    color: #000;
-    margin-top: 1em;
+    background-color: #536B78;
+    color: #CEE5F2;
+    margin: 0 auto 1em auto;
+    width: 100%;
+    font-size: .75em;
 }
 footer p
 {
     padding: .5rem;
-    margin: auto 3em;
+    text-align: center;
 }
