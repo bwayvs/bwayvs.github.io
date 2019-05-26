@@ -69,7 +69,6 @@ nav
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: bold;
-    text-outline: 1px #637081 solid;
 }
 
 nav li {
@@ -103,7 +102,7 @@ nav li a
 }
 /*****main content*****/
 
-}
+
 .hero {
     position: relative;
     margin: 1.25em;
@@ -132,9 +131,8 @@ nav li a
     align-content: center;
     
 }
-.forecastweek, .weekrow, .weekhead, .forecastbody, .forecastrow, .forecastcell, {
-    padding: 1em;
-  
+.forecastweek, .weekrow, .weekhead, .forecastbody, .forecastrow, .forecastcell {
+    padding: 1em;  
 }
 .weekhead {
     padding: .25em;
@@ -256,4 +254,3 @@ a:hover {
         font-weight: 700;	
     }
     }
-    
