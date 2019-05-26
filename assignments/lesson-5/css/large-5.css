@@ -1,4 +1,4 @@
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 567px) {
 .article .articlepicture {
     width: 50%;
     height: auto;
@@ -8,6 +8,9 @@ nav {
     font-size: .6em;
     border: 1px #536B78 solid;
     
+}
+.hamburger {
+    display: none;
 }
 nav ul {
     width: 100%;
@@ -32,5 +35,13 @@ nav li {
 .inactive {
     background-color: #CEE5F2;
     color: #536B78;
+}
+.forecast{
+    display: inline-block;
+}
+
+.contactpicture {
+    width: 25%;
+    height: auto;
 }
 }

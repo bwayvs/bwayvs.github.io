@@ -1,6 +1,6 @@
 <!DOCtype html>
 <html lang="en-US">
-<!-- Still need to create hover pseudoclass for all links, a farecast table in large view, 
+<!-- Still need to create hover pseudoclass for all links, a forecast table in large view, 
  and a responsive collapsed menu on small view. -->
 
 <head>
@@ -23,7 +23,8 @@
         </section>
     </header>
     <nav>
-        <ul>
+        <ul class="menu">
+            <li class="hamburger"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a class="inactive" href="home-4.html">Home</a></li>
             <li><a class="active" href="preston-4.html">Preston</a></li>
             <li><a class="inactive" href="sodasprings-4.html">Soda Springs</a></li>
@@ -35,7 +36,7 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="hero">
-            <img src="images/cloud-banner.jpg" class="heropicture" alt="Cloud Banner">
+            <img src="images/raindrops.jpg" class="heropicture" alt="Cloud Banner">
             <div class="hero summary">
                 <h4 class="articletitle"> Weather Summary</h4>
                 <ul class="hero list">
@@ -47,8 +48,28 @@
                 </ul>
             </div>
         </div>
+        <table class="forecast">
+            <thead class="forecastweek">
+                <tr class="weekrow">
+                    <th class="weekhead">Monday</th>
+                    <th class="weekhead">Tuesday</th>
+                    <th class="weekhead">Wednesday </th>
+                    <th class="weekhead">Thursday</th>
+                    <th class="weekhead">Friday</th>
+                </tr>
+            </thead>
+            <tbody class="forecastbody">
+                <tr class="forecastrow">
+                    <td class="forecastcell"><img src="images/sunny.png" class="forecastpic" alt="Monday Photo"></td>
+                    <td class="forecastcell"><img src="images/sunny.png" class="forecastpic" alt="Tuesday Photo"></td>
+                    <td class="forecastcell"><img src="images/partly-cloudy.png" class="forecastpic" alt="Wednesday Photo"></td>
+                    <td class="forecastcell"><img src="images/rain.png" class="forecastpic" alt="Thursday Photo"></td>
+                    <td class="forecastcell"><img src="images/sunny.png" class="forecastpic" alt="Friday Photo"></td>
+                </tr>
+            </tbody>
+        </table>
         <article class="article">
-            <img src="images/storm-logo.png" class="articlepicture" alt="Article Photo Goes Here">
+            <img src="images/dandelion.jpg" class="articlepicture" alt="Article Photo Goes Here">
             <h3>Article Name</h3>
             <div class="author">by Author Name</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
