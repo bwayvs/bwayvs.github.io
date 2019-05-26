@@ -137,7 +137,7 @@ nav li a {
 
 .forecast {
     display: none;
-    margin: 2em;
+    margin: 2em';
     align-content: center;
 
 }
@@ -165,6 +165,7 @@ table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 table,
@@ -189,16 +190,18 @@ th {
     margin: 1.25em;
     border: 1px #637081 solid;
     color: #637081;
-}
-
-.article .articlepicture {
-    width: 75%;
+    width: 95%;
     display: block;
     box-shadow: 0 0 30px #7C98B3;
     margin-top: 1em;
 
 }
-
+.articlepicture {
+    width: 50%;
+    display: block;
+    box-shadow: 0 0 30px #7C98B3;
+    margin-top: 1em;
+}
 .articletitle {
     margin: 1em;
 }
