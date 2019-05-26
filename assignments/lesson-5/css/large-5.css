@@ -12,6 +12,9 @@ nav {
 .hamburger {
     display: none;
 }
+.summary {
+    top: 20em;
+}
 nav ul {
     width: 100%;
     display: inline;
@@ -39,6 +42,7 @@ nav li {
 .forecast{
     display: inline-block;
 }
+
 
 .contactpicture {
     width: 25%;

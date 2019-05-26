@@ -55,9 +55,10 @@ header img {
 }
 .menu {
     display: inline-block;
-   
 }
-
+.hamburger {
+    color: #536B78;
+}
 .motto {
     font-size: 1rem;
     color: #ACCBE1;
@@ -118,7 +119,7 @@ nav li a
 }
 .summary {
     position: absolute;
-    top: 18em;
+    top: 38em;
     left: 1.5em;
     background-color: #ACCBE1;
     opacity: .85;
@@ -128,10 +129,8 @@ nav li a
 .forecast {
     display: none;
     margin: 2em;
-    width: 50%;
-    table-layout: auto;  
     align-content: center;
-    background-color: #FAFCFD;
+    
 }
 .forecastweek, .weekrow, .weekhead, .forecastbody, .forecastrow, .forecastcell, {
     padding: 1em;
@@ -154,6 +153,11 @@ table {
 table, th, td {
     border: 1px solid black;
   }
+td{
+    background-color: #FAFCFD;
+    min-width: 25px;
+
+}
 th {
     background-color: #7C98B3;
 }
