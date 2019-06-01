@@ -115,8 +115,9 @@ nav li a {
 }
 
 .heropicture {
-    width: 100%;
+    width: 85%;
     height: 15em;
+    
 
 }
 
@@ -135,24 +136,33 @@ nav li a {
 
 }
 
-.forecast {
+/*Forecast Table*/
+table {
     display: none;
-    margin: 2em';
+    margin: 2em;
     align-content: center;
-
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
 }
 
-.forecastweek,
-.weekrow,
-.weekhead,
-.forecastbody,
-.forecastrow,
-.forecastcell {
+table,
+thead,
+tr,
+tbody,
+td {
     padding: 1em;
 }
 
-.weekhead {
+thead,
+tbody {
+    width: 100%;
+}
+
+th {
     padding: .25em;
+    background-color: #7C98B3;
 }
 
 .forecastpic {
@@ -161,14 +171,6 @@ nav li a {
     padding: .25em;
 }
 
-table {
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-table,
 th,
 td {
     border: 1px solid black;
@@ -179,29 +181,26 @@ td {
     min-width: 25px;
 
 }
-
-th {
-    background-color: #7C98B3;
-}
-
+/*article */
 .article {
 
-    background-color: #ACCBE1;
+    background-color: rgb(219, 228, 235);
     margin: 1.25em;
     border: 1px #637081 solid;
-    color: #637081;
+    color: black;
     width: 95%;
     display: block;
     box-shadow: 0 0 30px #7C98B3;
     margin-top: 1em;
-
 }
+
 .articlepicture {
     width: 50%;
     display: block;
     box-shadow: 0 0 30px #7C98B3;
     margin-top: 1em;
 }
+
 .articletitle {
     margin: 1em;
 }
@@ -214,6 +213,7 @@ th {
 article p {
     margin: 2em 3em;
     text-align: justify;
+    line-height: 2em;
 }
 
 picture img {
@@ -239,7 +239,6 @@ picture img {
     width: 60%;
     display: block;
     margin: 1em auto;
-
 }
 
 /*****Footer*****/
