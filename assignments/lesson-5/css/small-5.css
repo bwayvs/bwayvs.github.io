@@ -10,6 +10,7 @@
 body {
     background-color: #CEE5F2;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
 h3,
 h4 {
     font-family: 'Playfair Display', serif;
-    color: #536B78;
+    color: rgb(54, 69, 77);
     margin: 1em;
 }
 
@@ -117,8 +118,6 @@ nav li a {
 .heropicture {
     width: 85%;
     height: 15em;
-    
-
 }
 
 .herolist {
@@ -137,49 +136,58 @@ nav li a {
 }
 
 /*Forecast Table*/
-table {
+
+.flex {
     display: none;
-    margin: 2em;
-    align-content: center;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
+    flex-direction: row;
+    height: 150px;
+    width: 50%
+    
+    
+    
 }
 
-table,
-thead,
-tr,
-tbody,
-td {
-    padding: 1em;
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6 {
+    flex: 1 1 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: #bed;
+    font-size: 10px;
+    text-align: center;
+    width: 20%
 }
 
-thead,
-tbody {
-    width: 100%;
+.flex div:last-child {
+    border-right: 1px solid #333;
 }
 
-th {
-    padding: .25em;
-    background-color: #7C98B3;
+.label {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: 1px solid #333;
+    background-color: #eee;
 }
 
-.forecastpic {
-    width: 100%;
+
+.fleximg {
+    padding: 5px;
+    width: 100px; 
     height: auto;
-    padding: .25em;
 }
 
-th,
-td {
-    border: 1px solid black;
-}
-
-td {
-    background-color: #FAFCFD;
-    min-width: 25px;
-
+.data {
+	display: block;
+    padding: 0 5px 5px;
+    font-size: 1.5em;
+    font-weight: 100;
 }
 /*article */
 .article {
