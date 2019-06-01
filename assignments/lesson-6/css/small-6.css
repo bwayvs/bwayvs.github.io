@@ -4,13 +4,12 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    line-height: 1.5;
 }
 
 body {
     background-color: #CEE5F2;
     font-family: 'Montserrat', sans-serif;
-
+    
 }
 
 h1 {
@@ -18,6 +17,7 @@ h1 {
     color: #CEE5F2;
     margin: .35em;
     font-size: 2rem;
+    line-height: 1.5;
 }
 
 h3,
@@ -25,6 +25,7 @@ h4 {
     font-family: 'Playfair Display', serif;
     color: rgb(54, 69, 77);
     margin: 1em;
+    line-height: 1.5;
 }
 
 h2 {
@@ -32,6 +33,7 @@ h2 {
     text-align: center;
     font-size: 2em;
     padding: 1em;
+    line-height: 1.5;
 }
 
 /*****Header*****/
@@ -112,8 +114,9 @@ nav li a {
 
 .hero {
     position: relative;
-    margin: 1.25em;
+    margin: 1.25em 1.25em 5em 1.25em;
     padding: none;
+    display: block;
 }
 
 .heropicture img {
@@ -133,7 +136,9 @@ nav li a {
     left: 1.5em;
     background-color: #ACCBE1;
     opacity: .85;
-    padding: .25em;
+    padding: 1em;
+    line-height: 1.5;
+    font-size: .75em;
 
 }
 
@@ -144,9 +149,6 @@ nav li a {
     flex-direction: row;
     height: 150px;
     width: 567px;
-
-
-
 }
 
 .col1,
@@ -163,6 +165,8 @@ nav li a {
     font-size: 10px;
     text-align: center;
     width: 20%
+    padding: 5px;
+    
 }
 
 .flex div:last-child {
@@ -189,14 +193,12 @@ nav li a {
     display: block;
     padding: 0 5px 5px;
     font-size: .75rem;
-    
 }
 
 /*article */
 .article {
 
     background-color: rgb(219, 228, 235);
-    margin: 1.25em;
     border: 1px #637081 solid;
     color: black;
     width: 95%;
@@ -204,7 +206,9 @@ nav li a {
     box-shadow: 0 0 30px #7C98B3;
     margin-top: 1em;
 }
-
+article .article {
+    margin-top: 5em;
+}
 .articlepicture {
     width: 50%;
     display: block;
