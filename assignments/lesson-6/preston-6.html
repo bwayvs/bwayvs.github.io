@@ -38,7 +38,12 @@
                 <img src="images/citimg-320w.jpg" 
                 srcset="images/citimg-480w.jpg 480w,
                 images/citimg-640w.jpg 640w,
-                images/citimg-800w.jpg 800w" alt="CIT Image">
+                images/citimg-800w.jpg 800w"
+                sizes="(min-width: 900px) 800px,
+                (max-width: 899px) and (min-width: 5640x) 640px,
+                (max-width: 639px) and (min-width: 480) 480px
+                (max-width: 479px) 320px"
+                alt="CIT Image">
             </picture>
             <div class="hero summary">
                 <h4 class="articletitle"> Weather Summary</h4>
