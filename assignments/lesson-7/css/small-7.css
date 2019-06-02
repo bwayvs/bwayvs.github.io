@@ -286,6 +286,7 @@ footer p {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr;
+    margin: 2em;
 }
 
 .galbox figure {
@@ -298,7 +299,7 @@ footer p {
     width: 100%;
 }
 figcaption {
-    font-size: smaller;
+    padding-top: 1em;
     text-align: justify;
     vertical-align: bottom;
 }
