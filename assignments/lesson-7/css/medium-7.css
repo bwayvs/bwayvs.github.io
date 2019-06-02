@@ -1,0 +1,9 @@
+@media screen and (min-width: 450px) and (max-width: 566px) {
+    .galbox {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .galbox picture {
+        padding: .5em;
+    }
+}
