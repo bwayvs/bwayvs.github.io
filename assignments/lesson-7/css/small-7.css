@@ -96,13 +96,15 @@ nav {
 }
 
 .navigation a {
-    display: block;
+    display: flex;
     color: rgb(27, 53, 65);
     padding: .75rem;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    
+    font-size: 1.5em;
+    height:100%;
+    align-items: center;
 }
 
 .navigation a:hover {
