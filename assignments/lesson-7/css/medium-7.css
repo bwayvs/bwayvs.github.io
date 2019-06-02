@@ -3,7 +3,7 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
     }
-    .galbox picture {
+    .galbox figure {
         padding: .5em;
     }
 }

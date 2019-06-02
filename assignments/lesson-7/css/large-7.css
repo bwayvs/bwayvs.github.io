@@ -84,8 +84,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
     }
-    .galbox picture {
+
+    .galbox figure {
         padding: .5em;
+    }
+
+    /* hover effect */
+    .galbox figure:hover {
+        box-shadow: 0 0 50px #333;
     }
 
 }

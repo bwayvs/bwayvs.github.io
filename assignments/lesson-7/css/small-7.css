@@ -288,9 +288,21 @@ footer p {
     grid-template-columns: 1fr;
 }
 
-.galbox picture {
+.galbox figure {
     padding: 2em;
+    border: 1px black solid;
+    background-color: #fff; 
 }
+
+.galbox img {
+    width: 100%;
+}
+figcaption {
+    font-size: smaller;
+    text-align: justify;
+    vertical-align: bottom;
+}
+
 
 a:hover {
     color: #fff;
