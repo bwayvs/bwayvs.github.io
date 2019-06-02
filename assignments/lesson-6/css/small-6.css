@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+    list-style: none;
 }
 
 body {
@@ -76,14 +77,11 @@ header img {
 /*****Nav Menu*****/
 nav {
     margin: 0 auto;
-    max-width: 760px;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: bold;
 }
 
 .navigation {
-    list-style: none;
     text-align: center;
     display: inline;
 }
@@ -102,6 +100,8 @@ nav {
     padding: .75rem;
     text-align: center;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .navigation a:hover {
@@ -110,9 +110,6 @@ nav {
     font-weight: 700;
 }
 
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
-  <ul class="navigation responsive">
-  */
 .responsive li {
     display: block;
 }
