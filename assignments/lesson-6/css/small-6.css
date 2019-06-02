@@ -62,8 +62,7 @@ header img {
 }
 
 .menu {
-    display: flex;
-    flex-wrap: nowrap;
+  display: inline-block;  
 }
 
 .hamburger {
@@ -80,11 +79,14 @@ nav {
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
+    
 }
 
 .navigation {
     text-align: center;
-    display: inline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
 .navigation li:first-child {
