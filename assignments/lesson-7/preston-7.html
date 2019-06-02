@@ -22,7 +22,7 @@
             <h1>AtmosActiv</h1>
             <p class="motto">Weather Monitoring At Its Finest</p>
         </div>
-        
+
     </header>
     <nav>
         <ul class="navigation">
@@ -47,10 +47,10 @@
                 <h4 class="articletitle"> Weather Summary</h4>
                 <ul class="list">
                     <li>Currently Sunny</li>
-                    <li>High: 76*F</li>
-                    <li>Wind Chill: 78*F</li>
+                    <li>High: <span id="temp">76</span>*F</li>
+                    <li>Wind Chill: <span id="windChill"></span>*F</li>
                     <li>Humidity: 69%</li>
-                    <li>Wind Speed: 5 mph</li>
+                    <li>Wind Speed: <span id="windSpeed">5</span> mph</li>
                 </ul>
             </div>
         </div>
@@ -123,6 +123,7 @@
     </footer>
     <script src="js/currentdate.js"> </script>
     <script src="js/hamburger.js"> </script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
