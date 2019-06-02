@@ -6,36 +6,52 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: darkslategray;
     text-align: left;
+    width: 100%;
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 3em;
     color: darkred;
     text-align: left;
     font-style: oblique;
+    line-height: 1.25;
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 2em;
     text-align: left;
+    margin: .5em 1.25em;
+    padding: .5em;
+}
+main div {
+    
     border-bottom: 1px solid rgb(19, 3, 75);
 }
 
-header, main, footer {
+header, footer {
     margin: 1.25rem auto;
     padding: 1rem;
-    max-width: 625px;
+    max-width: 100%;
     }
+main ul{
+    margin: 1.25em 5em;
+    padding: 1rem;
+    max-width: 100%;
+   
+
+}
 
 header {
     background-color: lightslategray;
     color: darkred;
     font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    
 }
 header img {
-    height: 175px;
-    width: 175px;
+    height: 250px;
+    width: 250px;
     float: right;
+    margin: auto 5em;
     }
 footer, footer a {
     text-align: center;
@@ -45,4 +61,37 @@ footer, footer a {
 
 footer {
     font-size: 11px;
+}
+@media screen and (max-width: 964px) {
+    header img {
+        margin-right: 1.25em;
+        width: 175px;
+        height: 175px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 661px) {
+    header img {
+        margin: 1em;
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    body {
+        font-size: .75em;
+    }
+    main ul {
+        margin: 1.25em;
+    }
+
 }
