@@ -113,30 +113,12 @@ nav {
 .responsive li {
     display: block;
 }
-
-/* Media Query for medium + screens */
-@media only screen and (min-width: 567px) {
-    .navigation li:first-child {
-        display: none;
-    }
-
-    .navigation li {
-        display: inline-block;
-        margin-right: 1rem;
-    }
-
-    .navigation li a {
-        color: rgb(22, 25, 37);
-    }
-}
-
 .active {
     background-color: #F6FAFC;
     color: #536B78;
 }
 
 /*****main content*****/
-
 
 .hero {
     position: relative;
