@@ -39,32 +39,29 @@ h2 {
 
 /*****Header*****/
 header {
-    margin: 0 auto;
-    padding: 0;
+    
+    width: 100%;
     background-color: #536B78;
     border: 1px solid #ACCBE1;
     box-shadow: 0 0 30px #7C98B3;
-    text-align: center;
     color: #CEE5F2;
     font-size: 1em;
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    
 }
 
-header img {
-    display: inline-block;
-    vertical-align: middle;
-    margin: .1em;
-    height: 4em;
-    position: relative;
-    top: -1em;
-
+.headerbox1 {
+    margin-right: .5em;
+    align-self: center;
+    
 }
-
-.menu {
-  display: inline-block;  
+.headerbox2 {
+    margin-left: .5em;
+    align-self: center;
 }
-
 .hamburger {
     color: #536B78;
 }
@@ -72,6 +69,7 @@ header img {
 .motto {
     font-size: 1rem;
     color: #ACCBE1;
+    margin-bottom: 2em;
 }
 
 /*****Nav Menu*****/
@@ -85,7 +83,7 @@ nav {
 .navigation {
     text-align: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
 }
 
@@ -98,13 +96,15 @@ nav {
 }
 
 .navigation a {
-    display: block;
+    display: flex;
     color: rgb(27, 53, 65);
     padding: .75rem;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    
+    font-size: 1.5em;
+    height:100%;
+    align-items: center;
 }
 
 .navigation a:hover {
@@ -126,7 +126,7 @@ nav {
 .hero {
     position: relative;
     margin: 1.25em 1.25em 3.5em 1.25em;
-    padding: none;
+    padding: 0;
     display: block;
 }
 
@@ -283,6 +283,29 @@ footer p {
     text-align: center;
     line-height: 1.5;
 }
+
+.galbox {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr;
+    margin: 2em;
+}
+
+.galbox figure {
+    padding: 2em;
+    border: 1px black solid;
+    background-color: #fff; 
+}
+
+.galbox img {
+    width: 100%;
+}
+figcaption {
+    padding-top: 1em;
+    text-align: justify;
+    vertical-align: bottom;
+}
+
 
 a:hover {
     color: #fff;
