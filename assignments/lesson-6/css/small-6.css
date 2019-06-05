@@ -95,6 +95,7 @@ nav {
 
 .navigation li {
     display: none;
+    
 }
 
 .navigation a {
@@ -104,6 +105,7 @@ nav {
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
     
 }
 
