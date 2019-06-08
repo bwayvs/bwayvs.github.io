@@ -301,7 +301,7 @@ footer p {
 }
 
 .galbox figure {
-    padding: 2em;
+    padding: .25em;
     border: 1px black solid;
     background-color: #fff; 
 }
@@ -309,9 +309,12 @@ footer p {
 .galbox img {
     width: 100%;
 }
-figcaption {
+.galbox figcaption {
     padding-top: 1em;
-    text-align: justify;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    text-align: center;
     vertical-align: bottom;
 }
 
