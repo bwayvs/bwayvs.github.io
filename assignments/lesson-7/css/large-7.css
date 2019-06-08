@@ -14,7 +14,7 @@
     }
 
     nav {
-        margin: 1em;
+        margin: 0 auto;
         font-size: .6em;
         border: 1px #536B78 solid;
     }
@@ -34,16 +34,21 @@
 
     .navigation li a {
         color: rgb(22, 25, 37);
+        font-size: 1.5em;
     }
 
     a.hamburger {
         display: none;
     }
-
     .summary {
-        top: 2em;
+        font-size: 1em;
+        text-align: center;
+    
     }
-
+    
+    .summary h4 {
+        font-size: 1.2em;
+    }
     nav ul {
         display: inline;
     }

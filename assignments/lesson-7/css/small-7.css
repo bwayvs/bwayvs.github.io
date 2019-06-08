@@ -10,15 +10,19 @@
 body {
     background-color: #CEE5F2;
     font-family: 'Montserrat', sans-serif;
-
+    width: 100%
+    margin: 0 auto;
 }
-
+header, nav, main, aside, footer {
+    max-width: 950px;
+    margin: 0 auto;
+}
 h1 {
     font-family: 'Playfair Display', serif;
     color: #CEE5F2;
-    margin: .35em;
     font-size: 2rem;
     line-height: 1.5;
+    margin: .35em 0;
 }
 
 h3,
@@ -56,6 +60,7 @@ header {
 .headerbox1 {
     margin-right: .5em;
     align-self: center;
+
     
 }
 .headerbox2 {
@@ -70,11 +75,11 @@ header {
     font-size: 1rem;
     color: #ACCBE1;
     margin-bottom: 2em;
+    
 }
 
 /*****Nav Menu*****/
 nav {
-    margin: 0 auto;
     text-align: center;
     font-weight: bold;
     
@@ -89,6 +94,7 @@ nav {
 
 .navigation li:first-child {
     display: inline-block;
+    
 }
 
 .navigation li {
@@ -102,7 +108,7 @@ nav {
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     height:100%;
     align-items: center;
 }
@@ -144,14 +150,22 @@ nav {
     position: absolute;
     top: 2em;
     left: 1.5em;
-    background-color: #ACCBE1;
-    opacity: .85;
+    background-color: rgb(210, 224, 235);
+    opacity: .90;
     padding: 1em;
     line-height: 1.5;
     font-size: .75em;
+    text-align: center;
 
 }
 
+.summary h4 {
+    font-size: 1em;
+    border-bottom: 1px solid black; 
+}
+.summary li {
+    color: black;
+}
 /*Forecast Table*/
 
 .flex {
@@ -227,11 +241,6 @@ article .article {
     box-shadow: 0 0 30px #7C98B3;
     margin-top: 1em;
 }
-
-.articletitle {
-    margin: 1em;
-}
-
 .author {
     margin: 1.5em;
     font-size: .75rem;
