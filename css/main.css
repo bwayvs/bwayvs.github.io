@@ -6,9 +6,9 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: darkslategray;
     text-align: left;
-    width: 100%;
     max-width: 950px;
     margin: 0 auto;
+    width: 100%;
 }
 
 h1 {

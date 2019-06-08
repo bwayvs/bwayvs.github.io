@@ -84,7 +84,7 @@ nav {
 
 .navigation {
     text-align: center;
-    display: flex;
+    display: block;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
