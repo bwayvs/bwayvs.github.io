@@ -15,7 +15,7 @@ table,
 caption,
 th,
 td {
-    border: 1px solid lightgrey;
+    border: 1px solid #B2A8A4;
     border-collapse: collapse;
     font-family: 'Ubuntu', sans-serif;
 }
