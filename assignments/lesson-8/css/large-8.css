@@ -1,0 +1,102 @@
+@media screen and (min-width: 567px) {
+
+
+    .articlepicture {
+        float: right;
+        width: 35%;
+        height: auto;
+        margin: 2em 5em;
+
+    }
+
+    .article {
+        margin-left: 1.5em;
+    }
+
+    nav {
+        margin: 0 auto;
+        font-size: .6em;
+        border: 1px #536B78 solid;
+    }
+
+    .navigation {
+        flex-flow: row nowrap;
+    }
+
+    .navigation li:first-child {
+        display: inline-block;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .navigation li a {
+        color: rgb(22, 25, 37);
+        font-size: 1.5em;
+    }
+
+    a.hamburger {
+        display: none;
+    }
+    .summary {
+        font-size: 1em;
+        text-align: center;
+    
+    }
+    
+    .summary h4 {
+        font-size: 1.2em;
+    }
+    nav ul {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        margin: 0;
+        background-color: #CEE5F2;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        background-color: #CEE5F2;
+    }
+
+    .navigation .active {
+        color: #F6FAFC;
+        background-color: #536B78;
+    }
+
+    .inactive {
+        background-color: #CEE5F2;
+        color: #536B78;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+
+    .contactpicture {
+        width: 25%;
+        height: auto;
+    }
+
+    .galbox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .galbox figure {
+        padding: .5em;
+    }
+
+    /* hover effect */
+    .galbox figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+}
