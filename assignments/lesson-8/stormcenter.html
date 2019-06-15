@@ -65,19 +65,19 @@
                     <span id="ratingvalue">5</span><br>
                 </label>
                 <label class="top">Storm Region
-                    <select name="region" form="region">
-                        <option value="">Please Select &#9662;</option>
+                    <select name="region">
+                        <option value="" disabled selected>Please Select &#9662;</option>
                         <option value="preston">Preston</option>
                         <option value="sugarcity">Sugar City</option>
                         <option value="fishhaven">Fish Haven</option>
                     </select>
                 </label>
-                <label class="check">Are you in danger? <br>
-                    <input type="radio" name="danger" value="yes" checked> Yes<br>
-                    <input type="radio" name="danger" value="no"> No<br>
-                    <input type="radio" name="danger" value="maybe"> Maybe
-                </label>
-                <label class="top">Additional Information <input type="textarea" name="additional"> </label>
+                <div class="check">Are you in danger?<br>
+                    <label class="check"><input type="radio" name="danger" value="yes" checked> Yes<br></label>
+                    <label class="check"><input type="radio" name="danger" value="no"> No<br></label>
+                    <label class="check"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                </div>
+                <label class="top">Additional Information <input type="text" name="additional"> </label>
             </fieldset>
             <input type="submit" class="submit" value="Send Storm Report">
         </form>

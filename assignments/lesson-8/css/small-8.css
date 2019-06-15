@@ -349,11 +349,9 @@ form label.side {
 form label.check {
     -webkit-appearance: none;
     display: block;
-    padding-top: 1rem;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    margin: .5em;
 }
 
 
