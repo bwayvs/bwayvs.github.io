@@ -397,7 +397,8 @@ form input.submit {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
-    width: 96%max-width: 20rem;
+    width: 96%;
+    max-width: 20rem;
 }
 
 form label.top input:required {
