@@ -307,7 +307,8 @@ form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: bold;
 
 
 }
@@ -333,6 +334,7 @@ form label.top select {
     width: 100%;
     max-width: 20rem;
     background-color: rgb(192, 219, 245);
+    margin: .25em;
 }
 
 form label.side {
