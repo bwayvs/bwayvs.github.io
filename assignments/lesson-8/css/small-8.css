@@ -294,23 +294,21 @@ picture img {
 
 /*****Form*****/
 form fieldset {
-    margin: 1em 0;
+    margin: 1em 2%;
     border: 1px solid rgb(25, 59, 121);
     border-radius: 10px;
     padding: .5rem 2%;
-    border-collapse: collapse;
-
 }
+
 
 form legend {
     color: #536B78;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-
-
+    border-collapse: collapse;
 }
 
 form label.top {
@@ -335,6 +333,7 @@ form label.top select {
     max-width: 20rem;
     background-color: rgb(192, 219, 245);
     margin: .25em;
+    line-height: 2.5em;
 }
 
 form label.side {
@@ -346,14 +345,25 @@ form label.side {
     margin: .5em;
 }
 
+form label.side input,
+form label.side select {
+    line-height: 2.5em;
+}
+
 form label.check {
     -webkit-appearance: none;
     display: block;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    margin: .25em;
 }
 
+input[type=radio] {
+    width: 5%;
+    height: 1.5em;
+    vertical-align: bottom;
+}
 
 input[type=range] {
     height: 34px;
@@ -378,9 +388,9 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
     box-shadow: 1px 1px 1px #000031;
     border: 1px solid #00001E;
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
     background: #FFFFFF;
     cursor: pointer;
     -webkit-appearance: none;
@@ -398,7 +408,7 @@ form input.submit {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 45rem;
 }
 
 form label.top input:required {
