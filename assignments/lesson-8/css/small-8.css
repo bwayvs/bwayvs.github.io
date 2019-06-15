@@ -303,7 +303,7 @@ form fieldset {
 }
 
 form legend {
-    color: rgb(25, 59, 121);
+    color: #536B78;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-family: 'Montserrat', sans-serif;
