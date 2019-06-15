@@ -279,6 +279,57 @@ picture img {
     margin: 1em auto;
 }
 
+/*****Form*****/
+form fieldset {
+    margin: 2em 0;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: blue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .8rem;
+}
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: black;
+}
+form label.side {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submit {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+
 /*****Footer*****/
 footer {
     background-color: #536B78;

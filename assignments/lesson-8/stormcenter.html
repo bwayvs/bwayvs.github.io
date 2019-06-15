@@ -41,14 +41,15 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]" minlength="5" required></label>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5" maxlength="20" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5" maxlength="20" required></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="top">Phone Number*<input type="tel" name="phone" required></label>
                 <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="side">Storm Date<input type="date" name="date"></label>
+                <label class="side">Storm Date:  <input type="date" name="date"> </label>
                 <label class="top">Storm Type<input list="type">
                     <datalist id="type">
                         <option value="Flash Flood"></option>
@@ -59,25 +60,26 @@
                     </datalist>
                 </label>
                 <label for="rating" class="side">Storm Severity (1 to 10):
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                    <input type="range" class="rating" id="rating" value="5" min="1" max="10" step="1"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span><br>
                 </label>
                 <label class="top">Storm Region
                     <select name="region" form="region">
-                        <option value="">Please Select</option>
+                        <option value="">Please Select &#9662;</option>
                         <option value="preston">Preston</option>
                         <option value="sugarcity">Sugar City</option>
                         <option value="fishhaven">Fish Haven</option>
                     </select>
                 </label>
-                <label class="top">Are you in danger?
+                <label class="check">Are you in danger? <br>
                     <input type="radio" name="danger" value="yes" checked> Yes<br>
                     <input type="radio" name="danger" value="no"> No<br>
                     <input type="radio" name="danger" value="maybe"> Maybe
                 </label>
                 <label class="top">Additional Information <input type="textarea" name="additional"> </label>
             </fieldset>
+            <input type="submit" class="submit" value="Send Storm Report">
         </form>
     </main>
     <aside class="contactinfo">

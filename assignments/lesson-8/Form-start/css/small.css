@@ -89,7 +89,7 @@ form label.top input, form label.top select{
     max-width: 20rem;
     background-color: black;
 }
-form label.sbs {
+form label.side {
     display: block;
     padding: .75rem 0;
     color: #555;
