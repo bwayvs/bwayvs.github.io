@@ -37,48 +37,8 @@
         </ul>
     </nav>
     <main>
-        <h2>Storm Center</h2>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]" minlength="5" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
-                <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Storm Information</legend>
-                <label class="side">Storm Date<input type="date" name="date"></label>
-                <label class="top">Storm Type<input list="type">
-                    <datalist id="type">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                </label>
-                <label for="rating" class="side">Storm Severity (1 to 10):
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span><br>
-                </label>
-                <label class="top">Storm Region
-                    <select name="region" form="region">
-                        <option value="">Please Select</option>
-                        <option value="preston">Preston</option>
-                        <option value="sugarcity">Sugar City</option>
-                        <option value="fishhaven">Fish Haven</option>
-                    </select>
-                </label>
-                <label class="top">Are you in danger?
-                    <input type="radio" name="danger" value="yes" checked> Yes<br>
-                    <input type="radio" name="danger" value="no"> No<br>
-                    <input type="radio" name="danger" value="maybe"> Maybe
-                </label>
-                <label class="top">Additional Information <input type="textarea" name="additional"> </label>
-            </fieldset>
-        </form>
+        <h2>Thanks for filling out the Storm Center Questionnaire!</h2>
+      
     </main>
     <aside class="contactinfo">
         <h4 class="contactheader">Contact Info</h4>
@@ -104,7 +64,6 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"> </script>
-    <script src="js/stormrange.js"></script>
 </body>
 
 </html>
