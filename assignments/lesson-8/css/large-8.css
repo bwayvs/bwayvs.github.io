@@ -41,7 +41,7 @@
         display: none;
     }
     .summary {
-        font-size: 1em;
+        font-size: .85em;
         text-align: center;
     
     }
@@ -78,10 +78,17 @@
     .flex {
         display: flex;
     }
-
-
-    .contactpicture {
-        width: 25%;
+    .contacttext {
+        padding: 2%;
+        height
+    }
+    
+    .contactinfo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contactimg {
+        width: 100%;
         height: auto;
     }
 

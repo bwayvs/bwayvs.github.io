@@ -141,7 +141,7 @@ nav {
 
 .hero {
     position: relative;
-    margin: 1.25em 1.25em 3.5em 1.25em;
+    margin: 1.25em 1.25em 1em; 1.25em;
     padding: 0;
     display: block;
 }
@@ -272,24 +272,29 @@ picture img {
 
 /*****Aside*****/
 .contactinfo {
-    margin: 0 auto;
+    margin: 5% auto 0;
     padding-bottom: .5em;
     padding-top: .5em;
     background-color: #7C98B3;
     text-align: center;
     color: #CEE5F2;
-    font-size: .75rem;
     line-height: 1.5;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 .contactheader {
     color: #CEE5F2;
 }
 
-.contactpicture {
-    width: 60%;
+.contactimg {
+    width: 100%;
     display: block;
-    margin: 1em auto;
+    padding: 5%;
+}
+.contactpicture {
+    width: 80%;
 }
 
 /*****Form*****/
@@ -433,7 +438,9 @@ footer p {
     text-align: center;
     line-height: 1.5;
 }
-
+footer a:visited {
+    color: #74A9D8;
+}
 .galbox {
     display: grid;
     grid-gap: 2em;
