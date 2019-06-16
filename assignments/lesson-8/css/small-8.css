@@ -14,11 +14,16 @@ body {
     margin: 0 auto;
 
 }
-header, footer, aside{
+
+header,
+footer,
+aside {
     width: 100%;
     margin: 0 auto;
 }
-nav, main{
+
+nav,
+main {
     max-width: 950px;
     margin: 0 auto;
 }
@@ -81,7 +86,7 @@ header {
 
 .motto {
     font-size: 1em;
-    color:  rgb(241, 243, 101);
+    color: rgb(241, 243, 101);
     margin-bottom: 2em;
 
 }
@@ -98,7 +103,7 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-   
+
 }
 
 .navigation li:first-child {
@@ -120,12 +125,12 @@ nav {
     font-size: 1em;
     height: 100%;
     align-items: center;
-   
+
 }
 
 .navigation a:hover {
     color: rgb(62, 71, 85);
-    background-color:  rgb(241, 243, 101);
+    background-color: rgb(241, 243, 101);
     font-weight: 700;
 }
 
@@ -135,7 +140,7 @@ nav {
 
 .navigation li a.active {
     background-color: rgb(15, 32, 68);
-    color:  rgb(241, 243, 101);
+    color: rgb(241, 243, 101);
     font-weight: normal;
 }
 
@@ -150,7 +155,7 @@ nav {
 
 .heropicture img {
     max-width: 800px;
-    
+
 
 }
 
@@ -282,29 +287,32 @@ picture img {
     margin: 5% auto 0;
     padding-bottom: .5em;
     padding-top: .5em;
-    background-color:  rgb(137, 178, 206);
+    background-color: rgb(137, 178, 206);
     text-align: center;
-    color: rgb(3, 20, 31);;
+    color: rgb(3, 20, 31);
+    ;
     line-height: 1.5;
     display: grid;
     grid-template-rows: 1fr 1fr;
     font-weight: bold;
     font-size: .95em;
-    
+
 
 }
+
 .contactinfo a {
     color: rgb(37, 3, 68);
     height: 100em;
 }
+
 .contactinfo a:visited {
     color: rgb(37, 3, 68);
 }
 
 .contactheader {
-    color:  rgb(3, 20, 31);
+    color: rgb(3, 20, 31);
     letter-spacing: .25rem;
-    border-bottom: 1px solid  rgb(3, 20, 31);
+    border-bottom: 1px solid rgb(3, 20, 31);
 }
 
 .contactimg {
@@ -312,6 +320,7 @@ picture img {
     display: block;
     padding: 5%;
 }
+
 .contactpicture {
     padding: 5%;
 }
@@ -321,18 +330,21 @@ form fieldset {
     margin: 1em 2%;
     border: 1px solid rgb(25, 59, 121);
     border-radius: 10px;
+    border-style: inset;
     padding: .5rem 2%;
+    background-color: #fff;
 }
 
 
 form legend {
-    color: rgb(15, 32, 68);
-    margin: 0 1rem;
-    padding: 0 .5rem;
+    margin: 0 2rem;
+    padding: 1rem 2rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
-    border-collapse: collapse;
+    background-color: rgb(241, 243, 101);
+    color: rgb(11, 22, 48);
+    border-radius: 30px;
 }
 
 form label.top {
@@ -343,6 +355,7 @@ form label.top {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin: .5em;
+    font-weight: bold;
 }
 
 form label.top input,
@@ -367,6 +380,7 @@ form label.side {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin: .5em;
+    font-weight: bold;
 }
 
 form label.side input,
@@ -382,6 +396,7 @@ form label.check {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin: .25em;
+    font-weight: bold;
 }
 
 input[type=radio] {
@@ -407,12 +422,15 @@ input[type=range]::-webkit-slider-runnable-track {
     box-shadow: 1px 1px 1px rgb(15, 32, 68);
     background: #74A9D8;
     border-radius: 1px;
-    border: 0px solid rgb(15, 32, 68);;
+    border: 0px solid rgb(15, 32, 68);
+    ;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    box-shadow: 1px 1px 1px rgb(15, 32, 68);;
-    border: 1px solid rgb(15, 32, 68);;
+    box-shadow: 1px 1px 1px rgb(15, 32, 68);
+    ;
+    border: 1px solid rgb(15, 32, 68);
+    ;
     height: 30px;
     width: 30px;
     border-radius: 30px;
@@ -424,19 +442,21 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #74A9D8;
 }
+
 form span {
     margin-left: 1em;
     font-weight: bold;
 }
+
 form div textarea.textarea {
     padding: 2.5%;
     width: 20em;
     height: 12em;
 }
 
-form > input.submit {
+form>input.submit {
     border: none;
-    background-color: rgb(15, 32, 68);
+    background-color: rgb(11, 22, 48);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -446,6 +466,7 @@ form > input.submit {
     font-size: 1.5em;
     font-weight: bolder;
     width: 12em;
+    border-style: outset;
 }
 
 form label.top input:required {
@@ -470,12 +491,15 @@ footer p {
     text-align: center;
     line-height: 1.5;
 }
+
 footer a {
-    color:  rgb(241, 243, 101);
+    color: rgb(241, 243, 101);
 }
+
 footer a:visited {
-    color:  rgb(241, 243, 101);
+    color: rgb(241, 243, 101);
 }
+
 .galbox {
     display: grid;
     grid-gap: 2em;

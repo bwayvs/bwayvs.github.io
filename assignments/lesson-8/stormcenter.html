@@ -41,15 +41,18 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5" maxlength="20" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5" maxlength="20" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5"
+                        maxlength="20" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5"
+                        maxlength="20" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
                 <label class="top">Phone Number*<input type="tel" name="phone" required></label>
                 <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="side">Storm Date:  <input type="date" name="date"> </label>
+                <label class="side">Storm Date: <input type="date" name="date"> </label>
                 <label class="top">Storm Type<input list="type">
                     <datalist id="type">
                         <option value="Flash Flood"></option>
@@ -62,7 +65,7 @@
                 <label for="rating" class="top">Storm Severity (1 to 10): <span id="ratingvalue">5</span> <br>
                     <input type="range" class="rating" id="rating" value="5" min="1" max="10" step="1"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    
+
                 </label>
                 <label class="top">Storm Region
                     <select name="region">
@@ -79,22 +82,26 @@
                 </div>
                 <div>
                     <label class="top">Additional Information</label>
-                    <textarea name="comment" class="textarea" form="usrform" placeholder="Enter additional information here..."></textarea>
+                    <textarea name="comment" class="textarea" form="usrform"
+                        placeholder="Enter additional information here..."></textarea>
                 </div>
+
+
             </fieldset>
             <input type="submit" class="submit" value="Send Storm Report">
         </form>
     </main>
     <aside class="contactinfo">
-        <div class="contacttext"><h4 class="contactheader">Contact Info</h4>
-        <p>&#10146; 2323 Victory Ave</p>
-        <p>Suite 700</p>
-        <p>Preston, Ohio 89652</p>
-        <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
-        <p>&phone; Phone: (800) 617-8574</p>
+        <div class="contacttext">
+            <h4 class="contactheader">Contact Info</h4>
+            <p>&#10146; 2323 Victory Ave</p>
+            <p>Suite 700</p>
+            <p>Preston, Ohio 89652</p>
+            <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
+            <p>&phone; Phone: (800) 617-8574</p>
         </div>
         <picture class="contactpicture">
-        <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
+            <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
         </picture>
     </aside>
     <footer>
