@@ -324,7 +324,7 @@ form fieldset {
 
 
 form legend {
-    color: #536B78;
+    color: rgb(15, 32, 68);
     margin: 0 1rem;
     padding: 0 .5rem;
     font-family: 'Montserrat', sans-serif;
@@ -336,7 +336,7 @@ form legend {
 form label.top {
     display: block;
     padding-top: 1rem;
-    color: black;
+    color: rgb(15, 32, 68);
     font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -350,7 +350,7 @@ form label.top select {
     font-size: 1rem;
     border: 1px solid #999;
     padding: .75rem;
-    color: black;
+    color: rgb(15, 32, 68);
     width: 100%;
     max-width: 20rem;
     background-color: rgb(192, 219, 245);
@@ -361,7 +361,7 @@ form label.top select {
 form label.side {
     display: block;
     padding: .75rem 0;
-    color: black;
+    color: rgb(15, 32, 68);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin: .5em;
@@ -375,7 +375,7 @@ form label.side select {
 form label.check {
     -webkit-appearance: none;
     display: block;
-    color: black;
+    color: rgb(15, 32, 68);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin: .25em;
@@ -401,15 +401,15 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 11px;
     cursor: pointer;
-    box-shadow: 1px 1px 1px #000000;
+    box-shadow: 1px 1px 1px rgb(15, 32, 68);
     background: #74A9D8;
     border-radius: 1px;
-    border: 0px solid #010101;
+    border: 0px solid rgb(15, 32, 68);;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    box-shadow: 1px 1px 1px #000031;
-    border: 1px solid #00001E;
+    box-shadow: 1px 1px 1px rgb(15, 32, 68);;
+    border: 1px solid rgb(15, 32, 68);;
     height: 30px;
     width: 30px;
     border-radius: 30px;
@@ -470,7 +470,7 @@ footer a:visited {
 
 .galbox figure {
     padding: .25em;
-    border: 1px black solid;
+    border: 1px rgb(15, 32, 68); solid;
     background-color: #fff;
 }
 
