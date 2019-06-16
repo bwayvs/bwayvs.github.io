@@ -93,6 +93,9 @@
         width: 100%;
         height: auto;
     }
+    .contactpicture {
+        align-content: left;
+    }
 
     .galbox {
         grid-template-columns: 1fr 1fr 1fr;
