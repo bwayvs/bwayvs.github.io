@@ -424,7 +424,10 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #74A9D8;
 }
-
+form span {
+    margin-left: 1em;
+    font-weight: bold;
+}
 form div textarea.textarea {
     padding: 2.5%;
     width: 20em;

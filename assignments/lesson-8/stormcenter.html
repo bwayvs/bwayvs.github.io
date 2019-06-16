@@ -59,10 +59,10 @@
                         <option value="Tornado"></option>
                     </datalist>
                 </label>
-                <label for="rating" class="side">Storm Severity (1 to 10):
+                <label for="rating" class="top">Storm Severity (1 to 10): <span id="ratingvalue">5</span> <br>
                     <input type="range" class="rating" id="rating" value="5" min="1" max="10" step="1"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span><br>
+                    
                 </label>
                 <label class="top">Storm Region
                     <select name="region">
