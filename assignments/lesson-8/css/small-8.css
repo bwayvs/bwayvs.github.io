@@ -372,7 +372,7 @@ form label.side {
 form label.side input,
 form label.side select {
     line-height: 2.5em;
-    padding-left: 1%;
+    padding-left: 2.5%;
 }
 
 form label.check {
