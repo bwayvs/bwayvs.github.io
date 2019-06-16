@@ -83,6 +83,10 @@
     }
     .contacttext {
         padding: 2%;
+        margin-right: 2.5%;
+    }
+    .contactpicture {
+       margin-left: 2.5%;
     }
     
     .contactinfo {

@@ -12,11 +12,15 @@
     }
     .contactinfo {
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;        
     }
+    
     .contacttext {
         padding: 2%;
+        margin-right: 2.5%;
     }
-
+    .contactpicture {
+        margin-left: 2.5%;
+    }
     
 }
