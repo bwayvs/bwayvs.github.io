@@ -425,7 +425,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background: #74A9D8;
 }
 
-form input.submit {
+form > input.submit {
     border: none;
     background-color: rgb(15, 32, 68);
     color: white;
@@ -434,8 +434,9 @@ form input.submit {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 45rem;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bolder;
+    width: 12em;
 }
 
 form label.top input:required {
