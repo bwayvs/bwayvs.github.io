@@ -425,6 +425,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background: #74A9D8;
 }
 
+form .textarea {
+    padding: 2.5%;
+    width: 20em;
+    height: 12em;
+}
+
 form > input.submit {
     border: none;
     background-color: rgb(15, 32, 68);
