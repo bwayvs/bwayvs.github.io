@@ -162,7 +162,7 @@ nav {
     position: absolute;
     top: 2em;
     left: 1.5em;
-    background-color: rgba(243, 217, 101, 0.7);
+    background-color: rgba(245, 215, 133, 0.9);
     opacity: .90;
     padding: 1em;
     line-height: 1.5;
@@ -292,11 +292,11 @@ picture img {
 
 }
 .contactinfo a {
-    color: rgb(67, 68, 3);
+    color: rgb(37, 3, 68);
 
 }
 .contactinfo a:visited {
-    color: rgb(67, 68, 3);
+    color: rgb(37, 3, 68);
 }
 
 .contactheader {
