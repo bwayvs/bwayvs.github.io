@@ -69,7 +69,10 @@
         color: #F6FAFC;
         background-color: #536B78;
     }
-
+    .navigation a{
+    border-style: outset;
+    border-color: rgb(165, 170, 172);
+    }
     .inactive {
         background-color: #CEE5F2;
         color: #536B78;
