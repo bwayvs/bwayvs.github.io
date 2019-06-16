@@ -470,7 +470,7 @@ footer a:visited {
 
 .galbox figure {
     padding: .25em;
-    border: 1px rgb(15, 32, 68); solid;
+    border: 1px rgb(15, 32, 68) solid;
     background-color: #fff;
 }
 
