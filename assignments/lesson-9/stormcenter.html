@@ -1,0 +1,123 @@
+<!DOCtype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtmosActive.com - Your #1 Weather Site</title>
+    <meta name="description"
+        content="AtmosActiv.com is a weather monitoring site in Idaho that, in addition to the weather, also monitors several weather-related topics.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-9.css" rel="stylesheet">
+    <link href="css/medium-9.css" rel="stylesheet">
+    <link href="css/large-9.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPlayfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerbox1">
+            <img src="images/storm-logo-optimized.png" alt="Storm Logo">
+        </div>
+        <div class="headerbox2">
+            <h1>AtmosActiv</h1>
+            <p class="motto">Your #1 Weather Site</p>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="inactive" title="Home" href="index.html">Home</a></li>
+            <li><a class="inactive" title="Preston" href="preston-9.html">Preston</a></li>
+            <li><a class="inactive" title="Soda Springs" href="sodasprings-9.html">Soda Springs</a></li>
+            <li><a class="inactive" title="Fish Haven" href="fishhaven-9.html">Fish Haven</a></li>
+            <li><a class="active" title="Storm Center" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="inactive" title="Gallery" href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5"
+                        maxlength="20" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5"
+                        maxlength="20" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="side">Storm Date: <input type="date" name="date"> </label>
+                <label class="top">Storm Type<input list="type">
+                    <datalist id="type">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label for="rating" class="top">Storm Severity (1 to 10): <span id="ratingvalue">5</span> <br>
+                    <input type="range" class="rating" id="rating" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="" disabled selected>Please Select &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarcity">Sugar City</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <div><label class="top">Are you in danger?<br></label>
+                    <label class="check"><input type="radio" name="danger" value="yes" checked> Yes<br></label>
+                    <label class="check"><input type="radio" name="danger" value="no"> No<br></label>
+                    <label class="check"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                </div>
+                <div>
+                    <label class="top">Additional Information</label>
+                    <textarea name="comment" class="textarea" placeholder="Enter additional information here..."></textarea>
+                </div>
+
+
+            </fieldset>
+            <input type="submit" class="submit" value="Send Storm Report">
+        </form>
+    </main>
+    <aside class="contactinfo">
+        <div class="contacttext">
+            <h4 class="contactheader">Contact Info</h4>
+            <p>&#10146; 2323 Victory Ave</p>
+            <p>Suite 700</p>
+            <p>Preston, Ohio 89652</p>
+            <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
+            <p>&phone; Phone: (800) 617-8574</p>
+        </div>
+        <picture class="contactpicture">
+            <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
+        </picture>
+    </aside>
+    <footer>
+        <p class="footer"> Copyright &copy;2019 AtmosActive | <a href="http://byui.edu/"> BYU -
+                Idaho</a> | Veronica S.
+            Broadway</p>
+        <p id="clockDisplay">
+            <script>
+                function renderTime() {
+                    document.getElementById("clockDisplay");
+                }
+            </script>
+        </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"> </script>
+    <script src="js/stormrange.js"></script>
+</body>
+
+</html>

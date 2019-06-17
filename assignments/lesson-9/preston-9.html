@@ -1,0 +1,130 @@
+<!DOCtype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtmosActive.com - Your #1 Weather Site</title>
+    <meta name="description" content="AtmosActiv.com is a weather monitoring site in Idaho that, in addition to the weather, also monitors several weather-related topics.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-9.css" rel="stylesheet">
+    <link href="css/medium-9.css" rel="stylesheet">
+    <link href="css/large-9.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPlayfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerbox1">
+            <img src="images/storm-logo-optimized.png" alt="Storm Logo">
+        </div>
+        <div class="headerbox2">
+            <h1>AtmosActiv</h1>
+            <p class="motto">Your #1 Weather Site</p>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="inactive" title="Home" href="index.html">Home</a></li>
+            <li><a class="active" title="Preston" href="preston-9.html">Preston</a></li>
+            <li><a class="inactive" title="Soda Springs" href="sodasprings-9.html">Soda Springs</a></li>
+            <li><a class="inactive" title="Fish Haven" href="fishhaven-9.html">Fish Haven</a></li>
+            <li><a class="inactive" title="Storm Center" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="inactive" title="Gallery" href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="hero">
+            <picture class="heropicture">
+                <img srcset="images/mountain-400.jpg 400w, images/mountain-800.jpg 800w"
+                    sizes="100vw" src="images/mountain-200.jpg" alt="Weather Summary Banner Image">
+            </picture>
+            <div class="summary">
+                <h4> Weather Summary</h4>
+                <ul class="list">
+                    <li>Currently Sunny</li>
+                    <li>High: <span id="temp">76</span>&deg; F</li>
+                    <li>Wind Chill: <span id="windchill"></span>&deg; F</li>
+                    <li>Humidity: 69%</li>
+                    <li>Wind Speed: <span id="windspeed">5</span> mph</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="col1">
+                <span class="label">Monday</span>
+                <img src="images/sunny.jpg" class="fleximg" alt="Sunny"><br />
+                <span class="data">Sunny</span>
+            </div>
+            <div class="col2">
+                <span class="label">Tuesday</span>
+                <img src="images/partly-cloudy.jpg" class="fleximg" alt="Partly Cloudy"><br />
+                <span class="data">Partly Cloudy</span>
+            </div>
+            <div class="col3">
+                <span class="label">Wednesday</span>
+                <img src="images/rain.jpg" class="fleximg" alt="Rain"><br />
+                <span class="data">Rainy</span>
+            </div>
+            <div class="col4">
+                <span class="label">Thursday</span>
+                <img src="images/partly-cloudy.jpg" class="fleximg" alt="Partly Cloudy"><br />
+                <span class="data">Partly Cloudy</span>
+            </div>
+            <div class="col5">
+                <span class="label">Friday</span>
+                <img src="images/sunny.jpg" class="fleximg" alt="Sunny"><br />
+                <span class="data">Sunny</span>
+            </div>
+        </div>
+        <article class="article">
+            <img src="images/dandelion-optimized.jpg" class="articlepicture" alt="Article Photo Goes Here">
+            <h3>Expanded Pollen Season Means Bad News for Allergy Sufferers</h3>
+            <div class="author">by Achu Gesundheit</div>
+            <p>For seasonal allergy sufferers sneezing is the sound associated with spring. And if you feel like
+                your
+                symptoms are stronger and lasting longer, experts say lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa
+                egetum
+                iaculis eu non diam phasellus. Sed arcu non odio euismod. Tristique senectus et netus et malesuada
+                fames. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Ultricies leo integer
+                malesuada nunc vel risus commodo. Pretium aenean pharetra magna ac placerat vestibulum. Maecenas
+                volutpat blandit aliquam etiam erat velit scelerisque in. Volutpat est velit egestas dui id ornare.
+                Turpis in eu mi bibendum neque egestas congue quisque egestas. Aenean pharetra magna ac placerat
+                vestibulum lectus mauris. Facilisi cras fermentum odio eu feugiat. Diam quis enim lobortis
+                scelerisque fermentum dui.</p>
+        </article>
+    </main>
+    <aside class="contactinfo">
+        <div class="contacttext"><h4 class="contactheader">Contact Info</h4>
+        <p>&#10146; 2323 Victory Ave</p>
+        <p>Suite 700</p>
+        <p>Preston, Ohio 89652</p>
+        <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
+        <p>&phone; Phone: (800) 617-8574</p>
+        </div>
+        <picture class="contactpicture">
+        <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
+        </picture>
+    </aside>
+    <footer>
+        <p class="footer"> Copyright &copy;2019 AtmosActive | <a href="http://byui.edu/"> BYU - Idaho</a> | Veronica S.
+            Broadway</p>
+        <p id="clockDisplay">
+            <script>
+                function renderTime() {
+                    document.getElementById("clockDisplay");
+                }
+            </script>
+        </p>
+    </footer>
+    <script src="js/currentdate.js"> </script>
+    <script src="js/hamburger.js"> </script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
