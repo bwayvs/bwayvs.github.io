@@ -511,6 +511,7 @@ form label.top input:required:valid {
     line-height: 2;
 }
 
+
 .townul {
     width: 100%;
     margin: 0;
@@ -533,11 +534,21 @@ form label.top input:required:valid {
     height: auto;
 }
 
-.towndiv h3,
-.towndiv h4 {
+.towndiv h3 {
     font-size: 1rem;
     text-align: center;
     margin: 2% 0 0 0;
+    padding-top: .5em;
+    border-top: 1px solid rgb(209, 80, 6);
+}
+.towndiv h4 {
+    font-size: .87rem;
+    text-align: center;
+    margin: 2% 0 0 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgb(209, 80, 6);
+    
+    
 }
 
 .towndiv h3 {
