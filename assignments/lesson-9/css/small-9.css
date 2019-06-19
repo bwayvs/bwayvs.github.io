@@ -517,13 +517,17 @@ form label.top input:required:valid {
     padding: 1em;
 }
 
-.townil {
+.townli {
     width: 100%;
     padding: 0;
     margin: 0;
     font-size: 1rem;
-}
+    font-weight: bold;
 
+}
+.townli span {
+    font-weight:  normal;
+}
 .townimg {
     width: 100%;
     height: auto;
