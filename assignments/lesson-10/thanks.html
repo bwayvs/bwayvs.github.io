@@ -1,0 +1,71 @@
+<!DOCtype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtmosActive.com - Your #1 Weather Site</title>
+    <meta name="description"
+        content="AtmosActiv.com is a weather monitoring site in Idaho that, in addition to the weather, also monitors several weather-related topics.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-8.css" rel="stylesheet">
+    <link href="css/medium-8.css" rel="stylesheet">
+    <link href="css/large-8.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPlayfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerbox1">
+            <img src="images/storm-logo-optimized.png" alt="Storm Logo">
+        </div>
+        <div class="headerbox2">
+            <h1>AtmosActiv</h1>
+            <p class="motto">Your #1 Weather Site</p>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="inactive" title="Home" href="home-8.html">Home</a></li>
+            <li><a class="inactive" title="Preston" href="preston-8.html">Preston</a></li>
+            <li><a class="inactive" title="Soda Springs" href="sodasprings-8.html">Soda Springs</a></li>
+            <li><a class="inactive" title="Fish Haven" href="fishhaven-8.html">Fish Haven</a></li>
+            <li><a class="inactive" title="Storm Center" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="inactive" title="Gallery" href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Thank you for sending the Storm Report!</h2>
+      
+    </main>
+    <aside class="contactinfo">
+        <div class="contacttext"><h4 class="contactheader">Contact Info</h4>
+        <p>&#10146; 2323 Victory Ave</p>
+        <p>Suite 700</p>
+        <p>Preston, Ohio 89652</p>
+        <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
+        <p>&phone; Phone: (800) 617-8574</p>
+        </div>
+        <picture class="contactpicture">
+        <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
+        </picture>
+    </aside>
+    <footer>
+        <p class="footer"> Copyright &copy;2019 AtmosActive | <a href="http://byui.edu/"> BYU -
+                Idaho</a> | Veronica S.
+            Broadway</p>
+        <p id="clockDisplay">
+            <script>
+                function renderTime() {
+                    document.getElementById("clockDisplay");
+                }
+            </script>
+        </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"> </script>
+</body>
+
+</html>
