@@ -1,12 +1,12 @@
 {
-    "towns" : [
+  "towns": [
     {
       "name": "Franklin",
       "motto": "Where you will grow!",
       "yearFounded": 1788,
       "currentPopulation": 30458,
       "averageRainfall": 21,
-      "events" : [
+      "events": [
         "March 4: March to the Drum of Donuts",
         "September 5 - 11: Founder Days",
         "December 1 - 26: Christmas in the Heart"
@@ -18,7 +18,7 @@
       "yearFounded": 1864,
       "currentPopulation": 501,
       "averageRainfall": 14.20,
-      "events" : [
+      "events": [
         "April 1: How Big Was That Fish Day",
         "May 15-30: Rush the Creek Days",
         "July 24: Bear Lake Blunder Run",
@@ -31,7 +31,7 @@
       "yearFounded": 1805,
       "currentPopulation": 33458,
       "averageRainfall": 25,
-      "events" : [
+      "events": [
         "February 10-12: Greenbration",
         "May 8 - 18: Greenville Founder Days",
         "June 20: Verde and Valiant Day",
@@ -44,7 +44,7 @@
       "yearFounded": 1946,
       "currentPopulation": 512,
       "averageRainfall": 39,
-      "events" : [
+      "events": [
         "July 4: A Blaze of Glory",
         "October 20: Fall through Fall"
       ]
@@ -55,7 +55,7 @@
       "yearFounded": 1866,
       "currentPopulation": 5204,
       "averageRainfall": 16.65,
-      "events" : [
+      "events": [
         "March 29: Work Creek Revival",
         "July 8-12: Napoleon Dynamite Festival",
         "November 2-4: Freedom Days"
@@ -67,7 +67,7 @@
       "yearFounded": 1858,
       "currentPopulation": 2985,
       "averageRainfall": 15.75,
-      "events" : [
+      "events": [
         "February 29: Geyser Song Day",
         "May 1-6: Days of May Celebration",
         "October 15-16: Octoberfest"
@@ -79,11 +79,11 @@
       "yearFounded": 1826,
       "currentPopulation": 17852,
       "averageRainfall": 17,
-      "events" : [
+      "events": [
         "January 8: Spring into Winter",
         "April 10-20: Celebration of Life",
         "July 31-Aug 15: Dog Days of Summer Festival"
       ]
     }
-   ]
-  }
+  ]
+}
