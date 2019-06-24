@@ -584,12 +584,13 @@ div.hometitlediv p {
     width: 100%;
     padding: 2%;
     margin: 5% auto;
-    max-width: 338px;
+    max-width: 500px;
     display: grid;
     background-color: rgb(65, 69, 80);
     border: 1px #637081 solid;
     color: black;
     box-shadow: 0 0 50px rgb(35, 43, 51);
+    min-width: 370px;
 }
 .eventsdiv {
     width: 100%;
@@ -613,6 +614,7 @@ div.hometitlediv p {
 }
 .prestonevents h3 {
     padding-bottom: .5em;
+    margin-bottom: 0;
     border-bottom: 1px solid rgb(209, 80, 6);
     min-width: 210px;
 }
