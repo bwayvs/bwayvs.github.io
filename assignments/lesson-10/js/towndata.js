@@ -17,7 +17,7 @@ request.onload = function () {
             document.getElementById('prestonyf').innerHTML = town.yearFounded;
             document.getElementById('prestonpop').innerHTML = town.currentPopulation;
             document.getElementById('prestonrain').innerHTML = town.averageRainfall;
-        }
+            }
         if (town.name == 'Soda Springs') {
             document.getElementById('sodaspringsname').innerHTML = town.name;
             document.getElementById('sodaspringsmotto').innerHTML = town.motto;

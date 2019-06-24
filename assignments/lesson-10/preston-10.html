@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AtmosActive.com - Your #1 Weather Site</title>
-    <meta name="description" content="AtmosActiv.com is a weather monitoring site in Idaho that, in addition to the weather, also monitors several weather-related topics.">
+    <meta name="description"
+        content="AtmosActiv.com is a weather monitoring site in Idaho that, in addition to the weather, also monitors several weather-related topics.">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
+    <link href="css/small-10.css" rel="stylesheet">
+    <link href="css/medium-10.css" rel="stylesheet">
+    <link href="css/large-10.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPlayfair+Display&display=swap" rel="stylesheet">
 </head>
 
@@ -28,7 +29,7 @@
         <ul class="navigation">
             <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a class="inactive" title="Home" href="index.html">Home</a></li>
-            <li><a class="active" title="Preston" href="preston.html">Preston</a></li>
+            <li><a class="active" title="Preston" href="preston-10.html">Preston</a></li>
             <li><a class="inactive" title="Soda Springs" href="sodasprings.html">Soda Springs</a></li>
             <li><a class="inactive" title="Fish Haven" href="fishhaven.html">Fish Haven</a></li>
             <li><a class="inactive" title="Storm Center" href="stormcenter.html">Storm Center</a></li>
@@ -39,45 +40,45 @@
         <h2>Preston, Idaho</h2>
         <div class="hero">
             <picture class="heropicture">
-                <img srcset="images/mountain-400.jpg 400w, images/mountain-800.jpg 800w"
-                    sizes="100vw" src="images/mountain-200.jpg" alt="Weather Summary Banner Image">
+                <img srcset="images/mountain-400.jpg 400w, images/mountain-800.jpg 800w" sizes="100vw"
+                    src="images/mountain-200.jpg" alt="Weather Summary Banner Image">
             </picture>
             <div class="summary">
                 <h4> Weather Summary</h4>
                 <ul class="list">
-                    <li>Currently Sunny</li>
-                    <li>High: <span id="temp">76</span>&deg; F</li>
+                    <li>Currently <span id="currently"></span></li>
+                    <li>High: <span id="hitemp"></span>&deg; F</li>
                     <li>Wind Chill: <span id="windchill"></span>&deg; F</li>
-                    <li>Humidity: 69%</li>
-                    <li>Wind Speed: <span id="windspeed">5</span> mph</li>
+                    <li>Humidity: <span id="humidity"></span></li>
+                    <li>Wind Speed: <span id="windspeed"></span> mph</li>
                 </ul>
             </div>
         </div>
         <div class="flex">
             <div class="col1">
-                <span class="label">Monday</span>
-                <img src="images/sunny.jpg" class="fleximg" alt="Sunny"><br />
-                <span class="data">Sunny</span>
+                <span class="label" id="day1"></span>
+                <img id="day1img" src="" alt=""><br />
+                <span class="data" id="day1desc"></span>
             </div>
             <div class="col2">
-                <span class="label">Tuesday</span>
-                <img src="images/partly-cloudy.jpg" class="fleximg" alt="Partly Cloudy"><br />
-                <span class="data">Partly Cloudy</span>
+                <span class="label" id="day2"></span>
+                <img id="day2img" src="" alt=""><br />
+                <span class="data" id="day2desc"></span>
             </div>
             <div class="col3">
-                <span class="label">Wednesday</span>
-                <img src="images/rain.jpg" class="fleximg" alt="Rain"><br />
-                <span class="data">Rainy</span>
+                <span class="label" id="day3"></span>
+                <img id="day3img" src="" alt=""><br />
+                <span class="data" id="day3desc"></span>
             </div>
             <div class="col4">
-                <span class="label">Thursday</span>
-                <img src="images/partly-cloudy.jpg" class="fleximg" alt="Partly Cloudy"><br />
-                <span class="data">Partly Cloudy</span>
+                <span class="label" id="day4"></span>
+                <img id="day4img" src="" alt=""><br />
+                <span class="data" id="day4desc"></span>
             </div>
             <div class="col5">
-                <span class="label">Friday</span>
-                <img src="images/sunny.jpg" class="fleximg" alt="Sunny"><br />
-                <span class="data">Sunny</span>
+                <span class="label" id="day5"></span>
+                <img id="day5img" src="" alt=""><br />
+                <span class="data" id="day5desc"></span>
             </div>
         </div>
         <article class="article">
@@ -98,17 +99,28 @@
                 vestibulum lectus mauris. Facilisi cras fermentum odio eu feugiat. Diam quis enim lobortis
                 scelerisque fermentum dui.</p>
         </article>
+        <article class="prestonevents">
+            <div class="eventsdiv">
+                <h3>Upcoming Events:</h3>
+                <ul class="eventsul">
+                    <li class=eventsli"><span id="prestonevents"></span></li>
+                    <li class="eventsli"><span id="prestonevents1"></span></li>
+                    <li class="eventsli"><span id="prestonevents2"></span></li>
+                </ul>
+            </div>
+        </article>
     </main>
     <aside class="contactinfo">
-        <div class="contacttext"><h4 class="contactheader">Contact Info</h4>
-        <p>&#10146; 2323 Victory Ave</p>
-        <p>Suite 700</p>
-        <p>Preston, Ohio 89652</p>
-        <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
-        <p>&phone; Phone: (800) 617-8574</p>
+        <div class="contacttext">
+            <h4 class="contactheader">Contact Info</h4>
+            <p>&#10146; 2323 Victory Ave</p>
+            <p>Suite 700</p>
+            <p>Preston, Ohio 89652</p>
+            <p>&#9993; Email: <a href="help@atmosactiv.com"><em>help@atmosactiv.com</em></a></p>
+            <p>&phone; Phone: (800) 617-8574</p>
         </div>
         <picture class="contactpicture">
-        <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
+            <img src="images/preston-clearmap-image.jpg" class="contactimg" alt="Contact Picture goes here.">
         </picture>
     </aside>
     <footer>
@@ -125,6 +137,10 @@
     <script src="js/currentdate.js"> </script>
     <script src="js/hamburger.js"> </script>
     <script src="js/windchill.js"></script>
+    <script src="js/prestonweatherapi.js"></script>
+    <script src="js/prestonforecastapi.js"></script>
+    <script src="js/towndata.json"></script>
+    <script src="js/presentevents.js"></script>
 </body>
 
 </html>
