@@ -9,10 +9,7 @@
     .galbox figure {
         padding: .5em;
     }
-    .summary {
-        font-size: .75em;
-        text-align: center;
-    }
+    
     .contactinfo {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;        
@@ -30,5 +27,9 @@
         display: inline;}
     .bigatmos {
         display: inline;
+    }
+
+    article .article {
+        margin-top: 5em;
     }
 }

@@ -180,13 +180,18 @@ nav {
 }
 
 .summary h4 {
-    font-size: 1em;
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: .25em;
+    font-variant: small-caps;
+    font-weight: normal;
     border-bottom: 1px solid rgb(15, 32, 68);
 }
 
 .summary li {
-    color: rgb(15, 32, 68);
-    font-weight: bold;
+    color: #fff;
+    font-weight: normal;
+    font-size:1.2em;
 }
 
 /*Forecast Table*/
@@ -213,6 +218,7 @@ nav {
     font-size: 10px;
     text-align: center;
     width: 20%;
+    height: 150px;
 }
 
 .flex div:last-child {
@@ -711,6 +717,12 @@ a:hover {
     }
     
 }
+@media screen and (max-width: 615px) {
+    .flex{
+        margin-top: 5%;
+    }
+}
+
 
 @media screen and (min-width: 278px) and (max-width: 819px) {
     
