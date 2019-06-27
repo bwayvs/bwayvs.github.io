@@ -9,7 +9,7 @@ forecastRequest.onload = function () {
     /*Weekdays*/
     let today = new Date();
     let DD = today.getDay();
-    let dayarray = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+    let dayarray = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu");
 
 
     /*Day 1 Forecast Info*/
@@ -67,7 +67,8 @@ forecastRequest.onload = function () {
     /*Day 5 Forecast Info*/
 
     let desc4 = forecastData.list[37].weather[0].description;
-    document.getElementById("day5img").setAttribute("alt", desc4);
+   
+    
 
     let icon4 = "http://openweathermap.org/img/w/" + forecastData.list[37].weather[0].icon + ".png";
     document.getElementById("day5img").setAttribute("src", icon4);

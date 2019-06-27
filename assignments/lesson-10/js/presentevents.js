@@ -1,10 +1,10 @@
-// ******************************
+//****************************************//
 const requestTownDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 const requestData = new XMLHttpRequest();
 requestData.open('GET', requestTownDataURL);
 requestData.responseType = 'json';
 requestData.send();
-//****************************************/
+//****************************************//
 
 requestData.onload = function () {
     let prestonData = requestData.response;
