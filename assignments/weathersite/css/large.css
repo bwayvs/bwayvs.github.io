@@ -1,0 +1,148 @@
+@media screen and (min-width: 566px) {
+
+    /*preston article*/
+    .articlepicture {
+        float: right;
+        width: 35%;
+        height: auto;
+        margin: 2em 5em;
+    }
+
+    .article {
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+    /*weather summary box*/
+    .summary {
+        font-size: .85em;
+        text-align: center;
+    }
+    .summary h4 {
+        font-size: 1.2em;
+    }
+     /*Navigation Menu*/
+    nav {
+        margin: 0 auto;
+        font-size: .6em;
+        border: 1px #536B78 solid;
+    }
+    .navigation {
+        flex-flow: row nowrap;     
+        margin-top: 2em;
+    
+    }
+
+    .navigation li:first-child {
+        display: inline-block;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .navigation li a {
+        color: rgb(22, 25, 37);
+        font-size: 1.5em;
+    }
+
+    a.hamburger {
+        display: none;
+    }
+    nav ul {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        margin: 0;
+        background-color: #CEE5F2;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        background-color: #CEE5F2;
+    }
+
+    .navigation .active {
+        color: #F6FAFC;
+        background-color: #536B78;
+    }
+    .navigation a{
+    border-style: outset;
+    border-color: rgb(165, 170, 172);
+    }
+    .inactive {
+        background-color: #CEE5F2;
+        color: #536B78;
+    }
+    /*contact info*/
+    .contacttext {
+        padding: 2%;
+        margin-right: 2.5%;
+    }
+    .contactpicture {
+       margin-left: 2.5%;
+    }
+    
+    .contactinfo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contactimg {
+        width: 100%;
+        height: auto;
+    }
+    /*forcast box*/
+    .flex {
+        display: flex;
+    }
+    .galbox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        background-color: rgb(209, 80, 6);
+        box-shadow: 0 0 50px rgb(35, 43, 51);
+        padding: 2em;
+    }
+
+    .galbox figure {
+        padding: .5em;
+    }
+
+    /* hover effect */
+    .galbox figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    div.hometitlediv div {
+        display: inline;
+        
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    /*home page*/
+    .maintowndiv {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .town1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .town2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .town3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .towndiv {
+        margin: 0 auto;
+    }
+    .bigatmos {
+        display: inline;
+    }
+}
