@@ -10,6 +10,7 @@
 
     .article {
         margin-left: 1.5em;
+        margin-top: 1em;
     }
     /*weather summary box*/
     .summary {
@@ -26,7 +27,9 @@
         border: 1px #536B78 solid;
     }
     .navigation {
-        flex-flow: row nowrap;
+        flex-flow: row nowrap;     
+        margin-top: 2em;
+    
     }
 
     .navigation li:first-child {

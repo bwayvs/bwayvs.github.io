@@ -33,7 +33,7 @@ h1 {
     color: #CEE5F2;
     font-size: 2rem;
     line-height: 1.5;
-    margin: .35em 0;
+    margin: .35em 0 0;
     font-variant: small-caps;
 }
 
@@ -49,8 +49,8 @@ h2 {
     color: rgb(15, 32, 68);
     text-align: center;
     font-size: 2em;
-    padding-top: 1em;
-    padding-bottom: .5em;
+    padding-top: .25em;
+    padding-bottom: .25rem;
     line-height: 1.5;
 }
 
@@ -96,6 +96,7 @@ header {
 nav {
     text-align: center;
     font-weight: bold;
+    
     border: none !important;
 }
 
@@ -149,7 +150,7 @@ nav {
 
 .hero {
     position: relative;
-    margin: 1.25em 1.25em 1em 7%;
+    margin: 0 1.25em 1em 7%;
     padding: 0;
     display: block;
 }
@@ -183,9 +184,10 @@ nav {
     font-size: 1.5em;
     color: #fff;
     letter-spacing: .25em;
-    font-variant: small-caps;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     border-bottom: 1px solid rgb(15, 32, 68);
+    margin-bottom: .5em;
 }
 
 .summary li {
@@ -215,7 +217,7 @@ nav {
     border-bottom: 1px solid #333;
     border-left: 1px solid #333;
     background-color: #fff;
-    font-size: 10px;
+    /*font-size: 10px;*/
     text-align: center;
     width: 20%;
     height: 150px;
@@ -231,20 +233,19 @@ nav {
     font-weight: 700;
     font-size: larger;
     border-bottom: 1px solid #333;
-    background-color: #eee;
+    background-color: rgb(162, 194, 221);
 }
 
 
 .flex img {
     padding: 5px;
-    width: 85px;
     height: auto;
 }
 
 .data {
     display: block;
-    margin: 1em;
-    font-size: .75rem;
+    font-weight: bold;
+    
 
 }
 
@@ -257,11 +258,11 @@ nav {
     width: 95%;
     display: block;
     box-shadow: 0 0 30px #7C98B3;
-    margin-top: 1em;
+    margin-top: 5em;
 }
 
 article .article {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .articlepicture {

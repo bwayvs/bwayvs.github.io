@@ -5,76 +5,31 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
+    let dayarray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let forecastdesc = [];
+    let forecasticon = [];
+    let weekday = [];
+    let day = 1;
 
-    /*Weekdays*/
-    let today = new Date();
-    let DD = today.getDay();
-    let dayarray = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu");
+    forecastData.list.forEach(hour => {
+        if (hour.dt_txt.includes('18:00:00')) {
+            weekday[day] = hour.dt_txt;
+            forecasticon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
+            forecastdesc[day] = hour.weather[0].main;
+            day++;
+        }
 
+    });
 
-    /*Day 1 Forecast Info*/
+    for (let i = 1; i <= 5; i++) {
+        let days = new Date(weekday[i]);
+        let dayname = dayarray[days.getDay()];
+        document.getElementById('wday' + i).innerHTML = dayname;
+        document.getElementById('dayimg' + i).setAttribute('src', forecasticon[i]);
+        document.getElementById('dayimg' + i).setAttribute('alt', forecastdesc[i]);
+        document.getElementById('forecast' + i).innerHTML = forecastdesc[i];
 
-    let desc = forecastData.list[5].weather[0].description;
-    document.getElementById("day1img").setAttribute("alt", desc);
-
-    let icon = "http://openweathermap.org/img/w/" + forecastData.list[5].weather[0].icon + ".png";
-    document.getElementById("day1img").setAttribute("src", icon);
-
-    document.getElementById("day1desc").innerHTML = forecastData.list[5].weather[0].main;
-
-    let day1 = document.getElementById("day1");
-    day1.innerText = dayarray[DD];
-
-    /*Day 2 Forecast Info*/
-
-    let day2 = document.getElementById("day2");
-    day2.innerText = dayarray[DD + 1];
-
-    let desc1 = forecastData.list[13].weather[0].description;
-    document.getElementById("day2img").setAttribute("alt", desc1);
-
-    let icon1 = "http://openweathermap.org/img/w/" + forecastData.list[13].weather[0].icon + ".png";
-    document.getElementById("day2img").setAttribute("src", icon1);
-
-    document.getElementById("day2desc").innerHTML = forecastData.list[13].weather[0].main;
-
-    /*Day 3 Forecast Info*/
-
-    let desc2 = forecastData.list[21].weather[0].description;
-    document.getElementById("day3img").setAttribute("alt", desc2);
-
-    let icon2 = "http://openweathermap.org/img/w/" + forecastData.list[21].weather[0].icon + ".png";
-    document.getElementById("day3img").setAttribute("src", icon2);
-
-    document.getElementById("day3desc").innerHTML = forecastData.list[21].weather[0].main;
-
-    let day3 = document.getElementById("day3");
-    day3.innerText = dayarray[DD + 2];
-
-    /*Day 4 Forecast Info*/
-
-    let desc3 = forecastData.list[29].weather[0].description;
-    document.getElementById("day4img").setAttribute("alt", desc3);
-
-    let icon3 = "http://openweathermap.org/img/w/" + forecastData.list[29].weather[0].icon + ".png";
-    document.getElementById("day4img").setAttribute("src", icon3);
-
-    document.getElementById("day4desc").innerHTML = forecastData.list[29].weather[0].main;
-
-    let day4 = document.getElementById("day4");
-    day4.innerText = dayarray[DD + 3];
-
-    /*Day 5 Forecast Info*/
-
-    let desc4 = forecastData.list[37].weather[0].description;
-   
-    
-
-    let icon4 = "http://openweathermap.org/img/w/" + forecastData.list[37].weather[0].icon + ".png";
-    document.getElementById("day5img").setAttribute("src", icon4);
-
-    document.getElementById("day5desc").innerHTML = forecastData.list[37].weather[0].main;
-
-    let day5 = document.getElementById("day5");
-    day5.innerText = dayarray[DD + 4];
+    }
 }
+
+
