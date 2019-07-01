@@ -119,7 +119,8 @@ nav {
 
 .navigation a {
     display: flex;
-    color: rgb(27, 53, 65);
+    color: rgb(20, 39, 48);
+    background-color: rgb(178, 204, 218);
     padding: .75rem;
     text-align: center;
     text-decoration: none;
@@ -491,7 +492,7 @@ form label.top input:required:valid {
     display: grid;
     width: 95%;
     min-width: 190px;
-    padding: 2em;
+    padding: 1em;
     grid-gap: 1em;
 
 }
@@ -505,7 +506,7 @@ form label.top input:required:valid {
     background-color: rgb(65, 69, 80);
     border: 1px #637081 solid;
     color: black;
-    box-shadow: 0 0 50px rgb(35, 43, 51);
+    box-shadow: 0 0 25px rgb(35, 43, 51);
 
 }
 
