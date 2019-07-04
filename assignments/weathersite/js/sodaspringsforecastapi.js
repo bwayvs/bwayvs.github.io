@@ -8,6 +8,7 @@ sodaSpringsForecastRequest.onload = function () {
     let sodaSpringsdayarray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let sodaSpringsforecastdesc = [];
     let sodaSpringsforecasticon = [];
+    let sodaSpringsforecasttemp = [];
     let sodaSpringsweekday = [];
     let sodaSpringsday = 1;
 
@@ -15,6 +16,7 @@ sodaSpringsForecastRequest.onload = function () {
         if (sodaSpringshour.dt_txt.includes('18:00:00')) {
             sodaSpringsweekday[sodaSpringsday] = sodaSpringshour.dt_txt;
             sodaSpringsforecasticon[sodaSpringsday] = "http://openweathermap.org/img/w/" + sodaSpringshour.weather[0].icon + ".png";
+            sodaSpringsforecasttemp[sodaSpringsday] = sodaSpringshour.main.temp;
             sodaSpringsforecastdesc[sodaSpringsday] = sodaSpringshour.weather[0].main;
             sodaSpringsday++;
         }
@@ -27,6 +29,7 @@ sodaSpringsForecastRequest.onload = function () {
         document.getElementById('sodaspringswday' + i).innerHTML = sodaSpringsdayname;
         document.getElementById('sodaspringsdayimg' + i).setAttribute('src', sodaSpringsforecasticon[i]);
         document.getElementById('sodaspringsdayimg' + i).setAttribute('alt', sodaSpringsforecastdesc[i]);
+        document.getElementById('sodaspringstemp' + i).innerHTML = sodaSpringsforecasttemp[i].toFixed();
         document.getElementById('sodaspringsforecast' + i).innerHTML = sodaSpringsforecastdesc[i];
 
     }

@@ -8,6 +8,7 @@ fishHavenForecastRequest.onload = function () {
     let fishHavendayarray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let fishHavenforecastdesc = [];
     let fishHavenforecasticon = [];
+    let fishHavenforecasttemp = [];
     let fishHavenweekday = [];
     let fishHavenday = 1;
 
@@ -15,6 +16,7 @@ fishHavenForecastRequest.onload = function () {
         if (fishHavenhour.dt_txt.includes('18:00:00')) {
             fishHavenweekday[fishHavenday] = fishHavenhour.dt_txt;
             fishHavenforecasticon[fishHavenday] = "http://openweathermap.org/img/w/" + fishHavenhour.weather[0].icon + ".png";
+            fishHavenforecasttemp[fishHavenday] = fishHavenhour.main.temp;
             fishHavenforecastdesc[fishHavenday] = fishHavenhour.weather[0].main;
             fishHavenday++;
         }
@@ -27,6 +29,7 @@ fishHavenForecastRequest.onload = function () {
         document.getElementById('fishhavenwday' + i).innerHTML = fishHavendayname;
         document.getElementById('fishhavendayimg' + i).setAttribute('src', fishHavenforecasticon[i]);
         document.getElementById('fishhavendayimg' + i).setAttribute('alt', fishHavenforecastdesc[i]);
+        document.getElementById('fishhaventemp' + i).innerHTML = fishHavenforecasttemp[i].toFixed();
         document.getElementById('fishhavenforecast' + i).innerHTML = fishHavenforecastdesc[i];
 
     }

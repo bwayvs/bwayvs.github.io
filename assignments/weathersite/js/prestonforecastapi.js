@@ -8,6 +8,7 @@ prestonForecastRequest.onload = function () {
     let prestondayarray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let prestonforecastdesc = [];
     let prestonforecasticon = [];
+    let prestonforecasttemp = [];
     let prestonweekday = [];
     let prestonday = 1;
 
@@ -15,7 +16,8 @@ prestonForecastRequest.onload = function () {
         if (prestonhour.dt_txt.includes('18:00:00')) {
             prestonweekday[prestonday] = prestonhour.dt_txt;
             prestonforecasticon[prestonday] = "http://openweathermap.org/img/w/" + prestonhour.weather[0].icon + ".png";
-            prestonforecastdesc[prestonday] = prestonhour.weather[0].main;
+            prestonforecasttemp[prestonday] = prestonhour.main.temp;
+            prestonforecastdesc[prestonday] = prestonhour.weather[0].main;           
             prestonday++;
         }
 
@@ -27,6 +29,7 @@ prestonForecastRequest.onload = function () {
         document.getElementById('prestonwday' + i).innerHTML = prestondayname;
         document.getElementById('prestondayimg' + i).setAttribute('src', prestonforecasticon[i]);
         document.getElementById('prestondayimg' + i).setAttribute('alt', prestonforecastdesc[i]);
+        document.getElementById('prestontemp' + i).innerHTML = prestonforecasttemp[i].toFixed();
         document.getElementById('prestonforecast' + i).innerHTML = prestonforecastdesc[i];
 
     }
