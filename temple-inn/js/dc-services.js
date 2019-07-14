@@ -12,7 +12,7 @@ requestDcServiceData.onload = function () {
     dcServices.forEach(dctemple => {
         if (dctemple.name == 'DC') {
             let dcServiceEvents = dctemple.services;
-            for (let f = 0; f < dcServiceEvents.length; f++) {
+            for (let f = 0; f < dcServiceEvents.length; r++) {
                 let listDcServiceItem = document.createElement('li');
                 listDcServiceItem.textContent = dcServiceEvents[f];
                 myDcServiceList.appendChild(listDcServiceItem);

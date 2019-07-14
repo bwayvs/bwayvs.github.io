@@ -12,9 +12,9 @@ requestphillyServiceData.onload = function () {
     phillyServices.forEach(phillytemple => {
         if (phillytemple.name == 'Philadelphia') {
             let phillyServiceEvents = phillytemple.services;
-            for (let f = 0; f < phillyServiceEvents.length; f++) {
+            for (let p = 0; p < phillyServiceEvents.length; p++) {
                 let listphillyServiceItem = document.createElement('li');
-                listphillyServiceItem.textContent = phillyServiceEvents[f];
+                listphillyServiceItem.textContent = phillyServiceEvents[p];
                 myphillyServiceList.appendChild(listphillyServiceItem);
             }
         }
