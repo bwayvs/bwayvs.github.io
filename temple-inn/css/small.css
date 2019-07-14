@@ -68,18 +68,18 @@ nav {
     text-align: center;
 }
 
-.navigation>li:first-child {
+.navigation > li:first-child {
     display: inline-block;
 
 }
 
-.navigation>li {
+.navigation > li {
     display: none;
     width: 100%;
     position: relative;
 }
 
-.navigation>li a {
+.navigation > li a {
     display: flex;
     color: rgb(20, 39, 48);
     background-color: #eae0d5;
@@ -92,7 +92,7 @@ nav {
 
 }
 
-.navigation>li>a:hover {
+.navigation > li > a:hover {
     color: #22333b;
     background-color: #dbbf9f;
     font-weight: 700;
@@ -102,42 +102,46 @@ nav {
     display: block;
 }
 
-.navigation>li a.active {
+.navigation > li a.active {
     background-color: #5e503f;
     color: #eae0d5;
     font-weight: normal;
 }
 
 /**Submenu**/
-
+.arrow {
+    display: none;
+}
 ul.submenu {
     position:absolute;
     display: none;
 }
-ul.submenu:hover {
-    display: block;
-    margin-left: 100px;
-    z-index: 1;
-    margin-top: -42px;
-    color: #22333b;
+.navigation li.submenu li {
+    margin-top: 42.5px;
     background-color: #dbbf9f;
-}
-
-ul.submenu li:hover {
-    background-color: #5e503f;
-    color: #eae0d5;
-    display: block;
 }
 
 .navigation li :hover .submenu {
     display: block;
     margin-left: 100px;
-    z-index: 1;
+    z-index: 100;
     margin-top: -42px;
     color: #22333b;
     background-color: #dbbf9f;
 }
-
+.submenu li a {
+    display: block;
+    width: 100%;
+    background-color: #dbbf9f;
+    margin: 0;
+    z-index: 100;
+}
+ul.submenu li a :hover {
+    background-color: #5e503f;
+    color: #eae0d5;
+    font-weight: normal;
+    z-index: 100;
+}
 /*****Header*****/
 header {
 

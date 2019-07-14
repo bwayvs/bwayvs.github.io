@@ -37,22 +37,22 @@
         display: none;
     }
 
-    nav ul {
+    nav > ul {
         display: inline;
     }
 
-    nav li a {
+    nav > li > a {
         display: inline-block;
         background-color: #eae0d5;
     }
 
-    nav>li {
+    nav > li {
         display: inline-block;
         margin: 0;
         background-color: #eae0d5;
     }
 
-    .navigation .active {
+    .navigation  .active {
         color: #eae0d5;
         background-color: #5e503f;
     }
@@ -63,6 +63,9 @@
     }
 
     /*Submenu*/
+    .arrow {
+        display: inline;
+    }
     .navigation li.submenu li {
         margin-top: 42.5px;
         background-color: #dbbf9f;
@@ -70,10 +73,12 @@
 
     .navigation li:hover .submenu {
         display: block;
-        z-index: 1;
+        z-index: 100;
         color: #22333b;
         background-color: #dbbf9f;
         text-align: left;
+        width: 100%;
+        margin: 0;
     }
 
     .submenu li a {
@@ -83,11 +88,12 @@
         margin: 0;
     }
 
-    ul .submenu li:hover a {
+    ul .submenu li a:hover  {
         background-color: #5e503f;
         color: #eae0d5;
         font-weight: normal;
         width: 100%;
+        z-index: 100;
     }
 
     /*Main*/
