@@ -156,7 +156,7 @@
 
     }
 
-    .amenitydiv ul li {
+    .templeinfo li, .amenitydiv ul li {
         text-align: center;
         list-style-type: none;
     }
