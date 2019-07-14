@@ -1,0 +1,38 @@
+{
+    "temples": [
+        {
+            "name": "DC",
+            "closures": [
+                "Temple closed for renovations."
+            ]
+        },
+        {
+            "name": "Columbia",
+            "closures": [
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019 - Monday, 13 January 2020"
+            ]
+        },
+        {
+            "name": "Philadelphia",
+            "closures": [
+                "Monday, 16 September 2019 - Monday, 30 September 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        },
+        {
+            "name": "RaleighC",
+            "closures": [
+                "Temple closed for renovations.",
+                "Open House: Saturday 21 September 2019 - Saturday, 28 September 2019",
+                "Dedication: Sunday, 13 October 2019"
+            ]
+        }
+    ]
+}

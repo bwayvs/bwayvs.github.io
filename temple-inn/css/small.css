@@ -40,6 +40,9 @@ h4 {
     font-family: 'Cormorant Upright', serif;
     color: #22333b;
     line-height: 1.5;
+    text-align: center;
+    padding-top: .25em;
+    padding-bottom: .25rem;
 }
 
 h2 {
@@ -303,12 +306,11 @@ form>div>input.submit {
 
 /*Amenity*/
 .amenitydiv {
-    border-top: 1px ridge #5e503f;
+    border-top: 1px solid #5e503f;
     margin: 0 auto 1em;
 }
 
 .amenitydiv ul {
-
     padding: 0 1em;
 }
 
@@ -320,6 +322,32 @@ form>div>input.submit {
     text-align: left;
     color: #22333b;
 
+}
+/**Temple page**/
+.slide-center,.slidepic{
+    width: 100%;
+}
+.slide-content {
+    max-width: 600px;
+    padding: 1em;
+    margin: 0 auto 1em;
+    width: 100%;
+}
+.templeinfo {
+    margin: 0 auto 1em;
+}
+.templeinfo ul li {
+    font-size: 1em;
+    font-family: 'Assistant', sans-serif;
+    text-align: left;
+    color: #22333b;
+}
+
+.slide-right {
+    float: right;
+}
+.slide-left {
+    float: left;
 }
 
 /*Map and Directions*/
@@ -339,7 +367,6 @@ aside {
 aside div {
     margin-bottom: 1em;
 }
-
 .asideaddressdiv {
     display: none;
     margin-right: .5em;
@@ -349,6 +376,11 @@ aside div {
 .directions {
     margin-left: .5em;
     align-self: center;
+}
+
+iframe {
+    padding: 2em;
+
 }
 
 /*Footer*/
