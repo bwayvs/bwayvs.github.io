@@ -15,7 +15,7 @@ requestraleighClosureData.onload = function () {
             for (let f = 0; f < raleighClosureEvents.length; f++) {
                 let listraleighClosureItem = document.createElement('li');
                 listraleighClosureItem.textContent = raleighClosureEvents[f];
-                myraleighClosureList.appenraleighhild(listraleighClosureItem);
+                myraleighClosureList.appendChild(listraleighClosureItem);
             }
         }
     });

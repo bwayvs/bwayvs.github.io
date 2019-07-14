@@ -15,7 +15,7 @@ requestcolumbiaClosureData.onload = function () {
             for (let f = 0; f < columbiaClosureEvents.length; f++) {
                 let listcolumbiaClosureItem = document.createElement('li');
                 listcolumbiaClosureItem.textContent = columbiaClosureEvents[f];
-                mycolumbiaClosureList.appencolumbiahild(listcolumbiaClosureItem);
+                mycolumbiaClosureList.appendChild(listcolumbiaClosureItem);
             }
         }
     });

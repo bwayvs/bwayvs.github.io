@@ -15,7 +15,7 @@ requestphillyClosureData.onload = function () {
             for (let f = 0; f < phillyClosureEvents.length; f++) {
                 let listphillyClosureItem = document.createElement('li');
                 listphillyClosureItem.textContent = phillyClosureEvents[f];
-                myphillyClosureList.appenphillyhild(listphillyClosureItem);
+                myphillyClosureList.appendChild(listphillyClosureItem);
             }
         }
     });
