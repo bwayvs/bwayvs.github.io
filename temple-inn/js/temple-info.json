@@ -24,8 +24,9 @@
             ],
             "closures": [
                 "Temple closed for renovations."
-            ]
-            
+            ],
+            "photo": "images/dc-temple2-600w.jpg",
+            "desc": "DC Temple"            
         },
         {
             "name": "Columbia",
@@ -54,7 +55,9 @@
                 "Temple Closure: Thursday, 28 November 2019",
                 "Temple Closure: Tuesday, 24 December 2019 - Thursday, 26 December 2019",
                 "Temple Closure: Tuesday, 31 December 2019 - Monday, 13 January 2020"
-            ]
+            ],
+            "photo": "images/columbia-temple-600w.jpg",
+            "desc": "Columbia Temple"
         },
         {
             "name": "Philadelphia",
@@ -82,7 +85,9 @@
                 "Temple Closure: Wednesday, 27 November 2019 - Thursday, 28 November 2019",
                 "Temple Closure: Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
                 "Temple Closure: Tuesday, 31 December 2019"
-            ]
+            ],
+            "photo": "images/philadelphia-temple-600w-400h.jpg",
+            "desc": "Philadelphia Temple"
         },
         {
             "name": "Raleigh",
@@ -112,7 +117,9 @@
                 "Temple closed for renovations.",
                 "Open House: Saturday 21 September 2019 - Saturday, 28 September 2019",
                 "Dedication: Sunday, 13 October 2019"
-            ]
+            ],
+            "photo": "images/raleigh-temple-600w.jpg",
+            "desc": "Raleigh Temple"
         }
     ]
 }
