@@ -1,21 +1,21 @@
-const requestphillyServiceDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-info.json';
-const requestphillyServiceData = new XMLHttpRequest();
-requestphillyServiceData.open('GET', requestphillyServiceDataURL);
-requestphillyServiceData.responseType = 'json';
-requestphillyServiceData.send();
+const requestPhillyServiceDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-info.json';
+const requestPhillyServiceData = new XMLHttpRequest();
+requestPhillyServiceData.open('GET', requestPhillyServiceDataURL);
+requestPhillyServiceData.responseType = 'json';
+requestPhillyServiceData.send();
 //****************************************//
 
-requestphillyServiceData.onload = function () {
-    let myphillyServiceList = document.getElementById('phillyservicesul');
-    let phillyServiceData = requestphillyServiceData.response;
-    let phillyServices = phillyServiceData['temples'];
-    phillyServices.forEach(phillytemple => {
-        if (phillytemple.name == 'Philadelphia') {
-            let phillyServiceEvents = phillytemple.services;
+requestPhillyServiceData.onload = function () {
+    let myPhillyServiceList = document.getElementById('phillyservicesul');
+    let phillyServiceData = requestPhillyServiceData.response;
+    let ptemples = phillyServiceData['temples'];
+    ptemples.forEach(ptemple => {
+        if (ptemple.name == 'Philadelphia') {
+            let phillyServiceEvents = ptemple.services;
             for (let ps = 0; ps < phillyServiceEvents.length; ps++) {
-                let listphillyServiceItem = document.createElement('li');
-                listphillyServiceItem.textContent = phillyServiceEvents[ps];
-                myphillyServiceList.appendChild(listphillyServiceItem);
+                let listPhillyServiceItem = document.createElement('li');
+                listPhillyServiceItem.textContent = phillyServiceEvents[ps];
+                myPhillyServiceList.appendChild(listPhillyServiceItem);
             }
         }
     });
