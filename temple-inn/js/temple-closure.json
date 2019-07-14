@@ -2,12 +2,52 @@
     "temples": [
         {
             "name": "DC",
+            "address": "9900 Stoneybrook Drive, Kensington, Maryland 20895-3199, United States",
+            "phone":"301-588-0650",
+            "email":"None listed",
+            "services": [
+                "NO Clothing Rental",
+                "NO Cafeteria available",
+                "NO Patron Housing available",
+                "NO Distribution Center nearby"
+                
+            ],
+            "quote": "As we come unto Christ and journey to higher ground, we will desire to spend more time in His temples, because the temples represent higher ground, sacred ground. —Joseph B. Wirthlin",
+            "sechedule": [
+                "Temple closed for renovations."
+            ],
+            "history" : [
+                "Announcement:  15 November 1968",
+                "Groundbreaking and Site Dedication:  7 December 1968 by Hugh B. Brown",
+                "Public Open House:  17 September–2 November 1974",
+                "Dedication:  19–22 November 1974 by Spencer W. Kimball"
+            ],
             "closures": [
                 "Temple closed for renovations."
             ]
+            
         },
         {
             "name": "Columbia",
+            "address": "2905 Trotter Rd, Hopkins, SC 29061-9573, United States",
+            "phone":"803-647-9472",
+            "email":"None listed",
+            "services": [
+                "NO Clothing Rental",
+                "NO Cafeteria available",
+                "NO Patron Housing available",
+                "Distribution Center nearby",
+                "NO Shuttle service"
+            ],
+            "quote": "None listed",
+            "sechedule": [
+                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
+            ],
+            "history" : [
+                "11 September 1998 - Announced",
+                "5 December 1998 - Groundbreaking",
+                "16 October 1999 - Dedicated"
+            ],
             "closures": [
                 "Temple Closure: Saturday, 5 October 2019",
                 "Temple Closure: Wednesday, 27 November 2019 (Limited Hours)",
@@ -18,6 +58,24 @@
         },
         {
             "name": "Philadelphia",
+            "address": "21739 Vine St., Philadelphia, PA 19103, United States",
+            "phone":"215-398-3040",
+            "email":"None listed",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "No distribution center nearby"
+            ],
+            "quote": "None listed",
+            "sechedule": [
+                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 215-398-3040"
+            ],
+            "history" : [
+                "4 October 2008 - Announced",
+                "17 September 2011 - Groundbreaking",
+                "18 September 2016 - Dedicated "
+            ],
             "closures": [
                 "Temple Closure: Monday, 16 September 2019 - Monday, 30 September 2019",
                 "Temple Closure: Saturday, 5 October 2019",
@@ -28,6 +86,28 @@
         },
         {
             "name": "Raleigh",
+            "address": "574 Bryan Drive, Apex, North Carolina  27502, United States",
+            "phone":"None listed",
+            "email":"None listed",
+            "services": [
+                "NO Clothing Rental",
+                "NO Cafeteria available",
+                "NO Patron Housing available",
+                "NO Distribution Center nearby"
+                
+            ],
+            "quote": "We love and cherish our dedicated temples and the essential, exalting ordinances that are performed there. We thank heaven and the presiding Brethren that more and more of them are being built, giving more and more of us greater access to them. —Jeffrey R. Holland",
+            "sechedule": [
+                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
+            ],
+            "history" : [
+                "Announcement:  3 September 1998",
+                "Groundbreaking and Site Dedication:  6 February 1999 by Loren C. Dunn",
+                "Public Open House:  3–11 December 1999",
+                "Dedication:  18–19 December 1999 by Gordon B. Hinckley",
+                "Public Open House:  21–28 September 2019",
+                "Rededication:  13 October 2019 by M. Russell Ballard"
+            ],
             "closures": [
                 "Temple closed for renovations.",
                 "Open House: Saturday 21 September 2019 - Saturday, 28 September 2019",

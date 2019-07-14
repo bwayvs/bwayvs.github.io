@@ -47,22 +47,46 @@
         <h2>Temples</h2>
         <div class="slide-content slide-display-container">
             <button class="slide-button slide-left" onclick="plusDivs(-1)">&#10094;Previous</button>
-
-            <button class="slide-button demo" onclick="currentDiv(1)">DC Temple</button>
-            <button class="slide-button demo" onclick="currentDiv(2)">Philadelphia Temple</button>
-            <button class="slide-button demo" onclick="currentDiv(3)">Raleigh Temple</button>
-            <button class="slide-button demo" onclick="currentDiv(4)">Columbia Temple</button>
-
-
             <button class="slide-button slide-right" onclick="plusDivs(1)">Next &#10095;</button>
             <div class="slide-display-container mySlides">
                 <h3>Washington DC Temple</h3>
                 <img class="slidepic" src="images/dc-temple2-600w.jpg" alt="DC Temple">
                 <div class="slide-display slide-container">
-                    <h4>Temple Events</h4>
-                    <ul class="templeinfo" id="dcclosureeventsul">
+                    <div class="templeinfo templecontactdiv">
+                        <h4>Contact Info</h4>
+                        <div class="templecontactcontent" id="dcaddress">
+                        </div>
+                        <div class="templecontactcontent" id="dcphone">
+                        </div>
+                        <div class="templecontactcontent" id="dcemail">
+                        </div>
+                    </div>
+                    <div class="templeinfo templecurrentdiv">
+                        <h4>Current Weather</h4>
+                        <div class="templecurrentcontent" id="dcweather">
 
-                    </ul>
+                        </div>
+                        <h4>Current Services</h4>
+                        <ul class="templecurrentcontent" id="dcservicesul">
+
+                        </ul>
+
+                    </div>
+                    <div class="templeinfo templeschedulediv">
+                        <h4>Ordainance Schedule</h4>
+                        <div class="templeschedulecontent" id="dcschedule">
+
+                        </div>
+
+                        <ul class="templeupdatecontent" id="dcclosureeventsul">
+
+                        </ul>
+                    </div>
+                    <div class="templeinfo templehistorydiv">
+                        <ul class="templehistorycontent" id="dchistoryul">
+
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -71,10 +95,41 @@
                 <img class="slidepic" src="images/philadelphia-temple-600w-400w.jpg" alt="Philadepelphia Temple">
                 <div class="slide-display slide-container">
 
-                    <h4>Temple Events</h4>
-                    <ul class="templeinfo" id="phillyclosureeventsul">
+                    <div class="templeinfo templecontactdiv">
+                        <h4>Contact Info</h4>
+                        <div class="templecontactcontent" id="phillyaddress">
+                        </div>
+                        <div class="templecontactcontent" id="phillyphone">
+                        </div>
+                        <div class="templecontactcontent" id="phillyemail">
+                        </div>
+                    </div>
+                    <div class="templeinfo templecurrentdiv">
+                        <h4>Current Weather</h4>
+                        <div class="templecurrentcontent" id="phillyweather">
 
-                    </ul>
+                        </div>
+                        <h4>Current Services</h4>
+                        <ul class="templecurrentcontent" id="phillyservicesul">
+
+                        </ul>
+
+                    </div>
+                    <div class="templeinfo templeschedulediv">
+                        <h4>Ordainance Schedule</h4>
+                        <div class="templeschedulecontent" id="phillyschedule">
+
+                        </div>
+
+                        <ul class="templeupdatecontent" id="phillyclosureeventsul">
+
+                        </ul>
+                    </div>
+                    <div class="templeinfo templehistorydiv">
+                            <ul class="templehistorycontent" id="phillyhistoryul">
+    
+                            </ul>
+                        </div>
                 </div>
             </div>
 
@@ -82,24 +137,86 @@
                 <h3>Raleigh NC Temple</h3>
                 <img class="slidepic" src="images/raleigh-temple-600w.jpg" alt="Raleigh Temple">
                 <div class="slide-display slide-container">
+                    <div class="templeinfo templecontactdiv">
+                        <h4>Contact Info</h4>
+                        <div class="templecontactcontent" id="raleighaddress">
+                        </div>
+                        <div class="templecontactcontent" id="raleighphone">
+                        </div>
+                        <div class="templecontactcontent" id="raleighemail">
+                        </div>
+                    </div>
+                    <div class="templeinfo templecurrentdiv">
+                        <h4>Current Weather</h4>
+                        <div class="templecurrentcontent" id="raleighweather">
 
-                    <h4>Temple Events</h4>
-                    <ul class="templeinfo" id="raleighclosureeventsul">
+                        </div>
+                        <h4>Current Services</h4>
+                        <ul class="templecurrentcontent" id="raleighservicesul">
 
-                    </ul>
+                        </ul>
+
+                    </div>
+                    <div class="templeinfo templeschedulediv">
+                        <h4>Ordainance Schedule</h4>
+                        <div class="templeschedulecontent" id="raleighschedule">
+
+                        </div>
+
+                        <ul class="templeupdatecontent" id="raleighclosureeventsul">
+
+                        </ul>
+                    </div>
+                    <div class="templeinfo templehistorydiv">
+                            <ul class="templehistorycontent" id="raleighhistoryul">
+    
+                            </ul>
+                        </div>
                 </div>
             </div>
             <div class="slide-display-container mySlides">
                 <h3>Columbia SC Temple</h3>
                 <img class="slidepic" src="images/columbia-temple-600w.jpg" alt="Columbia Temple">
                 <div class="slide-display slide-container">
+                    <div class="templeinfo templecontactdiv">
+                        <h4>Contact Info</h4>
+                        <div class="templecontactcontent" id="columbiaaddress">
+                        </div>
+                        <div class="templecontactcontent" id="columbiaphone">
+                        </div>
+                        <div class="templecontactcontent" id="columbiaemail">
+                        </div>
+                    </div>
+                    <div class="templeinfo templecurrentdiv">
+                        <h4>Current Weather</h4>
+                        <div class="templecurrentcontent" id="columbiaweather">
 
-                    <h4>Temple Events</h4>
-                    <ul class="templeinfo" id="columbiaclosureeventsul">
+                        </div>
+                        <h4>Current Services</h4>
+                        <ul class="templecurrentcontent" id="columbiaservicesul">
 
-                    </ul>
+                        </ul>
+
+                    </div>
+                    <div class="templeinfo templeschedulediv">
+                        <h4>Ordainance Schedule</h4>
+                        <div class="templeschedulecontent" id="columbiaschedule">
+
+                        </div>
+
+                        <ul class="templeupdatecontent" id="columbiaclosureeventsul">
+
+                        </ul>
+                    </div>
+                    <div class="templeinfo templehistorydiv">
+                            <ul class="templehistorycontent" id="columbiahistoryul">
+    
+                            </ul>
+                        </div>
                 </div>
             </div>
+            <button class="slide-button slide-left" onclick="plusDivs(-1)">&#10094;Previous</button>
+            <button class="slide-button slide-right" onclick="plusDivs(1)">Next &#10095;</button>
         </div>
 
     </main>
