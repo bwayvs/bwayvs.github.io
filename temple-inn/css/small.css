@@ -333,6 +333,13 @@ form>div>input.submit {
     margin: 0 auto 1em;
     width: 100%;
 }
+.slide-button {
+    padding: .5em;
+    background-color: #22333b;
+    color: #eae0d5;
+    font-size: 1.5em;
+    font-family: 'Assistant', sans-serif;
+}
 .templeinfo {
     margin: 0 auto 1em;
 }
