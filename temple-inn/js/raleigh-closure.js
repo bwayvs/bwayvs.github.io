@@ -1,4 +1,4 @@
-const requestraleighClosureDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-closure.json';
+const requestraleighClosureDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-info.json';
 const requestraleighClosureData = new XMLHttpRequest();
 requestraleighClosureData.open('GET', requestraleighClosureDataURL);
 requestraleighClosureData.responseType = 'json';

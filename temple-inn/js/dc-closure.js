@@ -1,4 +1,4 @@
-const requestDcClosureDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-closure.json';
+const requestDcClosureDataURL = 'https://bwayvs.github.io/temple-inn/js/temple-info.json';
 const requestDcClosureData = new XMLHttpRequest();
 requestDcClosureData.open('GET', requestDcClosureDataURL);
 requestDcClosureData.responseType = 'json';
