@@ -64,8 +64,7 @@ nav {
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-around;    
 }
 
 .navigation > li:first-child {
@@ -77,6 +76,7 @@ nav {
     display: none;
     width: 100%;
     position: relative;
+    
 }
 
 .navigation > li a {
@@ -89,6 +89,7 @@ nav {
     font-size: 1em;
     height: 100%;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -111,11 +112,15 @@ nav {
 /**Submenu**/
 .arrow {
     display: none;
+    width: 10px;
+    margin: 0;
 }
 ul.submenu {
     position:absolute;
     display: none;
+   
 }
+
 .navigation li.submenu li {
     margin-top: 42.5px;
     background-color: #dbbf9f;
@@ -129,6 +134,7 @@ ul.submenu {
     color: #22333b;
     background-color: #dbbf9f;
 }
+
 .submenu li a {
     display: block;
     width: 100%;
@@ -140,8 +146,8 @@ ul.submenu li a :hover {
     background-color: #5e503f;
     color: #eae0d5;
     font-weight: normal;
-    z-index: 100;
 }
+
 /*****Header*****/
 header {
 
