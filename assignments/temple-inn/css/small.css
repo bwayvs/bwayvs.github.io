@@ -110,16 +110,7 @@ nav {
 
 /**Submenu**/
 
-ul.submenu {
-    position:absolute;
-    display: none;
-}
-.navigation li:hover .submenu {
-    display: block;
-    z-index: 1;
-}
-
-/*ul.submenu:hover {
+ul.submenu:hover {
     display: block;
     margin-left: 100px;
     z-index: 1;
