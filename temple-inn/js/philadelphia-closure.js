@@ -12,9 +12,9 @@ requestphillyClosureData.onload = function () {
     phillyclosures.forEach(phillytemple => {
         if (phillytemple.name == 'Philadelphia') {
             let phillyClosureEvents = phillytemple.closures;
-            for (let f = 0; f < phillyClosureEvents.length; f++) {
+            for (let pc = 0; pc < phillyClosureEvents.length; pc++) {
                 let listphillyClosureItem = document.createElement('li');
-                listphillyClosureItem.textContent = phillyClosureEvents[f];
+                listphillyClosureItem.textContent = phillyClosureEvents[pc];
                 myphillyClosureList.appendChild(listphillyClosureItem);
             }
         }

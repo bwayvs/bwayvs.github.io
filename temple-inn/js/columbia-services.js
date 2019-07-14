@@ -12,9 +12,9 @@ requestcolumbiaServiceData.onload = function () {
     columbiaServices.forEach(columbiatemple => {
         if (columbiatemple.name == 'Columbia') {
             let columbiaServiceEvents = columbiatemple.services;
-            for (let c = 0; c < columbiaServiceEvents.length; c++) {
+            for (let cs = 0; cs < columbiaServiceEvents.length; cs++) {
                 let listcolumbiaServiceItem = document.createElement('li');
-                listcolumbiaServiceItem.textContent = columbiaServiceEvents[c];
+                listcolumbiaServiceItem.textContent = columbiaServiceEvents[cs];
                 mycolumbiaServiceList.appendChild(listcolumbiaServiceItem);
             }
         }

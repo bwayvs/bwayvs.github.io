@@ -12,9 +12,9 @@ requestraleighClosureData.onload = function () {
     raleighclosures.forEach(raleightemple => {
         if (raleightemple.name == 'Raleigh') {
             let raleighClosureEvents = raleightemple.closures;
-            for (let f = 0; f < raleighClosureEvents.length; f++) {
+            for (let rc = 0; rc < raleighClosureEvents.length; rc++) {
                 let listraleighClosureItem = document.createElement('li');
-                listraleighClosureItem.textContent = raleighClosureEvents[f];
+                listraleighClosureItem.textContent = raleighClosureEvents[rc];
                 myraleighClosureList.appendChild(listraleighClosureItem);
             }
         }

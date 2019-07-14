@@ -12,9 +12,9 @@ requestDcClosureData.onload = function () {
     dcclosures.forEach(dctemple => {
         if (dctemple.name == 'DC') {
             let dcClosureEvents = dctemple.closures;
-            for (let f = 0; f < dcClosureEvents.length; f++) {
+            for (let dc = 0; dc < dcClosureEvents.length; dc++) {
                 let listDcClosureItem = document.createElement('li');
-                listDcClosureItem.textContent = dcClosureEvents[f];
+                listDcClosureItem.textContent = dcClosureEvents[dc];
                 myDcClosureList.appendChild(listDcClosureItem);
             }
         }

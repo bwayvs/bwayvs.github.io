@@ -12,9 +12,9 @@ requestcolumbiaClosureData.onload = function () {
     columbiaclosures.forEach(columbiatemple => {
         if (columbiatemple.name == 'Columbia') {
             let columbiaClosureEvents = columbiatemple.closures;
-            for (let f = 0; f < columbiaClosureEvents.length; f++) {
+            for (let cc = 0; cc < columbiaClosureEvents.length; cc++) {
                 let listcolumbiaClosureItem = document.createElement('li');
-                listcolumbiaClosureItem.textContent = columbiaClosureEvents[f];
+                listcolumbiaClosureItem.textContent = columbiaClosureEvents[cc];
                 mycolumbiaClosureList.appendChild(listcolumbiaClosureItem);
             }
         }

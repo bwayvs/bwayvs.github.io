@@ -12,9 +12,9 @@ requestraleighServiceData.onload = function () {
     raleighServices.forEach(raleightemple => {
         if (raleightemple.name == 'Raleigh') {
             let raleighServiceEvents = raleightemple.services;
-            for (let r = 0; r < raleighServiceEvents.length; r++) {
+            for (let rs = 0; rs < raleighServiceEvents.length; rs++) {
                 let listraleighServiceItem = document.createElement('li');
-                listraleighServiceItem.textContent = raleighServiceEvents[r];
+                listraleighServiceItem.textContent = raleighServiceEvents[rs];
                 myraleighServiceList.appendChild(listraleighServiceItem);
             }
         }
