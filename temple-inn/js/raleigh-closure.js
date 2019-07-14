@@ -10,7 +10,7 @@ requestraleighClosureData.onload = function () {
     let raleighClosureData = requestraleighClosureData.response;
     let raleighclosures = raleighClosureData['temples'];
     raleighclosures.forEach(raleightemple => {
-        if (raleightemple.name == 'raleigh') {
+        if (raleightemple.name == 'Raleigh') {
             let raleighClosureEvents = raleightemple.closures;
             for (let f = 0; f < raleighClosureEvents.length; f++) {
                 let listraleighClosureItem = document.createElement('li');
