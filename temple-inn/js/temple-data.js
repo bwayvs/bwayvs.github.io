@@ -1,3 +1,5 @@
+let section = document.querySelector('section');
+
 const requestURL = "https://bwayvs.github.io/temple-inn/js/temple-info.json";
 const request = new XMLHttpRequest();
 request.open ('GET', requestURL);
@@ -6,14 +8,14 @@ request.send();
 ///*****************************************///
 
 request.onload = function() {
-    let templeData = request.response
+    let templeData = request.response;
     showData(templeData);
 }
 
-function showData9jsonObt){
+function showData(jsonObt){
     let temples = jsonObj['temples'];
 
-    for (let i = 0; i < temples.length;i++) {
+    for(let i = 0; i < temples.length; i++) {
         let myH3 = document.createElement('h3');
         let myH4 = document.createElement('h4');
         let myList = document.createElement('ul');
@@ -27,7 +29,7 @@ function showData9jsonObt){
         let myDiv = document.createElement('div');
 
         myH3.textContent = temples[i].name;
-        myImg.setAttribute('src',temples[i].photo);
+        myImg.setAttribute('src', temples[i].photo);
         myImg.setAttribute('alt', temples[i].desc);
         myPara1.textContent = "Address: " + temples[i].address;
         myPara2.textContent = "Phone Number : " + temples[i].phone;
@@ -36,7 +38,7 @@ function showData9jsonObt){
         myPara5.textContent = "History: ";
 
         let history = temple[i].history;
-        for (let j = 0; j < history.length; j++){
+        for(let j = 0; j < history.length; j++){
             let listItem = document.createElement('li');
             listItem.textContent = history[j];
             myList.appendChild(listItem);
@@ -49,6 +51,7 @@ function showData9jsonObt){
         myDiv.appendChild(myPara4);
         myDiv.appendChild(myPara5);
         myDiv.appendChild(myList);
-        SecurityPolicyViolationEvent.appendChild(myDiv);
+        
+        section.appendChild(myDiv);
     }
 }
