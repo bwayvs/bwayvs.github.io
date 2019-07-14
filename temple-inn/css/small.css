@@ -337,8 +337,9 @@ form>div>input.submit {
     padding: .5em;
     background-color: #22333b;
     color: #eae0d5;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Assistant', sans-serif;
+    margin: .5em auto;
 }
 .templeinfo {
     margin: 0 auto 1em;
