@@ -1,22 +1,27 @@
 {
-    "temples": [
-        {
+    "temples": [{
             "name": "Washington DC Temple",
-            "address": "9900 Stoneybrook Drive, Kensington, Maryland 20895-3199, United States",
-            "phone":"301-588-0650",
-            "email":"None listed",
+            "address": [
+                "9900 Stoneybrook Drive, Kensington, Maryland 20895-3199, United States"
+            ],
+            "phone": [
+                "301-588-0650"
+            ],
+            "email": [
+                "None listed"
+            ],
             "services": [
                 "NO Clothing Rental",
                 "NO Cafeteria available",
                 "NO Patron Housing available",
                 "NO Distribution Center nearby"
-                
+
             ],
             "quote": "As we come unto Christ and journey to higher ground, we will desire to spend more time in His temples, because the temples represent higher ground, sacred ground. —Joseph B. Wirthlin",
             "schedule": [
                 "Temple closed for renovations."
             ],
-            "history" : [
+            "history": [
                 "Announcement:  15 November 1968",
                 "Groundbreaking and Site Dedication:  7 December 1968 by Hugh B. Brown",
                 "Public Open House:  17 September–2 November 1974",
@@ -26,13 +31,19 @@
                 "Temple Closure: Temple closed for renovations."
             ],
             "photo": "images/dc-temple2-600w.jpg",
-            "desc": "DC Temple"            
+            "desc": "DC Temple"
         },
         {
             "name": "Columbia SC Temple",
-            "address": "2905 Trotter Rd, Hopkins, SC 29061-9573, United States",
-            "phone":"803-647-9472",
-            "email":"None listed",
+            "address": [
+                "2905 Trotter Rd, Hopkins, SC 29061-9573, United States"
+            ],
+            "phone": [
+                "803-647-9472"
+            ],
+            "email": [
+                "None listed"
+            ],
             "services": [
                 "NO Clothing Rental",
                 "NO Cafeteria available",
@@ -44,7 +55,7 @@
             "schedule": [
                 "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
             ],
-            "history" : [
+            "history": [
                 "11 September 1998 - Announced",
                 "5 December 1998 - Groundbreaking",
                 "16 October 1999 - Dedicated"
@@ -61,9 +72,15 @@
         },
         {
             "name": "Philadelphia PA Temple",
-            "address": "21739 Vine St., Philadelphia, PA 19103, United States",
-            "phone":"215-398-3040",
-            "email":"None listed",
+            "address": [
+                "21739 Vine St., Philadelphia, PA 19103, United States"
+            ],
+            "phone": [
+                "215-398-3040"
+            ],
+            "email": [
+                "None listed"
+            ],
             "services": [
                 "Clothing rental available",
                 "No cafeteria available",
@@ -74,7 +91,7 @@
             "schedule": [
                 "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 215-398-3040"
             ],
-            "history" : [
+            "history": [
                 "4 October 2008 - Announced",
                 "17 September 2011 - Groundbreaking",
                 "18 September 2016 - Dedicated "
@@ -91,21 +108,27 @@
         },
         {
             "name": "Raleigh NC Temple",
-            "address": "574 Bryan Drive, Apex, North Carolina  27502, United States",
-            "phone":"None listed",
-            "email":"None listed",
+            "address": [
+                "574 Bryan Drive, Apex, North Carolina  27502, United States"
+            ],
+            "phone": [
+                "None listed"
+            ],
+            "email": [
+                "None listed"
+            ],
             "services": [
                 "NO Clothing Rental",
                 "NO Cafeteria available",
                 "NO Patron Housing available",
                 "NO Distribution Center nearby"
-                
+
             ],
             "quote": "We love and cherish our dedicated temples and the essential, exalting ordinances that are performed there. We thank heaven and the presiding Brethren that more and more of them are being built, giving more and more of us greater access to them. —Jeffrey R. Holland",
             "schedule": [
                 "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
             ],
-            "history" : [
+            "history": [
                 "Announcement:  3 September 1998",
                 "Groundbreaking and Site Dedication:  6 February 1999 by Loren C. Dunn",
                 "Public Open House:  3–11 December 1999",
