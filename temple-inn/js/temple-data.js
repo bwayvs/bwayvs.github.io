@@ -40,12 +40,14 @@ function showData(jsonObj){
         myImg.setAttribute('alt', temples[i].desc);
 
         myPara1.textContent = "Address: " ;
+
         let address = temples[i].address;
         for(let m = 0; m < address.length; m++) {
             let listItem = document.createElement('li');
             listItem.textContent = address[m];
             myList1.appendChild(listItem);
         }
+
         myPara2.textContent = "Phone Number : ";
        
         let phone = temples[i].phone;
@@ -54,6 +56,7 @@ function showData(jsonObj){
             listItem.textContent = phone[n];
             myList2.appendChild(listItem);
         }
+
         myPara3.textContent = "Email: " ;
        
         let email = temples[i].email;
@@ -62,6 +65,7 @@ function showData(jsonObj){
             listItem.textContent = email[p];
             myList3.appendChild(listItem);
         }
+
         myPara4.textContent = "Schedule: ";
 
         let schedule = temples[i].schedule;
@@ -70,6 +74,7 @@ function showData(jsonObj){
             listItem.textContent = schedule[q];
             myList4.appendChild(listItem);
         }
+
         myPara5.textContent = "Temple History: ";
 
         let history = temples[i].history;
@@ -114,8 +119,6 @@ function showData(jsonObj){
         myDiv.appendChild(myPara7);
         myDiv.appendChild(myList7);
        
-        
-
         section.appendChild(myDiv);
     }
 }
