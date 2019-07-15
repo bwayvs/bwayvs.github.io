@@ -24,6 +24,8 @@ function showData(jsonObj){
         let myPara3 = document.createElement('p');
         let myPara4 = document.createElement('p');
         let myPara5 = document.createElement('p');
+        let myPara6 = document.createElement('p');
+        let myPara7 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
     
@@ -44,14 +46,33 @@ function showData(jsonObj){
             myList.appendChild(listItem);
         }
 
-        myDiv.appendChild(myH3);
+        myPara6.textContent = "Services: ";
+
+        let services = temples[i].services;
+        for(let k = 0; k < services.length; k++) {
+            let listItem = document.createElement('li');
+            listItem.textContent = services[k];
+            myList.appendChild(listItem);
+        }
+
+        myPara7.textContent = "Temple Events: ";
+
+        let closures = temples[i].closures;
+        for(let l = 0; l < closures.length; l++) {
+            let listItem = document.createElement('li');
+            listItem.textContent = closures[l];
+            myList.appendChild(listItem);
+        }
+        
         myDiv.appendChild(myImg);
+        myDiv.appendChild(myH3);
         myDiv.appendChild(myPara1);
         myDiv.appendChild(myPara2);
         myDiv.appendChild(myPara3);
         myDiv.appendChild(myPara4);
         myDiv.appendChild(myPara5);
         myDiv.appendChild(myList);
+        
 
         section.appendChild(myDiv);
     }

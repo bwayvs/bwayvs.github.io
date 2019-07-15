@@ -43,6 +43,8 @@ h4 {
     text-align: center;
     padding-top: .25em;
     padding-bottom: .25rem;
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -325,8 +327,45 @@ form>div>input.submit {
 
 }
 /**Temple page**/
-section p, section ul {
-    padding: 1em;
+section p{
+    display: block;
+    padding: .5em .5em 0;
+    margin: auto;
+    text-align: center;
+    font-family: serif;
+    font-size: 1.25em;
+    width: 100%;
+}
+section ul {
+    padding: 0 .5em .5em;
+    margin: auto;
+    text-align: center;
+    font-family: serif;
+    font-size: 1.25em;   
+    width: 100%;
+}
+
+section li {
+    display: block;
+    margin: auto;    
+    line-height: 1.25;
+    list-style-type: circle;
+    list-style-position: inside;
+    width: 100%;
+}
+section img {
+    display: block;
+    margin: auto;
+    padding: .5em .5em 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+section div {
+    border-top: 1px solid #5e503f;
+    margin: 0 auto;
+    display: block;
+
 }
 
 /*Map and Directions*/
