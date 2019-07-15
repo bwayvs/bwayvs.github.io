@@ -12,7 +12,7 @@ request.onload = function() {
     showData(templeData);
 }
 
-function showData(jsonObt){
+function showData(jsonObj){
     let temples = jsonObj['temples'];
 
     for(let i = 0; i < temples.length; i++) {
@@ -20,13 +20,13 @@ function showData(jsonObt){
         let myH4 = document.createElement('h4');
         let myList = document.createElement('ul');
         let myPara1 = document.createElement('p');
-        let myPara1 = document.createElement('p');
         let myPara2 = document.createElement('p');
         let myPara3 = document.createElement('p');
         let myPara4 = document.createElement('p');
         let myPara5 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
+    
 
         myH3.textContent = temples[i].name;
         myImg.setAttribute('src', temples[i].photo);
@@ -37,12 +37,13 @@ function showData(jsonObt){
         myPara4.textContent = "Schedule: " + temples[i].schedule;
         myPara5.textContent = "History: ";
 
-        let history = temple[i].history;
-        for(let j = 0; j < history.length; j++){
+        let history = temples[i].history;
+        for(let j = 0; j < history.length; j++) {
             let listItem = document.createElement('li');
             listItem.textContent = history[j];
             myList.appendChild(listItem);
         }
+
         myDiv.appendChild(myH3);
         myDiv.appendChild(myImg);
         myDiv.appendChild(myPara1);
@@ -51,7 +52,7 @@ function showData(jsonObt){
         myDiv.appendChild(myPara4);
         myDiv.appendChild(myPara5);
         myDiv.appendChild(myList);
-        
+
         section.appendChild(myDiv);
     }
 }
