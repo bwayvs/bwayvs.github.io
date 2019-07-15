@@ -325,35 +325,8 @@ form>div>input.submit {
 
 }
 /**Temple page**/
-.slidepic{
-    width: 100%;
-}
-.slide-content {
-    max-width: 600px;
+section p, section ul {
     padding: 1em;
-    margin: 0 auto 1em;
-    width: 100%;
-}
-.slide-button {
-    padding: .5em;
-    background-color: #22333b;
-    color: #eae0d5;
-    font-size: 1em;
-    font-family: 'Assistant', sans-serif;
-    margin: .5em auto;
-    display: inline;
-    
-}
-.templeinfo {
-    margin: 0 auto 1em;
-}
-
-
-.slide-right {
-    float: right;
-}
-.slide-left {
-    float: left;
 }
 
 /*Map and Directions*/

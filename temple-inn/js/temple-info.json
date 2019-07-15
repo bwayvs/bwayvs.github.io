@@ -1,7 +1,7 @@
 {
     "temples": [
         {
-            "name": "DC",
+            "name": "Washington DC Temple",
             "address": "9900 Stoneybrook Drive, Kensington, Maryland 20895-3199, United States",
             "phone":"301-588-0650",
             "email":"None listed",
@@ -29,7 +29,7 @@
             "desc": "DC Temple"            
         },
         {
-            "name": "Columbia",
+            "name": "Columbia SC Temple",
             "address": "2905 Trotter Rd, Hopkins, SC 29061-9573, United States",
             "phone":"803-647-9472",
             "email":"None listed",
@@ -60,7 +60,7 @@
             "desc": "Columbia Temple"
         },
         {
-            "name": "Philadelphia",
+            "name": "Philadelphia PA Temple",
             "address": "21739 Vine St., Philadelphia, PA 19103, United States",
             "phone":"215-398-3040",
             "email":"None listed",
@@ -90,7 +90,7 @@
             "desc": "Philadelphia Temple"
         },
         {
-            "name": "Raleigh",
+            "name": "Raleigh NC Temple",
             "address": "574 Bryan Drive, Apex, North Carolina  27502, United States",
             "phone":"None listed",
             "email":"None listed",
