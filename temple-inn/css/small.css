@@ -344,7 +344,11 @@ section ul {
     font-size: 1.25em;   
     width: 100%;
 }
+section {
+    display: block;
+    
 
+}
 section li {
     display: block;
     margin: auto;    
@@ -361,11 +365,10 @@ section img {
     max-width: 600px;
 }
 
-section div {
+section > div {
     border-top: 1px solid #5e503f;
     margin: 0 auto;
     display: block;
-
 }
 
 /*Map and Directions*/

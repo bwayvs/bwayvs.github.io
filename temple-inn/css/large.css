@@ -156,7 +156,7 @@
 
     }
 
-    .templeinfo li, .amenitydiv ul li {
+     .amenitydiv ul li {
         text-align: center;
         list-style-type: none;
     }
@@ -165,5 +165,7 @@
     .asideaddressdiv {
         display: inline-block;
     }
+    /*Temple page*/
+    
 
 }

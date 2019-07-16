@@ -118,7 +118,8 @@ function showData(jsonObj){
         myDiv.appendChild(myList6);
         myDiv.appendChild(myPara7);
         myDiv.appendChild(myList7);
-       
+        
         section.appendChild(myDiv);
+        myDiv.setAttribute('class', mySlides)
     }
 }
