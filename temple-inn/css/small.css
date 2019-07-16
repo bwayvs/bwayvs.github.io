@@ -329,20 +329,22 @@ form>div>input.submit {
 /**Temple page**/
 section p{
     display: block;
-    padding: .5em .5em 0;
+    padding: .25em .5em 0;
     margin: auto;
     text-align: center;
     font-family: serif;
     font-size: 1.25em;
     width: 100%;
+    max-width: 600px;
 }
 section ul {
-    padding: 0 .5em .5em;
+    padding: 0 .5em .25em;
     margin: auto;
     text-align: center;
     font-family: serif;
     font-size: 1.25em;   
     width: 100%;
+    max-width: 600px;
 }
 section {
     display: block;
@@ -356,6 +358,7 @@ section li {
     list-style-type: circle;
     list-style-position: inside;
     width: 100%;
+    max-width: 600px;
 }
 section img {
     display: block;
@@ -363,14 +366,49 @@ section img {
     padding: 1em .5em 0;
     width: 100%;
     max-width: 600px;
+    
 }
 
 section > div {
     border-top: 1px solid #5e503f;
     margin: 0 auto;
     display: block;
+   
 }
 
+section {
+    display: grid;
+    grid-gap: 1em;
+}
+section> div:first-child{
+    grid-row-start: 1;
+    grid-row-start: 2;
+}
+section> div:nth-child(2){
+    grid-row-start: 2;
+    grid-row-start: 3;
+}
+section> div:nth-child(3){
+    grid-row-start: 3;
+    grid-row-start: 4;
+}
+section> div:nth-child(4){
+    grid-row-start: 4;
+    grid-row-start: 5;
+}
+.slidebtn{
+    padding:.5em;
+    background-color: #22333b;
+    color: #eae0d5;
+    font-family: 'Assistant', sans-serif;
+    
+}
+.slidebtnleft {
+    float: left;
+}
+.slidebtnright{
+    float: right;
+}
 /*Map and Directions*/
 aside {
 

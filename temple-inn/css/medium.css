@@ -1,17 +1,18 @@
-
-
 @media screen and (min-width: 550px) and (max-width: 850px) {
+
     /*Header*/
-    .address ul{
+    .address ul {
         display: inline-block;
     }
-    .maindiv{
-        display:grid;
+
+    .maindiv {
+        display: grid;
         grid-gap: 10px;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
-    
+
     }
+
     .calltoaction {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -23,14 +24,16 @@
 
     .welcomearticlediv p {
         padding-top: 0;
-        padding-bottom: 1em;       
+        padding-bottom: 1em;
     }
+
     .welcomeimgdiv figure {
         margin-left: 0;
     }
+
     .welcomeimgdiv {
-        grid-row-start:1;
-        grid-row-end:2;
+        grid-row-start: 1;
+        grid-row-end: 2;
         grid-column-start: 2;
         grid-column-end: 3;
         display: inline;
@@ -38,21 +41,23 @@
         padding: 0 1em;
 
     }
-    .welcomearticlediv{
-        grid-row-start:2;
-        grid-row-end:3;
+
+    .welcomearticlediv {
+        grid-row-start: 2;
+        grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 3;
         margin: auto 0;
         padding: 0 1em;
-        
+
     }
+
     .welcomeimgdiv img {
         display: block;
         width: 100%;
     }
 
-    .templeinfo li, .amenitydiv ul li{
+    .amenitydiv ul li {
         text-align: center;
         list-style-type: none;
     }

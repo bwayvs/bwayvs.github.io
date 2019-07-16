@@ -2,7 +2,8 @@
     "temples": [{
             "name": "Washington DC Temple",
             "address": [
-                "9900 Stoneybrook Drive, Kensington, Maryland 20895-3199, United States"
+                "9900 Stoneybrook Drive",
+                "Kensington, Maryland 20895-3199"
             ],
             "phone": [
                 "301-588-0650"
@@ -36,7 +37,8 @@
         {
             "name": "Columbia SC Temple",
             "address": [
-                "2905 Trotter Rd, Hopkins, SC 29061-9573, United States"
+                "2905 Trotter Rd", 
+                "Hopkins, SC 29061-9573"
             ],
             "phone": [
                 "803-647-9472"
@@ -53,7 +55,8 @@
             ],
             "quote": "None listed",
             "schedule": [
-                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
+                "To schedule living ordinances (such as own endowment or sealing)", 
+                "or group visits, please call: (1) 803-647-9472"
             ],
             "history": [
                 "11 September 1998 - Announced",
@@ -73,7 +76,8 @@
         {
             "name": "Philadelphia PA Temple",
             "address": [
-                "21739 Vine St., Philadelphia, PA 19103, United States"
+                "21739 Vine St.", 
+                "Philadelphia, PA 19103"
             ],
             "phone": [
                 "215-398-3040"
@@ -89,7 +93,8 @@
             ],
             "quote": "None listed",
             "schedule": [
-                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 215-398-3040"
+                "To schedule living ordinances (such as own endowment or sealing)", 
+                "or group visits, please call: (1) 803-647-9472"
             ],
             "history": [
                 "4 October 2008 - Announced",
@@ -109,7 +114,8 @@
         {
             "name": "Raleigh NC Temple",
             "address": [
-                "574 Bryan Drive, Apex, North Carolina  27502, United States"
+                "574 Bryan Drive", 
+                "Apex, North Carolina 27502"
             ],
             "phone": [
                 "None listed"
@@ -126,7 +132,8 @@
             ],
             "quote": "We love and cherish our dedicated temples and the essential, exalting ordinances that are performed there. We thank heaven and the presiding Brethren that more and more of them are being built, giving more and more of us greater access to them. —Jeffrey R. Holland",
             "schedule": [
-                "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472"
+                "To schedule living ordinances (such as own endowment or sealing)", 
+                "or group visits, please call: (1) 803-647-9472"
             ],
             "history": [
                 "Announcement:  3 September 1998",

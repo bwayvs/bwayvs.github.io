@@ -2,20 +2,21 @@ let section = document.querySelector('section');
 
 const requestURL = "https://bwayvs.github.io/temple-inn/js/temple-info.json";
 const request = new XMLHttpRequest();
-request.open ('GET', requestURL);
-request.responseType= 'json';
+request.open('GET', requestURL);
+request.responseType = 'json';
 request.send();
 ///*****************************************///
 
-request.onload = function() {
+request.onload = function () {
     let templeData = request.response;
     showData(templeData);
+
 }
 
-function showData(jsonObj){
+function showData(jsonObj) {
     let temples = jsonObj['temples'];
 
-    for(let i = 0; i < temples.length; i++) {
+    for (let i = 0; i < temples.length; i++) {
         let myH3 = document.createElement('h3');
         let myList1 = document.createElement('ul');
         let myList2 = document.createElement('ul');
@@ -33,34 +34,34 @@ function showData(jsonObj){
         let myPara7 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
-    
+
 
         myH3.textContent = temples[i].name;
         myImg.setAttribute('src', temples[i].photo);
         myImg.setAttribute('alt', temples[i].desc);
 
-        myPara1.textContent = "Address: " ;
+        myPara1.textContent = "Address: ";
 
         let address = temples[i].address;
-        for(let m = 0; m < address.length; m++) {
+        for (let m = 0; m < address.length; m++) {
             let listItem = document.createElement('li');
             listItem.textContent = address[m];
             myList1.appendChild(listItem);
         }
 
         myPara2.textContent = "Phone Number : ";
-       
+
         let phone = temples[i].phone;
-        for(let n = 0; n < phone.length; n++) {
+        for (let n = 0; n < phone.length; n++) {
             let listItem = document.createElement('li');
             listItem.textContent = phone[n];
             myList2.appendChild(listItem);
         }
 
-        myPara3.textContent = "Email: " ;
-       
+        myPara3.textContent = "Email: ";
+
         let email = temples[i].email;
-        for(let p = 0; p < email.length; p++) {
+        for (let p = 0; p < email.length; p++) {
             let listItem = document.createElement('li');
             listItem.textContent = email[p];
             myList3.appendChild(listItem);
@@ -69,7 +70,7 @@ function showData(jsonObj){
         myPara4.textContent = "Schedule: ";
 
         let schedule = temples[i].schedule;
-        for(let q = 0; q < schedule.length; q++) {
+        for (let q = 0; q < schedule.length; q++) {
             let listItem = document.createElement('li');
             listItem.textContent = schedule[q];
             myList4.appendChild(listItem);
@@ -78,7 +79,7 @@ function showData(jsonObj){
         myPara5.textContent = "Temple History: ";
 
         let history = temples[i].history;
-        for(let j = 0; j < history.length; j++) {
+        for (let j = 0; j < history.length; j++) {
             let listItem = document.createElement('li');
             listItem.textContent = history[j];
             myList5.appendChild(listItem);
@@ -87,7 +88,7 @@ function showData(jsonObj){
         myPara6.textContent = "Services: ";
 
         let services = temples[i].services;
-        for(let k = 0; k < services.length; k++) {
+        for (let k = 0; k < services.length; k++) {
             let listItem = document.createElement('li');
             listItem.textContent = services[k];
             myList6.appendChild(listItem);
@@ -96,12 +97,12 @@ function showData(jsonObj){
         myPara7.textContent = "Temple Events: ";
 
         let closures = temples[i].closures;
-        for(let l = 0; l < closures.length; l++) {
+        for (let l = 0; l < closures.length; l++) {
             let listItem = document.createElement('li');
             listItem.textContent = closures[l];
             myList7.appendChild(listItem);
         }
-        
+
         myDiv.appendChild(myImg);
         myDiv.appendChild(myH3);
         myDiv.appendChild(myPara1);
@@ -118,8 +119,9 @@ function showData(jsonObj){
         myDiv.appendChild(myList6);
         myDiv.appendChild(myPara7);
         myDiv.appendChild(myList7);
-        
+
+
         section.appendChild(myDiv);
-        myDiv.setAttribute('class', mySlides)
+        myDiv.setAttribute('class', 'mySlides');
     }
 }
