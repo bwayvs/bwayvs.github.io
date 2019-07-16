@@ -316,7 +316,7 @@ form>div>input.submit {
     padding: 0 1em;
 }
 
-.templeinfo li, .amenitydiv ul li {
+.amenitydiv ul li {
     list-style-type: circle;
     list-style-position: inside;
     font-size: 1em;
@@ -331,20 +331,23 @@ section p{
     display: block;
     padding: .25em .5em 0;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-family: serif;
     font-size: 1.25em;
     width: 100%;
     max-width: 600px;
+    font-weight: bold;
 }
 section ul {
     padding: 0 .5em .25em;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-family: serif;
     font-size: 1.25em;   
     width: 100%;
     max-width: 600px;
+    list-style-type: circle;
+    list-style-position: inside;
 }
 section {
     display: block;

@@ -23,16 +23,18 @@
                 "Temple closed for renovations."
             ],
             "history": [
-                "Announcement:  15 November 1968",
-                "Groundbreaking and Site Dedication:  7 December 1968 by Hugh B. Brown",
-                "Public Open House:  17 September–2 November 1974",
-                "Dedication:  19–22 November 1974 by Spencer W. Kimball"
+                "Announcement:  15 Nov 1968",
+                "Groundbreaking and Site Dedication:  7 Dec 1968 by Hugh B. Brown",
+                "Public Open House:  17 Sept–2 Nov 1974",
+                "Dedication:  19–22 Nov 1974 by Spencer W. Kimball"
             ],
             "closures": [
                 "Temple Closure: Temple closed for renovations."
             ],
             "photo": "images/dc-temple2-600w.jpg",
-            "desc": "DC Temple"
+            "desc": "DC Temple",
+            "cityid": "4366164",
+            "className" :"washingtondc"
         },
         {
             "name": "Columbia SC Temple",
@@ -59,19 +61,21 @@
                 "or group visits, please call: 803-647-9472"
             ],
             "history": [
-                "11 September 1998 - Announced",
-                "5 December 1998 - Groundbreaking",
-                "16 October 1999 - Dedicated"
+                "11 Sept 1998 - Announced",
+                "5 Dec 1998 - Groundbreaking",
+                "16 Oct 1999 - Dedicated"
             ],
             "closures": [
-                "Temple Closure: Saturday, 5 October 2019",
-                "Temple Closure: Wednesday, 27 November 2019 (Limited Hours)",
-                "Temple Closure: Thursday, 28 November 2019",
-                "Temple Closure: Tuesday, 24 December 2019 - Thursday, 26 December 2019",
-                "Temple Closure: Tuesday, 31 December 2019 - Monday, 13 January 2020"
+                "Temple Closure: 5 Oct 2019",
+                "Temple Closure: 27 Nov 2019 (Limited Hours)",
+                "Temple Closure: 28 Nov 2019",
+                "Temple Closure: 24-26 Dec 2019",
+                "Temple Closure: 31 Dec 2019 - 13 Jan 2020"
             ],
             "photo": "images/columbia-temple-600w.jpg",
-            "desc": "Columbia Temple"
+            "desc": "Columbia Temple",
+            "cityid" : "4575352",
+            "className": "columbia"
         },
         {
             "name": "Philadelphia PA Temple",
@@ -97,19 +101,22 @@
                 "or group visits, please call: 803-647-9472"
             ],
             "history": [
-                "4 October 2008 - Announced",
-                "17 September 2011 - Groundbreaking",
-                "18 September 2016 - Dedicated "
+                "4 Oct 2008 - Announced",
+                "17 Sept 2011 - Groundbreaking",
+                "18 Sept 2016 - Dedicated "
             ],
             "closures": [
-                "Temple Closure: Monday, 16 September 2019 - Monday, 30 September 2019",
-                "Temple Closure: Saturday, 5 October 2019",
-                "Temple Closure: Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-                "Temple Closure: Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-                "Temple Closure: Tuesday, 31 December 2019"
+                "Temple Closure: 16-30 Sept 2019",
+                "Temple Closure: 5 Oct 2019",
+                "Temple Closure: 27-28 Nov 2019",
+                "Temple Closure: 24-25 Dec 2019",
+                "Temple Closure: 31 Dec 2019"
             ],
             "photo": "images/philadelphia-temple-600w-400h.jpg",
-            "desc": "Philadelphia Temple"
+            "desc": "Philadelphia Temple",
+            "cityid" : "4560349",
+            "className": "philly"
+
         },
         {
             "name": "Raleigh NC Temple",
@@ -136,20 +143,22 @@
                 "or group visits, please call: 803-647-9472"
             ],
             "history": [
-                "Announcement:  3 September 1998",
-                "Groundbreaking and Site Dedication:  6 February 1999 by Loren C. Dunn",
-                "Public Open House:  3–11 December 1999",
-                "Dedication:  18–19 December 1999 by Gordon B. Hinckley",
-                "Public Open House:  21–28 September 2019",
-                "Rededication:  13 October 2019 by M. Russell Ballard"
+                "Announcement:  3 Sept 1998",
+                "Groundbreaking and Site Dedication:  6 Feb 1999 by Loren C. Dunn",
+                "Public Open House:  3–11 Dec 1999",
+                "Dedication:  18–19 Dec 1999 by Gordon B. Hinckley",
+                "Public Open House:  21–28 Sep 2019",
+                "Rededication:  13 Oct 2019 by M. Russell Ballard"
             ],
             "closures": [
                 "Temple Closure: Temple closed for renovations.",
-                "Open House: Saturday 21 September 2019 - Saturday, 28 September 2019",
-                "Dedication: Sunday, 13 October 2019"
+                "Open House: 21-28 Sept 2019",
+                "Dedication: 13 Oct 2019"
             ],
             "photo": "images/raleigh-temple-600w.jpg",
-            "desc": "Raleigh Temple"
+            "desc": "Raleigh Temple",
+            "cityid" : "4487042",
+            "className": "raleigh"
         }
     ]
 }

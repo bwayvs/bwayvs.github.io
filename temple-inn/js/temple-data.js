@@ -10,8 +10,9 @@ request.send();
 request.onload = function () {
     let templeData = request.response;
     showData(templeData);
-
 }
+
+
 
 function showData(jsonObj) {
     let temples = jsonObj['temples'];
@@ -34,6 +35,9 @@ function showData(jsonObj) {
         let myPara7 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
+        let myButton1 = document.createElement('button')
+        let myButton2 = document.createElement('button')
+
 
 
         myH3.textContent = temples[i].name;
@@ -103,6 +107,39 @@ function showData(jsonObj) {
             myList7.appendChild(listItem);
         }
 
+        /*Create Slide
+        let slideIndex = 1;
+        showDivs(slideIndex);
+
+        /*Slide Buttons
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            let r;
+            let x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (r = 0; r < x.length; r++) {
+                x[r].style.display = "none";
+            }
+           x[slideIndex - 1].style.display = "block";***Why does this show error each time?
+            myButton1.setAttribute('class', 'slidebtn prevbtn');
+            myButton1.setAttribute('onclick', "plusDivs(-1)");
+
+            myButton2.setAttribute('class', 'slidebtn nextbtn');
+            myButton2.setAttribute('onclick', "plusDivs(+1)");
+         /*End Slide Function*/
+
+
+        /*myDiv.appendChild(myButton1);
+        myDiv.appendChild(myButton2);*/
+
         myDiv.appendChild(myImg);
         myDiv.appendChild(myH3);
         myDiv.appendChild(myPara1);
@@ -120,8 +157,8 @@ function showData(jsonObj) {
         myDiv.appendChild(myPara7);
         myDiv.appendChild(myList7);
 
-
         section.appendChild(myDiv);
-        myDiv.setAttribute('class', 'mySlides');
+
+
     }
 }
