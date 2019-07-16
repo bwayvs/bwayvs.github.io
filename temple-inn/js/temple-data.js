@@ -35,8 +35,8 @@ function showData(jsonObj) {
         let myPara7 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
-        let myButton1 = document.createElement('button')
-        let myButton2 = document.createElement('button')
+        //let myButton1 = document.createElement('button')
+        //let myButton2 = document.createElement('button')
 
 
 
