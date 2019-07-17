@@ -446,6 +446,11 @@ iframe {
 }
 
 /*Reservations Page*/
+fieldset {
+    display: block;
+    margin: auto;
+    border-collapse: collapse;
+}
 form label.top {
     display: block;
     padding-top: 1rem;

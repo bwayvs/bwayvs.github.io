@@ -26,6 +26,7 @@ function showData(jsonObj) {
         let myList5 = document.createElement('ul');
         let myList6 = document.createElement('ul');
         let myList7 = document.createElement('ul');
+        let myPara0 = document.createElement('p');
         let myPara1 = document.createElement('p');
         let myPara2 = document.createElement('p');
         let myPara3 = document.createElement('p');
@@ -43,6 +44,9 @@ function showData(jsonObj) {
         myH3.textContent = temples[i].name;
         myImg.setAttribute('src', temples[i].photo);
         myImg.setAttribute('alt', temples[i].desc);
+
+        
+        myPara0.setAttribute('id', 't' + temples[i].cityid);
 
         myPara1.textContent = "Address: ";
 
@@ -142,6 +146,7 @@ function showData(jsonObj) {
 
         myDiv.appendChild(myImg);
         myDiv.appendChild(myH3);
+        myDiv.appendChild(myPara0);
         myDiv.appendChild(myPara1);
         myDiv.appendChild(myList1);
         myDiv.appendChild(myPara2);

@@ -11,7 +11,7 @@ let requestnew = new XMLHttpRequest();
     requestnew.onreadystatechange = function(){
         if(requestnew.readyState === XMLHttpRequest.DONE && requestnew.status ===200) {
             let data = JSON.parse(requestnew.responseText);
-            document.createElement('p').textContent = "Temperature: " + data.main.temp.toFixed() + '/xB0';
+           document.getElementById(index[t]).innerHTML = "Temperature: " + data.main.temp.toFixed() + '&deg;';
             resultArr.push(data.main.temp.toFixed());
             loop(t+1, length, resultArr);
         }
