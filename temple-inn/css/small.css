@@ -376,40 +376,24 @@ section > div {
     border-top: 1px solid #5e503f;
     margin: 0 auto;
     display: block;
+    margin-bottom: 1em;
    
 }
 
-section {
-    display: grid;
-    grid-gap: 1em;
-}
-section> div:first-child{
-    grid-row-start: 1;
-    grid-row-start: 2;
-}
-section> div:nth-child(2){
-    grid-row-start: 2;
-    grid-row-start: 3;
-}
-section> div:nth-child(3){
-    grid-row-start: 3;
-    grid-row-start: 4;
-}
-section> div:nth-child(4){
-    grid-row-start: 4;
-    grid-row-start: 5;
-}
+
 .slidebtn{
+    display: inline-block;
     padding:.5em;
     background-color: #22333b;
     color: #eae0d5;
     font-family: 'Assistant', sans-serif;
+    margin: 1em;
     
 }
-.slidebtnleft {
+.prevbtn {
     float: left;
 }
-.slidebtnright{
+.nextbtn{
     float: right;
 }
 /*Map and Directions*/
@@ -442,6 +426,7 @@ aside div {
 
 iframe {
     padding: 2em;
+    width: 100%;
 
 }
 

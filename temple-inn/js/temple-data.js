@@ -36,8 +36,8 @@ function showData(jsonObj) {
         let myPara7 = document.createElement('p');
         let myImg = document.createElement('img');
         let myDiv = document.createElement('div');
-        //let myButton1 = document.createElement('button')
-        //let myButton2 = document.createElement('button')
+        let myButton1 = document.createElement('button')
+        let myButton2 = document.createElement('button')
 
 
 
@@ -45,8 +45,8 @@ function showData(jsonObj) {
         myImg.setAttribute('src', temples[i].photo);
         myImg.setAttribute('alt', temples[i].desc);
 
-        
-        myPara0.setAttribute('id', 't' + temples[i].cityid);
+
+        myPara0.setAttribute('id', temples[i].cityid);
 
         myPara1.textContent = "Address: ";
 
@@ -110,12 +110,20 @@ function showData(jsonObj) {
             listItem.textContent = closures[l];
             myList7.appendChild(listItem);
         }
+        myButton1.setAttribute('class', 'slidebtn prevbtn');
+        myButton1.textContent = '< Previous'
 
-        /*Create Slide
+        myButton2.setAttribute('class', 'slidebtn nextbtn');
+        myButton2.textContent = 'Next >';
+        section.appendChild(myDiv);
+
+        myDiv.setAttribute('class', "mySlides")
+        
+        //Create Slide
         let slideIndex = 1;
         showDivs(slideIndex);
 
-        /*Slide Buttons
+        //Slide Buttons
         function plusDivs(n) {
             showDivs(slideIndex += n);
         }
@@ -132,17 +140,17 @@ function showData(jsonObj) {
             for (r = 0; r < x.length; r++) {
                 x[r].style.display = "none";
             }
-           x[slideIndex - 1].style.display = "block";***Why does this show error each time?
-            myButton1.setAttribute('class', 'slidebtn prevbtn');
-            myButton1.setAttribute('onclick', "plusDivs(-1)");
+            x[slideIndex - 1].style.display = "block";
+           
+            myButton1.onclick = function() {plusDivs(-1);}
+            
+            myButton2.onclick = function() {plusDivs(+1);};
+        }
+        
 
-            myButton2.setAttribute('class', 'slidebtn nextbtn');
-            myButton2.setAttribute('onclick', "plusDivs(+1)");
-         /*End Slide Function*/
-
-
-        /*myDiv.appendChild(myButton1);
-        myDiv.appendChild(myButton2);*/
+       
+        myDiv.appendChild(myButton1);
+        myDiv.appendChild(myButton2);
 
         myDiv.appendChild(myImg);
         myDiv.appendChild(myH3);
@@ -162,8 +170,8 @@ function showData(jsonObj) {
         myDiv.appendChild(myPara7);
         myDiv.appendChild(myList7);
 
-        section.appendChild(myDiv);
-
+       
+        
 
     }
 }
