@@ -27,7 +27,7 @@
                     <li><a title="Receptions" href="receptions.html">Receptions</a></li>
                     <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
                             Missionary</a></li>
-                </ul> 
+                </ul>
             </li>
             <li><a class="inactive" title="Contact" href="contact.html">Contact Us</a></li>
         </ul>
@@ -44,7 +44,55 @@
         </div>
     </header>
     <main>
-            <h2>Reservations</h2>
+        <h2>Reservations</h2>
+        <form method="get" action="thanks.html">
+
+            <fieldset>
+
+                <legend>Reserve A Room</legend>
+                <label class="side">Check-In Date: <input type="date" id="checkin" name="trip-start" value=""></label>
+                <label class="side">Check-Out Date: <input type="date" id="checkout" name="trip-end" value=""></label>
+                <label class="top">Guests & Room:
+                    <select>
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="oneking">1 King Bed (1 - 2 Guests)</option>
+                        <option value="twoqueens">2 Queens Beds (2 - 4 Guests)</option>
+                    </select></label>
+                <label class="top">Temple Location:
+                    <select>
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="washingtondc">Washington DC</option>
+                        <option value="columbia">Columbia SC</option>
+                        <option value="philly">Philadelphia PA</option>
+                        <option value="raleigh">Raleigh NC</option>
+                    </select> </label>
+                </label>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5"
+                            maxlength="20" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5"
+                            maxlength="20" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                    <label class="top">Street Address*<input type="text" name="saddress" placeholder="123 Main Street"
+                            required></label>
+                    <label class="top">Suite/Apartment/Unit<input type="text" name="suite"
+                            placeholder="Suite 100"></label>
+                    <label class="top">City, State, Zip Code*<input type="text" name="city" required></label>
+
+                </fieldset>
+                <fieldset>
+                    <label class="top">Special Accomodations & Additional Information </br>
+                        <textarea name="comment" class="textarea"
+                            placeholder="Enter additional information here..."></textarea></label>
+                </fieldset>
+
+            </fieldset>
+            <input type="submit" class="submit" value="View Rates">
+        </form>
     </main>
     <aside>
         <div class="asideaddressdiv">

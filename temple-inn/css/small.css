@@ -445,6 +445,75 @@ iframe {
 
 }
 
+/*Reservations Page*/
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #22333b;
+    font-size: .8rem;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    margin: .5em;
+    font-weight: bold;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #22333b;
+    padding: .75rem;
+    color: #22333b;
+    width: 100%;
+    max-width: 20rem;
+    background-color:#fff;
+    margin: .25em;
+    line-height: 2.5em;
+}
+
+form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #22333b;
+    padding: .75rem;
+    color: #22333b;
+    width: 100%;
+    max-width: 20rem;
+    max-height: 40rem;
+    background-color:#fff;
+    margin: .25em;
+    line-height: 2.5em;
+}
+form label.side {
+    display: block;
+    padding: .75rem 0;
+    color: #22333b;
+    
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    margin: .5em;
+    font-weight: bold;
+}
+
+form label.side input,
+form label.side select {
+    line-height: 2.5em;
+    padding-left: 2.5%;
+    background-color:#fff;
+    color: #22333b;
+    max-width: 20rem;
+}
+form label.two input{
+    max-width: 3em;
+}
+
+form label.zip input{
+    max-width: 7em;
+}
+
+
 /*Footer*/
 footer {
     background-color: #5e503f;
