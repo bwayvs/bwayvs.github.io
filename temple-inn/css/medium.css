@@ -62,4 +62,22 @@
         list-style-type: none;
     }
 
+    /*Serives Page*/
+    .serviceimg img {
+        width: 100%;
+        box-shadow:0 0 5px #0a0908;
+    }
+    .recpic {
+        width:50%;
+        float: left;
+       
+    }
+    .misspic {
+        width: 50%;
+        float: right;
+       
+    }
+    .amdiv, .servdiv {
+        display: none;
+    }
 }

@@ -60,34 +60,42 @@ h2 {
 /*****Nav Menu*****/
 nav {
     background-color: #eae0d5;
-    font-size:1em;
-    font-weight: bold;
-}
+    font-size: 1.25em;
+    font-family: 'Assistant', sans-serif;
 
+}
+#active{
+    background-color: #5e503f;
+    color: #eae0d5 !important;
+}
 .navigation {
-    width: 960px;
+    max-width: 960px;
     text-align: left;
 }
-.navigation > li:first-child {
+
+.navigation>li:first-child {
     display: inline-block;
 }
 
-.navigation >li {
+.navigation>li {
     display: none;
 }
 
 .responsive li {
     display: block;
 }
-.navigation >li :hover {
+
+.navigation>li :hover {
     display: block;
     background-color: #dbbf9f;
 }
+
 #nav ul {
     position: relative;
 }
 
-#nav ul li a, visited {
+#nav ul li a,
+visited {
     color: #22333b;
     display: block;
     padding: 15px;
@@ -99,13 +107,16 @@ nav {
     color: #22333b;
     text-decoration: none;
 }
+
 #nav ul li :hover a {
     background-color: #dbbf9f
 }
+
 #nav ul li:hover ul {
     display: block;
 }
-#nav ul ul  {
+
+#nav ul ul {
     display: none;
     position: absolute;
     min-width: 200px;
@@ -113,17 +124,16 @@ nav {
     margin-left: 6em;
     margin-top: -48px;
 }
-#nav ul ul li a, visited {
+
+#nav ul ul li a,
+visited {
     background-color: #dbbf9f;
 }
+
 #nav ul ul li :hover {
-    background-color: #5e503f;
-    color: #eae0d5;
+    background-color: #b4946d;
+    color: #22333b;
 }
-
-
- /*STARTED HERE - CTRL + Z Once more*/
-
 
 /*****Header*****/
 header {
@@ -236,8 +246,9 @@ form legend {
     max-width: 12em;
     border-style: outset;
 }
+
 form .submitdiv {
-    width:100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     max-width: 211px;
@@ -304,8 +315,9 @@ form .submitdiv {
     line-height: 1.5;
 
 }
+
 /**Temple page**/
-section p{
+section p {
     display: block;
     padding: .25em .5em 0;
     margin: auto;
@@ -316,65 +328,148 @@ section p{
     max-width: 600px;
     font-weight: bold;
 }
+
 section ul {
     padding: 0 .5em .25em;
     margin: auto;
     text-align: left;
     font-family: serif;
-    font-size: 1.25em;   
+    font-size: 1.25em;
     width: 100%;
     max-width: 600px;
     list-style-type: circle;
     list-style-position: inside;
 }
+
 section {
     display: block;
-    
+
 
 }
+
 section li {
     display: block;
-    margin: auto;    
+    margin: auto;
     line-height: 1.25;
     list-style-type: circle;
     list-style-position: inside;
     width: 100%;
     max-width: 600px;
 }
+
 section img {
     display: block;
     margin: auto;
     padding: 1em .5em 0;
     width: 100%;
     max-width: 600px;
-    
+
 }
 
-section > div {
+section>div {
     border-top: 1px solid #5e503f;
     margin: 0 auto;
     display: block;
     margin-bottom: 1em;
-   
+
 }
 
 
 
-.slidebtn{
+.slidebtn {
     display: inline-block;
-    padding:.5em;
+    padding: .5em;
     background-color: #22333b;
-    color: #eae0d5;
+    color: #fff;
     font-family: 'Assistant', sans-serif;
     margin: 1em;
-    
+
 }
+
 .prevbtn {
     float: left;
 }
-.nextbtn{
+
+.nextbtn {
     float: right;
 }
+
+/*Services Page*/
+.services {
+    display: inline-block;
+   
+    width: 100%;
+    
+
+}
+
+.servicedesc {
+    width: 100%;
+}
+
+.servicedesc p {
+    text-align: justify;
+    margin: 0 1em;
+
+}
+
+.serviceimg {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.servamdiv {
+    width: 100%;
+}
+
+.amdiv {
+    width: 47%;
+    float: left;
+    padding: 0 1em;
+    border-right: 1px solid #22333b;
+    margin: 1em .5em 0 0;
+
+}
+
+.servdiv {
+    width: 47%;
+    float: right;
+    margin: 1em 0 0 .5em;
+}
+
+.servdiv ul,
+.amdiv ul {
+    width: 100%;
+}
+
+.servdiv ul li,
+.amdiv ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.serviceimg {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.recpic,
+.misspic {
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+
+}
+
+.recpic img,
+.misspic img {
+    width: 85%;
+    box-shadow: 0 0 5px #0a0908;
+}
+
 /*Map and Directions*/
 aside {
 
@@ -392,6 +487,7 @@ aside {
 aside div {
     margin-bottom: 1em;
 }
+
 .asideaddressdiv {
     display: none;
     margin-right: .5em;
@@ -407,9 +503,9 @@ iframe {
     padding: 2em;
     width: 100%;
     max-width: 300;
-    max-height:200; 
-    border: none; 
-    
+    max-height: 200;
+    border: none;
+
 }
 
 /*Reservations Page*/
@@ -421,13 +517,14 @@ form {
     display: inline-block;
     margin: auto;
 }
-fieldset{
+
+fieldset {
     display: flex;
     justify-items: center;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    
+
 }
 
 form label.top {
@@ -451,7 +548,7 @@ form label.top select {
     color: #22333b;
     width: 100%;
     max-width: 20rem;
-    background-color:#fff;
+    background-color: #fff;
     margin: .25em;
     line-height: 2.5em;
 }
@@ -466,15 +563,16 @@ form label.top textarea {
     width: 100%;
     max-width: 20rem;
     max-height: 40rem;
-    background-color:#fff;
+    background-color: #fff;
     margin: .25em;
     line-height: 2.5em;
 }
+
 form label.side {
     display: block;
     padding: .75rem 0;
     color: #22333b;
-    
+
     font-family: 'Assistant', sans-serif;
     font-size: 1rem;
     margin: .5em;
@@ -486,21 +584,23 @@ form label.side select {
     line-height: 2.5em;
     padding-left: 2.5%;
     border: 1px solid black;
-    background-color:#fff;
+    background-color: #fff;
     color: #22333b;
     max-width: 20rem;
     width: 100%;
 }
-form label.two input{
+
+form label.two input {
     max-width: 3em;
 }
 
-form label.zip input{
+form label.zip input {
     max-width: 7em;
 }
+
 .submit {
     display: inline-block;
-    padding:.5em;
+    padding: .5em;
     background-color: #22333b;
     color: #eae0d5;
     font-family: 'Assistant', sans-serif;
@@ -508,12 +608,14 @@ form label.zip input{
     width: 100%;
     max-width: 300px;
 }
+
 .resdiv {
     float: right;
     display: none;
     margin: 1em;
     width: 50%;
 }
+
 .resdiv img {
     width: 100%;
     max-width: 400px;
@@ -543,7 +645,14 @@ footer a {
 footer a:visited {
     color: #eae0d5;
 }
-
+@media screen and (max-width: 482px) {
+    .address div{
+        display: none
+    }
+    .address {
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 350px) {
     h1 {

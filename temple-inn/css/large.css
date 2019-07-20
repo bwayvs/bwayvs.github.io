@@ -109,7 +109,28 @@
         text-align: center;
         list-style-type: none;
     }
-
+    /*Services Page*/
+    .services {
+        display: grid;
+    }
+    .services h3 {
+        text-align: left;
+    }
+    .servicedesc {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 1em .5em 1em 1em;  
+    }
+    .serviceimg {
+        grid-column-start: 3;
+        grid-column-end: 4;       
+        margin: 1em 1em 1em .5em;
+    }
+    .serviceimg img {
+        width: 100%;
+        box-shadow:0 0 5px #0a0908;
+    }
+    
     /*Aside*/
     .asideaddressdiv {
         display: inline-block;
