@@ -6,17 +6,9 @@
     }
 
     /*Navigation Menu*/
-    nav {
-        margin: 0 auto;
-        font-size: .6em;
-        border: 1px #22333b solid;
-    }
-
     .navigation {
-        flex-flow: row nowrap;
-        margin-top: 2em;
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
 
     .navigation>li:first-child {
@@ -30,73 +22,27 @@
 
     .navigation li a {
         color: #22333b;
-        font-size: 1.5em;
+    
     }
-
+    #nav ul ul {
+        margin-left: 0;
+        margin-top:0;
+        
+    }
+    #nav ul ul :hover {
+        display: inline-block;
+    }
+    #nav ul ul :hover li {
+        display: inline-block;
+    }
+    #nav ul ul li a, visited {
+        display: inline-block;
+    }
     a.hamburger {
         display: none;
     }
 
-    nav > ul {
-        display: inline;
-    }
-
-    nav > li > a {
-        display: inline-block;
-        background-color: #eae0d5;
-    }
-
-    nav > li {
-        display: inline-block;
-        margin: 0;
-        background-color: #eae0d5;
-    }
-
-    .navigation  .active {
-        color: #eae0d5;
-        background-color: #5e503f;
-    }
-
-    .inactive {
-        background-color: #eae0d5;
-        color: #22333b;
-    }
-
-    /*Submenu*/
-    .arrow {
-        display: inline;
-    }
-    .navigation li.submenu li {
-        margin-top: 42.5px;
-        background-color: #dbbf9f;
-    }
-
-    .navigation li:hover .submenu {
-        display: block;
-        z-index: 100;
-        color: #22333b;
-        background-color: #dbbf9f;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-    }
-
-    .submenu li a {
-        display: flex;
-        width: 100%;
-        background-color: #dbbf9f;
-        margin: 0;
-        justify-content: center;
-        flex-flow: row nowrap;
-    }
-
-    ul .submenu li a:hover  {
-        background-color: #5e503f;
-        color: #eae0d5;
-        font-weight: normal;
-        width: 100%;
-        z-index: 100;
-    }
+   
 
     /*Main*/
 
@@ -128,7 +74,7 @@
 
     .welcomeimgdiv figure {
         margin: auto;
-
+        
     }
 
     .welcomeimgdiv {
@@ -137,6 +83,7 @@
         grid-row-start: 1;
         grid-row-end: 2;
         margin: auto;
+        
 
     }
 
@@ -153,6 +100,8 @@
 
         padding: 0;
         margin: auto;
+        min-width: 300px;
+
 
     }
 
@@ -165,36 +114,21 @@
     .asideaddressdiv {
         display: inline-block;
     }
-    /*Temple page*/
+    /*Reservations Page - Large View*/
+
+    .formdiv {
+        text-align: left;
+        margin-left: 1em;
+    }
     
-    /*section>div:first-child {
-        grid-row-start: 1;
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
+    .resdiv {
+        display: block;
+        float: right;
     }
-
-    section>div:nth-child(2) {
-        grid-row-start: 1;
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    section>div:nth-child(3) {
-        grid-row-start: 2;
-        grid-row-start: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    section>div:nth-child(4) {
-        grid-row-start: 2;
-        grid-row-start: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }*/
-
+   .resdiv img {
+       margin-bottom: 2em;
+   }
+   
    
 
 }

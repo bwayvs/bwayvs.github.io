@@ -59,99 +59,71 @@ h2 {
 
 /*****Nav Menu*****/
 nav {
-    text-align: center;
+    background-color: #eae0d5;
+    font-size:1em;
     font-weight: bold;
-    border: none !important;
-    width: 100%;
 }
 
 .navigation {
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;    
+    width: 960px;
+    text-align: left;
 }
-
 .navigation > li:first-child {
     display: inline-block;
-
 }
 
-.navigation > li {
+.navigation >li {
     display: none;
-    width: 100%;
-    position: relative;
-    
-}
-
-.navigation > li a {
-    display: flex;
-    color: rgb(20, 39, 48);
-    background-color: #eae0d5;
-    padding: .75rem;
-    text-decoration: none;
-    font-family: 'Assistant', sans-serif;
-    font-size: 1em;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.navigation > li > a:hover {
-    color: #22333b;
-    background-color: #dbbf9f;
-    font-weight: 700;
 }
 
 .responsive li {
     display: block;
 }
-
-.navigation > li a.active {
-    background-color: #5e503f;
-    color: #eae0d5;
-    font-weight: normal;
-}
-
-/**Submenu**/
-.arrow {
-    display: none;
-    width: 10px;
-    margin: 0;
-}
-ul.submenu {
-    position:absolute;
-    display: none;
-   
-}
-
-.navigation li.submenu li {
-    margin-top: 42.5px;
+.navigation >li :hover {
+    display: block;
     background-color: #dbbf9f;
 }
+#nav ul {
+    position: relative;
+}
 
-.navigation li :hover .submenu {
-    display: block;
-    margin-left: 100px;
-    z-index: 100;
-    margin-top: -42px;
+#nav ul li a, visited {
     color: #22333b;
-    background-color: #dbbf9f;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+
 }
 
-.submenu li a {
-    display: block;
-    width: 100%;
-    background-color: #dbbf9f;
-    margin: 0;
-    z-index: 100;
+#nav ul li a :hover {
+    color: #22333b;
+    text-decoration: none;
 }
-ul.submenu li a :hover {
+#nav ul li :hover a {
+    background-color: #dbbf9f
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul  {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: #dbbf9f;
+    margin-left: 6em;
+    margin-top: -48px;
+}
+#nav ul ul li a, visited {
+    background-color: #dbbf9f;
+}
+#nav ul ul li :hover {
     background-color: #5e503f;
     color: #eae0d5;
-    font-weight: normal;
 }
+
+
+ /*STARTED HERE - CTRL + Z Once more*/
+
 
 /*****Header*****/
 header {
@@ -224,11 +196,11 @@ form legend {
     color: #22333b;
     text-align: center;
     margin: .25em 0;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0;
 
 }
 
-form label {
+.homeform form label {
     display: block;
     padding-bottom: 1rem;
     color: #22333b;
@@ -238,8 +210,8 @@ form label {
     font-weight: bold;
 }
 
-form label input,
-form select {
+.homeform form label input,
+.homeform form select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -252,7 +224,7 @@ form select {
     line-height: 2.5em;
 }
 
-form>div>input.submit {
+.homeform form>div>input.submit {
     display: block;
     width: 100%;
     border: none;
@@ -261,9 +233,15 @@ form>div>input.submit {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 auto 1em;
-    max-width: 15em;
+    max-width: 12em;
     border-style: outset;
-
+}
+form .submitdiv {
+    width:100%;
+    padding: 0;
+    margin: 0;
+    max-width: 211px;
+    display: inline-block;
 }
 
 /*Welcome*/
@@ -381,6 +359,7 @@ section > div {
 }
 
 
+
 .slidebtn{
     display: inline-block;
     padding:.5em;
@@ -427,15 +406,30 @@ aside div {
 iframe {
     padding: 2em;
     width: 100%;
-
+    max-width: 300;
+    max-height:200; 
+    border: none; 
+    
 }
 
 /*Reservations Page*/
-fieldset {
-    display: block;
-    margin: auto;
-    border-collapse: collapse;
+.formdiv {
+    text-align: center;
 }
+
+form {
+    display: inline-block;
+    margin: auto;
+}
+fieldset{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    
+}
+
 form label.top {
     display: block;
     padding-top: 1rem;
@@ -491,9 +485,11 @@ form label.side input,
 form label.side select {
     line-height: 2.5em;
     padding-left: 2.5%;
+    border: 1px solid black;
     background-color:#fff;
     color: #22333b;
     max-width: 20rem;
+    width: 100%;
 }
 form label.two input{
     max-width: 3em;
@@ -502,7 +498,27 @@ form label.two input{
 form label.zip input{
     max-width: 7em;
 }
-
+.submit {
+    display: inline-block;
+    padding:.5em;
+    background-color: #22333b;
+    color: #eae0d5;
+    font-family: 'Assistant', sans-serif;
+    margin: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+.resdiv {
+    float: right;
+    display: none;
+    margin: 1em;
+    width: 50%;
+}
+.resdiv img {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 1em;
+}
 
 /*Footer*/
 footer {

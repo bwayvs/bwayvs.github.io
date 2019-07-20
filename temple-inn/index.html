@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="navigation">
+    <nav id="nav">
+        <ul class="navigation" id="wrapper">
             <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a class="active" title="Home" href="index.html">Home</a></li>
             <li><a class="inactive" title="Temples" href="temples.html">Temples</a></li>
             <li><a class="inactive" title="Reservations" href="reservations.html">Reservations</a></li>
-            <li><a class="inactive" title="Services">Services <span class="arrow">&#9660;</span></a>
+            <li><a class="inactive" title="Services" href="services.html">Services</a>
                 <ul class="submenu">
                     <li><a title="Receptions" href="receptions.html">Receptions</a></li>
                     <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
@@ -45,22 +45,22 @@
         </div>
     </header>
     <main>
-        <h2>Welcome, Guests!</h2>
+        <h2>Welcome to Serentiy.</h2>
         <div class="maindiv">
             <div class="calltoaction">
                 <form method="get" action="thanks.html">
                     <fieldset>
                         <legend>Reserve A Room</legend>
-                        <label>Check-In Date: <input type="date" id="checkin" name="trip-start" value=""></label>
-                        <label>Check-Out Date: <input type="date" id="checkout" name="trip-end" value=""></label>
-                        <label>Guests & Room:
+                        <label class="side">Check-In Date: <input type="date" id="checkin" name="trip-start" value=""></label>
+                        <label class="side">Check-Out Date: <input type="date" id="checkout" name="trip-end" value=""></label>
+                        <label class="side">Guests & Room:
                             <select>
                                 <option value="" disabled selected>Please Select</option>
                                 <option value="oneking">1 King Bed (1 - 2 Guests)</option>
                                 <option value="twoqueens">2 Queens Beds (2 - 4 Guests)</option>
                             </select></label>
                     </fieldset>
-                    <div>
+                    <div class="submitdiv">
                         <input type="submit" class="submit" value="View Rates">
                     </div>
                 </form>

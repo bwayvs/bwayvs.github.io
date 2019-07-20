@@ -16,22 +16,22 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="navigation">
-            <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a class="inactive" title="Home" href="index.html">Home</a></li>
-            <li><a class="inactive" title="Temples" href="temples.html">Temples</a></li>
-            <li><a class="active" title="Reservations" href="reservations.html">Reservations</a></li>
-            <li><a class="inactive" title="Services">Services &#9660;</a>
-                <ul class="submenu">
-                    <li><a title="Receptions" href="receptions.html">Receptions</a></li>
-                    <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
-                            Missionary</a></li>
+        <nav id="nav">
+                <ul class="navigation" id="wrapper">
+                    <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="active" title="Home" href="index.html">Home</a></li>
+                    <li><a class="inactive" title="Temples" href="temples.html">Temples</a></li>
+                    <li><a class="inactive" title="Reservations" href="reservations.html">Reservations</a></li>
+                    <li><a class="inactive" title="Services" href="services.html">Services</a>
+                        <ul class="submenu">
+                            <li><a title="Receptions" href="receptions.html">Receptions</a></li>
+                            <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
+                                    Missionary</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="inactive" title="Contact" href="contact.html">Contact Us</a></li>
                 </ul>
-            </li>
-            <li><a class="inactive" title="Contact" href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+            </nav>
     <header>
         <div class="headerbox1">
             <img src="images/temple-logo-blue-square.png" alt="Temple Logo">
@@ -45,72 +45,88 @@
     </header>
     <main>
         <h2>Reservations</h2>
-        <form method="get" action="thanks.html">
+        <div class="formdiv">
+            <form method="get" action="thanks.html">
 
-            <fieldset>
+                <fieldset>
 
-                <legend>Reserve A Room</legend>
-                <label class="side">Check-In Date: <input type="date" id="checkin" name="trip-start" value=""></label>
-                <label class="side">Check-Out Date: <input type="date" id="checkout" name="trip-end" value=""></label>
-                <label class="top">Guests & Room:
-                    <select>
-                        <option value="" disabled selected>Please Select</option>
-                        <option value="oneking">1 King Bed (1 - 2 Guests)</option>
-                        <option value="twoqueens">2 Queens Beds (2 - 4 Guests)</option>
-                    </select></label>
-                <label class="top">Temple Location:
-                    <select>
-                        <option value="" disabled selected>Please Select</option>
-                        <option value="washingtondc">Washington DC</option>
-                        <option value="columbia">Columbia SC</option>
-                        <option value="philly">Philadelphia PA</option>
-                        <option value="raleigh">Raleigh NC</option>
-                    </select> </label>
-                </label>
+                    <legend>Reserve A Room</legend>
+                    <label class="side">Check-In: <input type="date" id="checkin" name="trip-start" value=""></label>
+                    <label class="side">Check-Out: <input type="date" id="checkout" name="trip-end" value=""></label>
+                    <label class="top">Guests & Room:
+                        <select>
+                            <option value="" disabled selected>Please Select &#9662;</option>
+                            <option value="oneking">1 King Bed (1 - 2 Guests)</option>
+                            <option value="twoqueens">2 Queens Beds (2 - 4 Guests)</option>
+                        </select></label>
+                    <label class="top">Temple Location:
+                        <select>
+                            <option value="" disabled selected>Please Select &#9662;</option>
+                            <option value="washingtondc">Washington DC</option>
+                            <option value="columbia">Columbia SC</option>
+                            <option value="philly">Philadelphia PA</option>
+                            <option value="raleigh">Raleigh NC</option>
+                        </select> </label>
+                    </label>
+                </fieldset>
 
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="5"
+                    
+                    <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]+" minlength="3"
                             maxlength="20" required></label>
-                    <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="5"
+                    <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]+" minlength="2"
                             maxlength="20" required></label>
                     <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
                             required></label>
-                    <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                    <label class="top">Phone Number*<input type="tel" name="phone" placeholder="(555) 555-5555" required></label>
                     <label class="top">Street Address*<input type="text" name="saddress" placeholder="123 Main Street"
                             required></label>
                     <label class="top">Suite/Apartment/Unit<input type="text" name="suite"
                             placeholder="Suite 100"></label>
-                    <label class="top">City, State, Zip Code*<input type="text" name="city" required></label>
+                    <label class="top">City, State, Zip Code*<input type="text" name="city" placeholder="Dallas, TX 75219" required></label>
 
-                </fieldset>
-                <fieldset>
                     <label class="top">Special Accomodations & Additional Information </br>
                         <textarea name="comment" class="textarea"
                             placeholder="Enter additional information here..."></textarea></label>
                 </fieldset>
+                <input type="submit" class="submit" value="View Rates">
 
-            </fieldset>
-            <input type="submit" class="submit" value="View Rates">
-        </form>
+
+            </form>
+
+            <div class="resdiv">
+                <img src="images/hotel-room-400w.jpg" alt="Hotel Room">
+                <img src="images/hotel-kingroom-400w.jpg" alt="Hotel Room">
+                <img src="images/hotel-bath-400w.jpg" alt="Hotel Bath">
+                <img src="images/hotel-lobby-400w.jpg" alt="Hotel Lobby">
+                <img src="images/hotel-pool-400w.jpg" alt="Hotel Pool">
+            </div>
+        </div>
     </main>
     <aside>
-        <div class="asideaddressdiv">
-            <h3>Temple Inn & Suites</h3>
-            <p>4800 Montgomery Ln #300</p>
-            <p>Bethesda, MD 20814 </p>
-            <p>(301) 657-2405</p>
-        </div>
-        <figure>
-            <img src="images/temple-logo-blue-square.png">
-        </figure>
-        <div class="directions">
-            <h3>Directions</h3>
-            <p>Follow I-495 to MD-187 S.</p>
-            <p>Take exit 36 to 1-495 N.</p>
-            <p>Follow MD-187 to Montgomery Ln.</p>
-        </div>
-    </aside>
+            <div class="asideaddressdiv">
+                <h3>Temple Inn & Suites</h3>
+                <ul>
+                    <li>4800 Montgomery Ln #300</li>
+                    <li>Bethesda, MD 20814 </li>
+                    <li>(301) 657-2405</li>
+                </ul>
+            </div>
+            <figure>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.8398876490464!2d-77.09636316544903!3d38.9834498873263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563107392011!5m2!1sen!2sus"
+                    width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </figure>
+            <div class="directions">
+                <h3>Directions</h3>
+                <ul>
+                    <li>Follow I-495 to MD-187 S.</li>
+                    <li>Take exit 36 to 1-495 N.</li>
+                    <li>Follow MD-187 to Montgomery Ln.</li>
+                </ul>
+            </div>
+        </aside>
     <footer>
         <p>
             &copy; 2019 Veronica Broadway Texas, U.S.A. | <a href="http://www.byui.edu/online">BYU-Idaho</a> |
@@ -121,3 +137,6 @@
 </body>
 
 </html>
+
+
+
