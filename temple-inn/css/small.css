@@ -240,7 +240,7 @@ form legend {
     line-height: 2.5em;
 }
 
-.homeform form>div>input.submit {
+.submitdiv .submit {
     display: block;
     width: 100%;
     border: none;
@@ -251,6 +251,7 @@ form legend {
     margin: 0 auto 1em;
     max-width: 12em;
     border-style: outset;
+
 }
 
 form .submitdiv {
@@ -259,6 +260,7 @@ form .submitdiv {
     margin: 0;
     max-width: 211px;
     display: inline-block;
+    
 }
 
 /*Welcome*/
@@ -337,6 +339,7 @@ section p {
     max-width: 600px;
     font-weight: bold;
     color: #131c20;
+    font-family: 'Cormorant Upright', serif;
 }
 
 section ul {
@@ -350,6 +353,7 @@ section ul {
     list-style-type: circle;
     list-style-position: inside;
     color: #131c20;
+    font-family: 'Assistant', sans-serif;
 }
 
 section {
@@ -371,6 +375,7 @@ section li {
     width: 100%;
     max-width: 600px;
     color: #131c20;
+    font-family: 'Assistant', sans-serif;
 }
 
 section img {
@@ -388,8 +393,8 @@ section>div {
     margin-right: auto;
     display: block;
     margin-bottom: 1em;
-    width: 80%;
-    
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
 
 }
 
@@ -612,13 +617,8 @@ form label.side select {
     max-width: 20rem;
     width: 100%;
 }
-
-form label.two input {
-    max-width: 3em;
-}
-
-form label.zip input {
-    max-width: 7em;
+form label.side select {
+    height: 44px;
 }
 
 .formdiv .submit {
@@ -630,6 +630,7 @@ form label.zip input {
     margin: 1em;
     width: 100%;
     max-width: 300px;
+    border-radius: 1rem;
 }
 
 .resdiv {
@@ -733,6 +734,7 @@ form label.zip input {
     font-family: 'Assistant', sans-serif;
     margin: 1em;
     max-width: 260px;
+    border-radius: 1rem;
 }
 
 .recaction input {
