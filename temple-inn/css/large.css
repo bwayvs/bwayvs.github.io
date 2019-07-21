@@ -55,8 +55,8 @@
     .maindiv {
         display: grid;
         grid-gap: 10px;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         border-collapse: collapse;
 
     }
@@ -66,7 +66,7 @@
         margin: auto;
         border: none;
         grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
     }
@@ -80,7 +80,6 @@
 
     .welcomeimgdiv figure {
         margin: auto;
-
     }
 
     .welcomeimgdiv {
@@ -89,31 +88,40 @@
         grid-row-start: 1;
         grid-row-end: 2;
         margin: auto;
-
-
     }
-
     .welcomearticlediv {
 
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
         margin: auto;
     }
 
     .welcomeimgdiv img {
 
         padding: 0;
+        width:80%;
+        max-width:
         margin: auto;
-        min-width: 300px;
-
-
+       
     }
-
+    .homeamdiv {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #22333b;
+    }
     .amenitydiv ul li {
         text-align: center;
         list-style-type: none;
+    }
+    .amdiv1, .amdiv2 {
+        border-top: none;
+    }
+    .homefigure {
+        display: flex;
     }
 
     /*Services Page*/

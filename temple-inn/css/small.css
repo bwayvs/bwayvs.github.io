@@ -184,11 +184,12 @@ header {
     font-size: 1em;
     display: grid;
     width: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto 1fr);
     grid-template-columns: auto;
 
 
 }
+
 
 /*Call To Action*/
 .calltoaction {
@@ -327,7 +328,18 @@ form .submitdiv {
     line-height: 1.5;
 
 }
-
+.homefigure {
+    display: none;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0 1em 1em;
+}
+.homefigure img {
+    margin: 0 1em 0 0;
+    width: 30%;
+    box-shadow: 0 0 10px #0a0908;
+}
 /**Temple page**/
 .templemain {
     text-align: center;
