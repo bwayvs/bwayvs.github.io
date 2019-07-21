@@ -665,7 +665,7 @@ form label.side select {
     width: 100%;
 }
 .rechero p {
-    padding: 1em 5% 0;
+    padding: 0 5% 0;
     text-align: justify;
 }
 .recpkgdiv {
@@ -726,7 +726,7 @@ form label.side select {
     min-height: 150px;
     width: 100%;
 }
-.recaction .submit {
+.recform .submit {
     display: inline-block;
     padding: .5em;
     background-color: #22333b;
@@ -750,6 +750,120 @@ form label.side select {
     padding-top: 0;
 }
 
+/*Full-Time Missionary Page*/
+.missroompics {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.missroompics img {
+    padding: 1em;
+    width: 100%;
+    
+}
+.amenitydiv p {
+    margin: 0 1em;
+    text-align: justify;
+}
+
+/*Full Time Mission Page*/
+.ftmisspara {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: .5em auto;
+    display: block;
+    width: 100%;
+}
+
+.ftmisspara p {
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding: 0 1em .5em;
+}
+.missreqinfo {
+    border: 1px solid #22333b;
+    border-radius: 10px;
+    min-width: 250px;
+    max-width: 400px;
+    margin: 0 auto 1em 1em;
+    display: inline-block;
+    border-collapse: collapse;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.missreqinfo fieldset {
+    border: none;
+    padding-bottom: 0;
+    
+}
+
+.missimgdiv {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: inline-block;
+    margin: .5em auto;
+    width: 100%;
+    display: block;
+    padding: 0 1em .5em;
+
+}
+
+.missimgdiv img {
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 0 5px #0a0908;
+    display: block;
+    margin: 0 auto 1em;
+
+}
+
+.missimgdiv figure {
+    width: 100%;
+}
+.mainmissdiv {
+    align-items: center;
+    background-color: #eae0d5;
+    color: #22333b;
+    font-size: 1em;
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(auto 1fr);
+    grid-template-columns: auto;
+    margin: 0 1em;
+}
+/*Contact Us Page*/
+.contactdiv {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.contactdiv iframe {
+    width: 100%;
+    min-height: 300px;
+    margin: 0;  
+}
+.contaddy {
+    color: #22333b;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.contactform {
+    margin: 1em;
+}
+.contactdiv .submit {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #22333b;
+    color: #eae0d5;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 auto 1em;
+    max-width: 12em;
+    border-style: outset;
+}
 /*Footer*/
 footer {
     background-color: #5e503f;
@@ -777,7 +891,71 @@ footer a:visited {
     .pkgdiv{
         width: 80%
     } 
+    .ftmisspara {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: .5em auto;
+        display: block;
+        width: 100%;
+    }
+    
+    .ftmisspara p {
+        display: none;
+        width: 100%;
+        margin: auto;
+        padding: 0 1em .5em;
+    }
+    .missreqinfo {
+        border: 1px solid #22333b;
+        border-radius: 10px;
+        min-width: 250px;
+        max-width: 400px;
+        margin: 0 auto 1em;
+        display: inline-block;
+        border-collapse: collapse;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .missreqinfo fieldset {
+        border: none;
+        padding-bottom: 0;
+    }
+    .missimgdiv {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: inline-block;
+        margin: .5em auto;
+        width: 100%;
+        display: block;
+        padding: 0 1em .5em;
+    
+    }
+    
+    .missimgdiv img {
+        max-width: 350px;
+        width: 100%;
+        box-shadow: 0 0 5px #0a0908;
+        display: block;
+        margin: 0 auto 1em;
+    
+    }
+    
+    .missimgdiv figure {
+        width: 100%;
+    }
+    .mainmissdiv {
+        align-items: center;
+        background-color: #eae0d5;
+        color: #22333b;
+        font-size: 1em;
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(auto 1fr);
+        grid-template-columns: auto;
+    }
 }
+
 @media screen and (max-width: 482px) {
     .address ul{
         display: none

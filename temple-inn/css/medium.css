@@ -112,12 +112,15 @@
         margin: 0 1em;
 
     }
+
     .flexrecimg {
         display: block;
     }
+
     .flexrecimg img {
-        width:100%;
+        width: 100%;
     }
+
     .flexrecimg p {
         text-align: justify;
         width: 100%;
@@ -125,4 +128,72 @@
         max-width: 368px;
     }
 
+    /*Full-Time Missionary Page*/
+    .missroompics {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .missroompics img {
+        margin: 1em;
+        width: 25%;
+        max-height: 290px;
+    }
+
+   
+    .ftmisspara p {
+        display: block;
+        
+        text-align: justify;
+       
+    }
+    .ftmisspara {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .missimgdiv {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+       
+    }
+    .missimgdiv img {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .missreqinfo{ 
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    /*Contact Us Page*/
+    .contactdiv {
+        display: grid;
+    }
+    .contactdiv iframe{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .contactdiv .contaddy {
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .contactdiv .contactform {
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:2;
+        grid-column-end:3;
+    }
 }

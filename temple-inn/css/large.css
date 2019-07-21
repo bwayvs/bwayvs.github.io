@@ -22,27 +22,33 @@
 
     .navigation li a {
         color: #22333b;
-    
+
     }
+
     #nav ul ul {
         margin-left: 0;
-        margin-top:0;
-        
+        margin-top: 0;
+
     }
+
     #nav ul ul :hover {
         display: inline-block;
     }
+
     #nav ul ul :hover li {
         display: inline-block;
     }
-    #nav ul ul li a, visited {
+
+    #nav ul ul li a,
+    visited {
         display: inline-block;
     }
+
     a.hamburger {
         display: none;
     }
 
-   
+
 
     /*Main*/
 
@@ -74,7 +80,7 @@
 
     .welcomeimgdiv figure {
         margin: auto;
-        
+
     }
 
     .welcomeimgdiv {
@@ -83,7 +89,7 @@
         grid-row-start: 1;
         grid-row-end: 2;
         margin: auto;
-        
+
 
     }
 
@@ -105,72 +111,83 @@
 
     }
 
-     .amenitydiv ul li {
+    .amenitydiv ul li {
         text-align: center;
         list-style-type: none;
     }
+
     /*Services Page*/
     .services {
         display: grid;
     }
+
     .services h3 {
         text-align: left;
     }
+
     .servicedesc {
         grid-column-start: 1;
         grid-column-end: 3;
-        margin: 1em .5em 1em 1em;  
+        margin: 1em .5em 1em 1em;
     }
+
     .serviceimg {
         grid-column-start: 3;
-        grid-column-end: 4;       
+        grid-column-end: 4;
         margin: 1em 1em 1em .5em;
     }
+
     .serviceimg img {
         width: 100%;
-        box-shadow:0 0 5px #0a0908;
+        box-shadow: 0 0 5px #0a0908;
     }
-    
+
     /*Aside*/
     .asideaddressdiv {
         display: inline-block;
     }
+
     /*Reservations Page - Large View*/
 
     .formdiv {
         text-align: left;
         margin-left: 1em;
     }
-    
+
     .resdiv {
         display: block;
         float: right;
     }
-   .resdiv img {
-       margin-bottom: 2em;
-   }
-   
+
+    .resdiv img {
+        margin-bottom: 2em;
+    }
+
     /*Receptions Page*/
     .pkgdiv {
         width: 27%;
-        
-    } 
-    .rechero  {
+
+    }
+
+    .rechero {
         display: inline-block;
         margin-top: 1em;
         text-align: justify;
         font-size: 1.15em;
         color: #0a0908;
     }
+
     .flexrecimg {
         display: flex;
     }
+
     .recaction {
         display: grid;
         text-align: center;
         padding: 1em;
-       
+
     }
+
     .recaction img {
         display: block;
         max-width: 400px;
@@ -178,12 +195,13 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-       
+
         margin: 0 1em;
     }
+
     .recaction form {
         display: block;
-       
+
         max-width: 350px;
         text-align: left;
         margin: 0 1em;
@@ -191,14 +209,17 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-       
+
     }
+
     .flexrecimg {
         display: block;
     }
+
     .flexrecimg img {
-        width:100%;
+        width: 100%;
     }
+
     .flexrecimg p {
         text-align: justify;
         width: 100%;
@@ -206,4 +227,71 @@
         max-width: 368px;
     }
 
+    /*Full-Time Missionary Page*/
+    .missroompics {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .missroompics img {
+        margin: 1em;
+      width: 100%;
+    }
+
+    .ftmisspara p {
+        display: block;
+    
+        text-align: justify;
+       
+    }
+    .ftmisspara {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .missimgdiv {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+       
+    }
+    .missimgdiv img {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .missreqinfo{ 
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+     /*Contact Us Page*/
+     .contactdiv {
+        display: grid;
+    }
+    .contactdiv iframe{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .contactdiv .contaddy {
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .contactdiv .contactform {
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:2;
+        grid-column-end:3;
+    }
 }

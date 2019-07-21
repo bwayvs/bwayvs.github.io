@@ -16,63 +16,91 @@
 </head>
 
 <body>
-        <nav id="nav">
-                <ul class="navigation" id="wrapper">
-                    <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a class="active" title="Home" href="index.html">Home</a></li>
-                    <li><a class="inactive" title="Temples" href="temples.html">Temples</a></li>
-                    <li><a class="inactive" title="Reservations" href="reservations.html">Reservations</a></li>
-                    <li><a class="inactive" title="Services" href="services.html">Services</a>
-                        <ul class="submenu">
-                            <li><a title="Receptions" href="receptions.html">Receptions</a></li>
-                            <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
-                                    Missionary</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="inactive" title="Contact" href="contact.html">Contact Us</a></li>
+    <nav id="nav">
+        <ul class="navigation" id="wrapper">
+            <li><a class="hamburger" href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="active" title="Home" href="index.html">Home</a></li>
+            <li><a class="inactive" title="Temples" href="temples.html">Temples</a></li>
+            <li><a class="inactive" title="Reservations" href="reservations.html">Reservations</a></li>
+            <li><a class="inactive" title="Services" href="services.html">Services</a>
+                <ul class="submenu">
+                    <li><a title="Receptions" href="receptions.html">Receptions</a></li>
+                    <li><a title="Full Time Missionary" href="full-time-missionary.html">Full Time
+                            Missionary</a></li>
                 </ul>
-            </nav>
+            </li>
+            <li><a class="inactive" title="Contact" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <header>
         <div class="headerbox1">
             <img src="images/temple-logo-blue-square.png" alt="Temple Logo">
         </div>
         <div class="address headerbox2">
-            <h1>Temple Inn & Suites</h1>
-            <p>4800 Montgomery Ln #300</p>
-            <p>Bethesda, MD 20814 </p>
-            <p>(301) 657-2405</p>
-        </div>
-    </header>
-    <main>
-            <h2>Contact Us</h2>
-    </main>
-    <aside>
-            <div class="asideaddressdiv">
-                <h5>Temple Inn & Suites</h5>
+                <h1>Temple Inn & Suites</h1>
                 <ul>
                     <li>4800 Montgomery Ln #300</li>
                     <li>Bethesda, MD 20814 </li>
                     <li>(301) 657-2405</li>
                 </ul>
             </div>
-            <figure>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.8398876490464!2d-77.09636316544903!3d38.9834498873263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563107392011!5m2!1sen!2sus"
-                    width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </figure>
-            <div class="directions">
-                <h5>Directions</h5>
-                <ul>
-                    <li>Follow I-495 to MD-187 S.</li>
-                    <li>Take exit 36 to 1-495 N.</li>
-                    <li>Follow MD-187 to Montgomery Ln.</li>
-                </ul>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <div class="contactdiv">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013225!2d-77.09772048539614!3d38.983251779557555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563727173747!5m2!1sen!2sus"
+                 allowfullscreen>
+            </iframe>
+            <div class="contaddy">
+                <h3>Temple Inn & Suites</h3>
+                <p>&#10146; 4800 Montgomery Ln #300</p>
+                <p>Bethesda, MD 20814 </p>
+                <p>&#9993; Email: <a href="help@temple-inn.com"><em>help@temple-inn.com</em></a></p>
+                <p>&phone; (301) 657-2405</p>
             </div>
-        </aside>
+            <form class="contactform">
+                <fieldset>
+                    <legend>Request Information</legend>
+                    <label class="top">Name*<input type="text" name="name" pattern="[A-Za-z]+" minlength="2"
+                            maxlength="20" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">Your Message:</br>
+                        <textarea name="comment" class="textarea"
+                            placeholder="Enter information here..."></textarea></label>
+                    <input type="submit" class="submit" value="Send Request">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <aside>
+        <div class="asideaddressdiv">
+            <h4>Temple Inn & Suites</h4>
+            <ul>
+                <li>4800 Montgomery Ln #300</li>
+                <li>Bethesda, MD 20814 </li>
+                <li>(301) 657-2405</li>
+            </ul>
+        </div>
+        <figure>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.8398876490464!2d-77.09636316544903!3d38.9834498873263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563107392011!5m2!1sen!2sus"
+                width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </figure>
+        <div class="directions">
+            <h4>Directions</h4>
+            <ul>
+                <li>Follow I-495 to MD-187 S.</li>
+                <li>Take exit 36 to 1-495 N.</li>
+                <li>Follow MD-187 to Montgomery Ln.</li>
+            </ul>
+        </div>
+    </aside>
     <footer>
         <p>
             &copy; 2019 Veronica Broadway Texas, U.S.A. | <a href="http://www.byui.edu/online">BYU-Idaho</a> |
-            Attributions
+            <a href="https://bwayvs.github.io/temple-inn/attributions.html">Attributions</a>
         </p>
     </footer>
     <script src="js/hamburger.js"></script>
