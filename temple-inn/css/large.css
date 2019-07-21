@@ -162,6 +162,17 @@
     .resdiv img {
         margin-bottom: 2em;
     }
+    /*Services Page*/
+    .amdiv {
+        width: 47%;
+        float: left;    
+    }
+    
+    .servdiv {
+        width: 47%;
+        float: right;
+    }
+    
 
     /*Receptions Page*/
     .pkgdiv {
@@ -250,12 +261,12 @@
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
     }
 
     .missimgdiv {
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
         display: grid;

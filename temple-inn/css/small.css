@@ -33,8 +33,8 @@ h1 {
     font-size: 2rem;
     line-height: 1.5;
     margin: .35em 0 0;
-    
-    
+
+
 }
 
 h3,
@@ -47,11 +47,13 @@ h4 {
     padding-bottom: .25rem;
     font-weight: bolder;
     font-size: 1.5em;
-   
+
 }
+
 h4 {
     white-space: nowrap;
 }
+
 h2 {
     color: #22333b;
     text-align: center;
@@ -69,10 +71,12 @@ nav {
     font-family: 'Assistant', sans-serif;
 
 }
-#active{
+
+#active {
     background-color: #5e503f;
     color: #eae0d5 !important;
 }
+
 .navigation {
     max-width: 960px;
     text-align: left;
@@ -161,7 +165,7 @@ header {
 .headerbox2 {
     margin-left: .5em;
     align-self: center;
-   
+
 }
 
 .address ul {
@@ -180,7 +184,7 @@ header {
     font-size: 1em;
     display: grid;
     width: 100%;
-    grid-template-rows: repeat(auto 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: auto;
 
 
@@ -260,7 +264,7 @@ form .submitdiv {
     margin: 0;
     max-width: 211px;
     display: inline-block;
-    
+
 }
 
 /*Welcome*/
@@ -328,6 +332,7 @@ form .submitdiv {
 .templemain {
     text-align: center;
 }
+
 section p {
     display: block;
     padding: .25em .5em 0;
@@ -360,10 +365,10 @@ section {
     display: inline-block;
     text-align: center;
     font-family: 'Assistant', sans-serif;
-   
+
     margin: 0 auto 1em;
-   
-  
+
+
 }
 
 section li {
@@ -388,7 +393,7 @@ section img {
 }
 
 section>div {
-   
+
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -422,10 +427,7 @@ section>div {
 /*Services Page*/
 .services {
     display: inline-block;
-   
     width: 100%;
-    
-
 }
 
 .servicedesc {
@@ -449,8 +451,7 @@ section>div {
 }
 
 .amdiv {
-    width: 47%;
-    float: left;
+    
     padding: 0 1em;
     border-right: 1px solid #22333b;
     margin: 1em .5em 0 0;
@@ -458,8 +459,7 @@ section>div {
 }
 
 .servdiv {
-    width: 47%;
-    float: right;
+   
     margin: 1em 0 0 .5em;
 }
 
@@ -592,8 +592,9 @@ form label.top textarea {
     margin: .25em;
     line-height: 1.5em;
 }
+
 .formdiv textarea {
-    height : 150px;
+    height: 150px;
 }
 
 form label.side {
@@ -617,6 +618,7 @@ form label.side select {
     max-width: 20rem;
     width: 100%;
 }
+
 form label.side select {
     height: 44px;
 }
@@ -651,6 +653,7 @@ form label.side select {
 .recbanner {
     width: 90%;
 }
+
 #reception {
     display: inline-block;
     text-align: center;
@@ -660,18 +663,36 @@ form label.side select {
 #reception figure {
     width: 100%;
 }
+
 .rechero {
     display: none;
     width: 100%;
 }
+
 .rechero p {
     padding: 0 5% 0;
     text-align: justify;
+}
+.rechero ul {
+    padding: 0 10% 0;
+    margin-top: 1em;
+}
+.rechero ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: left;
+    margin-bottom: .5em;
+}
+.bold {
+    font-weight: bold;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.15em;
 }
 .recpkgdiv {
     width: 100%;
     display: inline-block;
 }
+
 .pkgdiv {
     width: 60%;
     display: inline-block;
@@ -680,18 +701,21 @@ form label.side select {
     box-shadow: 0 0 5px #0a0908;
     margin: 1em;
 }
+
 .pkgdiv img {
     width: 100%;
     max-width: 200px;
     border: 1px solid #22333b;
 }
+
 .pkgdiv p {
     max-width: 200px;
     width: 100%;
     margin-top: 1em;
     text-align: justify;
 }
-.recaction{
+
+.recaction {
     display: inline-block;
     border-top: 1px solid #22333b;
     width: 100%;
@@ -703,29 +727,40 @@ form label.side select {
     width: 100%;
     display: inline-block;
 }
+
 .recform fieldset {
     display: inline-block;
     width: 90%;
 }
+
 .recaction input {
     max-width: 15em;
 }
+
 .flexrecimg {
     display: none;
     align-items: center;
+    margin-right: 1em;
 }
+.flexrecimg p {
+    width: 100%;
+}
+
 .recaction img {
     display: none;
     margin: auto;
 }
+
 .recaction form {
     display: block;
 }
+
 .recaction textarea {
     min-width: 300px;
     min-height: 150px;
     width: 100%;
 }
+
 .recform .submit {
     display: inline-block;
     padding: .5em;
@@ -740,12 +775,14 @@ form label.side select {
 .recaction input {
     padding: .5em;
     width: 100%;
-    
+
 }
+
 .recaction fieldset {
     width: 80%;
-  
+
 }
+
 .recaction legend {
     padding-top: 0;
 }
@@ -756,11 +793,13 @@ form label.side select {
     text-align: center;
     width: 100%;
 }
+
 .missroompics img {
     padding: 1em;
     width: 100%;
-    
+
 }
+
 .amenitydiv p {
     margin: 0 1em;
     text-align: justify;
@@ -781,6 +820,7 @@ form label.side select {
     margin: auto;
     padding: 0 1em .5em;
 }
+
 .missreqinfo {
     border: 1px solid #22333b;
     border-radius: 10px;
@@ -796,7 +836,7 @@ form label.side select {
 .missreqinfo fieldset {
     border: none;
     padding-bottom: 0;
-    
+
 }
 
 .missimgdiv {
@@ -822,6 +862,7 @@ form label.side select {
 .missimgdiv figure {
     width: 100%;
 }
+
 .mainmissdiv {
     align-items: center;
     background-color: #eae0d5;
@@ -833,25 +874,30 @@ form label.side select {
     grid-template-columns: auto;
     margin: 0 1em;
 }
+
 /*Contact Us Page*/
 .contactdiv {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
+
 .contactdiv iframe {
     width: 100%;
     min-height: 300px;
-    margin: 0;  
+    margin: 0;
 }
+
 .contaddy {
     color: #22333b;
     margin-bottom: 1em;
     text-align: center;
 }
+
 .contactform {
     margin: 1em;
 }
+
 .contactdiv .submit {
     display: block;
     width: 100%;
@@ -864,6 +910,7 @@ form label.side select {
     max-width: 12em;
     border-style: outset;
 }
+
 /*Footer*/
 footer {
     background-color: #5e503f;
@@ -887,10 +934,12 @@ footer a {
 footer a:visited {
     color: #eae0d5;
 }
+
 @media screen and (max-width: 556px) {
-    .pkgdiv{
+    .pkgdiv {
         width: 80%
-    } 
+    }
+
     .ftmisspara {
         grid-row-start: 3;
         grid-row-end: 4;
@@ -898,13 +947,14 @@ footer a:visited {
         display: block;
         width: 100%;
     }
-    
+
     .ftmisspara p {
         display: none;
         width: 100%;
         margin: auto;
         padding: 0 1em .5em;
     }
+
     .missreqinfo {
         border: 1px solid #22333b;
         border-radius: 10px;
@@ -916,11 +966,12 @@ footer a:visited {
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
+
     .missreqinfo fieldset {
         border: none;
         padding-bottom: 0;
     }
+
     .missimgdiv {
         grid-row-start: 2;
         grid-row-end: 3;
@@ -929,21 +980,22 @@ footer a:visited {
         width: 100%;
         display: block;
         padding: 0 1em .5em;
-    
+
     }
-    
+
     .missimgdiv img {
         max-width: 350px;
         width: 100%;
         box-shadow: 0 0 5px #0a0908;
         display: block;
         margin: 0 auto 1em;
-    
+
     }
-    
+
     .missimgdiv figure {
         width: 100%;
     }
+
     .mainmissdiv {
         align-items: center;
         background-color: #eae0d5;
@@ -957,12 +1009,14 @@ footer a:visited {
 }
 
 @media screen and (max-width: 482px) {
-    .address ul{
+    .address ul {
         display: none
     }
+
     .address {
         text-align: center;
     }
+
     .headerbox2 {
         text-align: left;
         margin: 0 .5em;
@@ -986,8 +1040,9 @@ footer a:visited {
     form label {
         font-size: .8em;
     }
+
     .pkgdiv {
         width: 90%;
     }
-  
+
 }

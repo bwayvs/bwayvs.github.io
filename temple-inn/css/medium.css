@@ -118,6 +118,7 @@
     }
 
     .flexrecimg img {
+        display: block;
         width: 100%;
     }
 
