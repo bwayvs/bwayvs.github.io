@@ -356,10 +356,10 @@ section {
     display: inline-block;
     text-align: center;
     font-family: 'Assistant', sans-serif;
-    background-color: #d8c0a7;
+   
     margin: 0 auto 1em;
-    box-shadow: 10px 10px 30px #0a0908;
-    border: 3px ridge #5e503f;
+   
+  
 }
 
 section li {
