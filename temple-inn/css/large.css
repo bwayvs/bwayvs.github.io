@@ -150,6 +150,60 @@
        margin-bottom: 2em;
    }
    
-   
+    /*Receptions Page*/
+    .pkgdiv {
+        width: 27%;
+        
+    } 
+    .rechero  {
+        display: inline-block;
+        margin-top: 1em;
+        text-align: justify;
+        font-size: 1.15em;
+        color: #0a0908;
+    }
+    .flexrecimg {
+        display: flex;
+    }
+    .recaction {
+        display: grid;
+        text-align: center;
+        padding: 1em;
+       
+    }
+    .recaction img {
+        display: block;
+        max-width: 400px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+       
+        margin: 0 1em;
+    }
+    .recaction form {
+        display: block;
+       
+        max-width: 350px;
+        text-align: left;
+        margin: 0 1em;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+       
+    }
+    .flexrecimg {
+        display: block;
+    }
+    .flexrecimg img {
+        width:100%;
+    }
+    .flexrecimg p {
+        text-align: justify;
+        width: 100%;
+        margin: 1em 0 1em 2em;
+        max-width: 368px;
+    }
 
 }

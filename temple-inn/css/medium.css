@@ -65,19 +65,64 @@
     /*Serives Page*/
     .serviceimg img {
         width: 100%;
-        box-shadow:0 0 5px #0a0908;
+        box-shadow: 0 0 5px #0a0908;
     }
+
     .recpic {
-        width:50%;
+        width: 50%;
         float: left;
-       
+
     }
+
     .misspic {
         width: 50%;
         float: right;
-       
+
     }
-    .amdiv, .servdiv {
+
+    .amdiv,
+    .servdiv {
         display: none;
     }
+
+    /*Receptions Page*/
+    .rechero {
+        display: inline-block;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 557px) {
+        .pkgdiv {
+            width: 27%;
+            display: inline-block;
+        }
+    }
+
+    .recaction {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+
+    }
+
+    .recform {
+        display: block;
+        max-width: 350px;
+        text-align: left;
+        margin: 0 1em;
+
+    }
+    .flexrecimg {
+        display: block;
+    }
+    .flexrecimg img {
+        width:100%;
+    }
+    .flexrecimg p {
+        text-align: justify;
+        width: 100%;
+        margin: 1em;
+        max-width: 368px;
+    }
+
 }

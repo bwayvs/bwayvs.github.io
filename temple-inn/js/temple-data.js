@@ -151,6 +151,10 @@ function showData(jsonObj) {
        
         myDiv.appendChild(myButton1);
         myDiv.appendChild(myButton2);
+        myDiv.appendChild(document.createElement("br"));
+        myDiv.appendChild(document.createElement("br"));
+        myDiv.appendChild(document.createElement("br"));
+        myDiv.appendChild(document.createElement("br"));
 
         myDiv.appendChild(myImg);
         myDiv.appendChild(myH3);

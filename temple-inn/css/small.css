@@ -33,6 +33,8 @@ h1 {
     font-size: 2rem;
     line-height: 1.5;
     margin: .35em 0 0;
+    
+    
 }
 
 h3,
@@ -45,8 +47,11 @@ h4 {
     padding-bottom: .25rem;
     font-weight: bolder;
     font-size: 1.5em;
+   
 }
-
+h4 {
+    white-space: nowrap;
+}
 h2 {
     color: #22333b;
     text-align: center;
@@ -156,6 +161,7 @@ header {
 .headerbox2 {
     margin-left: .5em;
     align-self: center;
+   
 }
 
 .address ul {
@@ -317,34 +323,43 @@ form .submitdiv {
 }
 
 /**Temple page**/
+.templemain {
+    text-align: center;
+}
 section p {
     display: block;
     padding: .25em .5em 0;
     margin: auto;
-    text-align: left;
+    text-align: center;
     font-family: serif;
     font-size: 1.25em;
     width: 100%;
     max-width: 600px;
     font-weight: bold;
+    color: #131c20;
 }
 
 section ul {
     padding: 0 .5em .25em;
     margin: auto;
-    text-align: left;
+    text-align: center;
     font-family: serif;
     font-size: 1.25em;
     width: 100%;
     max-width: 600px;
     list-style-type: circle;
     list-style-position: inside;
+    color: #131c20;
 }
 
 section {
-    display: block;
-
-
+    display: inline-block;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    background-color: #d8c0a7;
+    margin: 0 auto 1em;
+    box-shadow: 10px 10px 30px #0a0908;
+    border: 3px ridge #5e503f;
 }
 
 section li {
@@ -355,6 +370,7 @@ section li {
     list-style-position: inside;
     width: 100%;
     max-width: 600px;
+    color: #131c20;
 }
 
 section img {
@@ -367,10 +383,13 @@ section img {
 }
 
 section>div {
-    border-top: 1px solid #5e503f;
-    margin: 0 auto;
+   
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     margin-bottom: 1em;
+    width: 80%;
+    
 
 }
 
@@ -383,6 +402,7 @@ section>div {
     color: #fff;
     font-family: 'Assistant', sans-serif;
     margin: 1em;
+
 
 }
 
@@ -544,13 +564,13 @@ form label.top select {
     display: block;
     font-size: 1rem;
     border: 1px solid #22333b;
-    padding: .75rem;
+    padding: .5rem;
     color: #22333b;
     width: 100%;
     max-width: 20rem;
     background-color: #fff;
     margin: .25em;
-    line-height: 2.5em;
+    line-height: 1.5em;
 }
 
 form label.top textarea {
@@ -565,7 +585,10 @@ form label.top textarea {
     max-height: 40rem;
     background-color: #fff;
     margin: .25em;
-    line-height: 2.5em;
+    line-height: 1.5em;
+}
+.formdiv textarea {
+    height : 150px;
 }
 
 form label.side {
@@ -598,7 +621,7 @@ form label.zip input {
     max-width: 7em;
 }
 
-.submit {
+.formdiv .submit {
     display: inline-block;
     padding: .5em;
     background-color: #22333b;
@@ -620,6 +643,109 @@ form label.zip input {
     width: 100%;
     max-width: 400px;
     margin-right: 1em;
+}
+
+
+/*Receptions Page*/
+.recbanner {
+    width: 90%;
+}
+#reception {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+#reception figure {
+    width: 100%;
+}
+.rechero {
+    display: none;
+    width: 100%;
+}
+.rechero p {
+    padding: 1em 5% 0;
+    text-align: justify;
+}
+.recpkgdiv {
+    width: 100%;
+    display: inline-block;
+}
+.pkgdiv {
+    width: 60%;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 5px #0a0908;
+    margin: 1em;
+}
+.pkgdiv img {
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #22333b;
+}
+.pkgdiv p {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 1em;
+    text-align: justify;
+}
+.recaction{
+    display: inline-block;
+    border-top: 1px solid #22333b;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.recform {
+    width: 100%;
+    display: inline-block;
+}
+.recform fieldset {
+    display: inline-block;
+    width: 90%;
+}
+.recaction input {
+    max-width: 15em;
+}
+.flexrecimg {
+    display: none;
+    align-items: center;
+}
+.recaction img {
+    display: none;
+    margin: auto;
+}
+.recaction form {
+    display: block;
+}
+.recaction textarea {
+    min-width: 300px;
+    min-height: 150px;
+    width: 100%;
+}
+.recaction .submit {
+    display: inline-block;
+    padding: .5em;
+    background-color: #22333b;
+    color: #eae0d5;
+    font-family: 'Assistant', sans-serif;
+    margin: 1em;
+    max-width: 260px;
+}
+
+.recaction input {
+    padding: .5em;
+    width: 100%;
+    
+}
+.recaction fieldset {
+    width: 80%;
+  
+}
+.recaction legend {
+    padding-top: 0;
 }
 
 /*Footer*/
@@ -645,13 +771,23 @@ footer a {
 footer a:visited {
     color: #eae0d5;
 }
+@media screen and (max-width: 556px) {
+    .pkgdiv{
+        width: 80%
+    } 
+}
 @media screen and (max-width: 482px) {
-    .address div{
+    .address ul{
         display: none
     }
     .address {
         text-align: center;
     }
+    .headerbox2 {
+        text-align: left;
+        margin: 0 .5em;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -670,5 +806,8 @@ footer a:visited {
     form label {
         font-size: .8em;
     }
-
+    .pkgdiv {
+        width: 90%;
+    }
+  
 }
