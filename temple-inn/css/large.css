@@ -159,6 +159,9 @@
     .formdiv {
         text-align: left;
         margin-left: 1em;
+       
+    }
+    .formdiv form {
         width: 47%;
     }
 
