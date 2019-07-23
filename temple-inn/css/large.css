@@ -166,6 +166,7 @@
         display: block;
         float: right;
         width: 47%;
+        margin-left: 0;
     }
 
     .resdiv img {
