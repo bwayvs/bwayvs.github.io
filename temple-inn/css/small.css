@@ -834,9 +834,7 @@ form label.side select {
     padding: 0 1em .5em;
 }
 
-.missreqinfo {
-    
-    border-radius: 10px;
+.missreqinfo { 
     min-width: 250px;
     max-width: 400px;
     margin: 0 auto 1em 1em;
@@ -844,12 +842,11 @@ form label.side select {
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.missform {
-    border: 1px solid #22333b;
-}
 .missreqinfo fieldset {
-    border: none;
+    border: 1px solid #22333b;
+    border-radius: 10px;
     padding-bottom: 0;
+    width:100%;
 
 }
 
@@ -882,6 +879,7 @@ form label.side select {
     background-color: #eae0d5;
     color: #22333b;
     font-size: 1em;
+  
     display: grid;
     width: 100%;
     grid-template-rows: repeat(auto 1fr);

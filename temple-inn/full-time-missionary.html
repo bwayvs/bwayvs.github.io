@@ -47,10 +47,10 @@
         <h2>Full-Time Missionary</h2>
         <div class="mainmissdiv">
             <div class="missreqinfo">
-                <form class="missform recform">
-                    <legend>Request Details</legend>
+                <form class="missform">
+                  
                     <fieldset>
-
+                            <legend>Request Details</legend>
                         <label class="top">Name*<input type="text" name="name" pattern="[A-Za-z]+" minlength="2"
                                 maxlength="20" required></label>
                         <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
@@ -58,10 +58,11 @@
                         <label class="top">Your Message:</br>
                             <textarea name="comment" class="textarea"
                                 placeholder="Enter information here..."></textarea></label>
+                        <div class="submitdiv">
+                            <input type="submit" class="submit" value="View Rates">
+                        </div>
                     </fieldset>
-                    <div class="submitdiv">
-                        <input type="submit" class="submit" value="View Rates">
-                    </div>
+
                 </form>
             </div>
             <div class="missimgdiv">

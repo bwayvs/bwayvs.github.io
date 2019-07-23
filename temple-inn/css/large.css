@@ -293,6 +293,14 @@
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
+        justify-items: stretch;
+        align-self: center;
+        margin: auto 0 auto auto;
+        max-width: none;
+        min-width: 350px;
+    }
+    .missform {
+        width: 100%;
     }
      /*Contact Us Page*/
      .contactdiv {
