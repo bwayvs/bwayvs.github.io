@@ -163,9 +163,10 @@
     }
 
     .resdiv {
-        display: block;
+        display: inline-block;
         float: right;
         width: 47%;
+        text-align: center;
         margin-left: 0;
     }
 
