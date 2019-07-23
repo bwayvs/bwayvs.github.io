@@ -165,6 +165,7 @@
     .resdiv {
         display: block;
         float: right;
+        width: 47%;
     }
 
     .resdiv img {
