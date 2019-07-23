@@ -824,6 +824,7 @@ form label.side select {
     margin: .5em auto;
     display: block;
     width: 100%;
+    max-width:400px;
 }
 
 .ftmisspara p {
@@ -834,17 +835,18 @@ form label.side select {
 }
 
 .missreqinfo {
-    border: 1px solid #22333b;
+    
     border-radius: 10px;
     min-width: 250px;
     max-width: 400px;
     margin: 0 auto 1em 1em;
     display: inline-block;
-    border-collapse: collapse;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
+.missform {
+    border: 1px solid #22333b;
+}
 .missreqinfo fieldset {
     border: none;
     padding-bottom: 0;
@@ -884,7 +886,7 @@ form label.side select {
     width: 100%;
     grid-template-rows: repeat(auto 1fr);
     grid-template-columns: auto;
-    margin: 0 1em;
+    padding: 0 1em;
 }
 
 /*Contact Us Page*/
